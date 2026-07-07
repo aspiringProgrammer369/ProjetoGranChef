@@ -1,0 +1,26 @@
+/* 
+  Variáveis para cores:
+  --fundo-principal #F5E600
+  --texto #FCC600
+  --texto-inverso #EB9401
+  --destaque #E06100
+  --destaque-inverso #BD2600
+  --fundo-card #9C0015
+  --cor-neutra #F5EBDC;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --fundo-principal: #F5E600;
+  --texto: #FCC600;
+  --texto-inverso: #EB9401;
+  --destaque: #E06100;
+  --destaque-inverso: #BD2600;
+  --fundo-card: #9C0015;
+  --cor-neutra: #F5EBDC;
+}
