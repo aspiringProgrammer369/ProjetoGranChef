@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 320px) and (max-widdth: 480px) {
+    .opcoes, .navegacao, header > div:not(.logo) {
+        display: none;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+}
