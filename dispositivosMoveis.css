@@ -48,6 +48,23 @@
         align-items: center;
     }
 
+    .carousel {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .carousel img {
+        display: none;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .carousel img.active {
+        display: block;
+    }
+
 }
 
 /*
