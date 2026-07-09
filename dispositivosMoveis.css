@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 320px) and (max-width: 780px) {
+@media (max-width: 640px) {
 
-    .opcoes, .navegacao, .login, header > div:not(.logo) {
+    header {
+        background-color: #EB9401;
+        display: flex;
+        justify-content: center;
+    }
+
+    .opcoes, .navegacao, .login, header > div > a > img:not(.logo2) {
         display: none;
     }
 
-    .logo img {
+    .logo2 {
         width: 150px;
         height: auto;
     }
