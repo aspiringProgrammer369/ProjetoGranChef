@@ -18,7 +18,7 @@
 
     
 
-    .login, .login, .logo1, .logo2, .navegacao {
+    .login, .logo1, .logo2, .navegacao {
         display: none;
     }
 
@@ -38,6 +38,12 @@
     .logo4 {
         width: 160px;
         height: auto;
+    }
+
+    .login {
+        font-size: 40px;
+        cursor: pointer;
+        color: #000;
     }
 
 }
