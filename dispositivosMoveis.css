@@ -7,7 +7,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 0 20px;
+        padding: 0px 0px 0px 20px;
     }
 
     .opcoes span.material-symbols-outlined {
@@ -28,11 +28,16 @@
         align-items: flex-end;
     }
     
-    .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
+    .logo3 {
+        display: inline;
+        position: relative;
+        top: -5px;
+        margin: 0 auto;
+    }
+
+    .logo4 {
+        width: 160px;
+        height: auto;
     }
 
 }
