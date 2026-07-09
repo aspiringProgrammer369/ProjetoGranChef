@@ -5,16 +5,34 @@
     header {
         background-color: #EB9401;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 20px;
     }
 
-    .opcoes, .navegacao, .login, header > div > a > img:not(.logo2) {
+    .opcoes span.material-symbols-outlined {
+        font-size: 40px;   /* aumenta o tamanho do ícone */
+        cursor: pointer;   /* deixa com aparência de botão clicável */
+        padding: 10px;     /* aumenta a área de clique */
+    }
+
+    
+
+    .login, .login, .logo1, .logo2, .navegacao {
         display: none;
     }
 
-    .logo2 {
-        width: 150px;
-        height: auto;
+    .opcoes {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
     }
 
 }
