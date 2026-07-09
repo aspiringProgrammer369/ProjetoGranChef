@@ -34,17 +34,18 @@
         height: auto;
     }
 
-    .logo4 {
+    .logo-gran-chef {
         display: block;
         width: 160px;
         height: auto;
         margin: 0 auto;
     }
 
-    .login {
+    .icones-a-direita {
         font-size: 40px;
         cursor: pointer;
         color: white;
+        align-items: center;
     }
 
 }
