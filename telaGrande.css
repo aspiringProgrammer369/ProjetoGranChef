@@ -3,7 +3,7 @@
 @media screen and (min-width: 1025px) {
     
     header {
-        background-color: #EB9401;
+        background-color: var(--texto-inverso);
         display: flex;
         flex-direction: column;
     }

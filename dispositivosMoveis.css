@@ -3,7 +3,7 @@
 @media (max-width: 640px) {
 
     header {
-        background-color: #EB9401;
+        background-color: var(--texto-inverso);
         display: grid;
         grid-template: 1fr / 1fr 2fr 1fr;
         align-items: center;
@@ -26,7 +26,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        color: white;
+        color: var(--cor-neutra);
     }
     
     .logo-rosto {
@@ -44,29 +44,42 @@
     .icones-a-direita {
         font-size: 40px;
         cursor: pointer;
-        color: white;
+        color: var(--cor-neutra);
         align-items: center;
     }
 
-    .carousel {
+    .carousel, .segundo-carousel {
+        position: relative;
         width: 100%;
-        height: auto;
+        height: 750px;
         overflow: hidden;
     }
 
-    .carousel img {
-        display: none;
+    .carousel img, .segundo-carousel img{
+        position: absolute;
+        top: 0;
+        left: 100%;
         width: 100%;
         height: auto;
+        transition: left 1s ease;
         
     }
 
-    .carousel img.active {
-        display: block;
-    }
+    
+
 
     .segundo-carousel {
         padding: 10px;
+    }
+
+    .carousel img.active,
+    .segundo-carousel img.active {
+        left: 0;
+    }
+
+    .carousel img.exit, .segundo-carousel img.exit {
+        left: -100%;
+       
     }
 
     .sobremesas {
@@ -77,46 +90,3 @@
     }
 
 }
-
-/*
-.opcoes span.material-symbols-outlined {
-        font-size: 40px;   
-        cursor: pointer;   
-        padding: 10px;     
-        #E9CB9E
-    }
-
-    
-
-    .logo1, .logo2, .navegacao {
-        display: none;
-    }
-
-    .opcoes {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
-    }
-    
-    .logo3 {
-        display: inline;
-        position: relative;
-        top: -18px;
-        margin: 0 auto;
-        width: 50px;
-        height: auto;
-    }
-
-    .logo4 {
-        display: block;
-        width: 160px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .login {
-        font-size: 40px;
-        cursor: pointer;
-        color: #000;
-    }
-*/
