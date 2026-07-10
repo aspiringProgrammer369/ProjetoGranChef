@@ -69,10 +69,11 @@
         padding: 10px;
     }
 
-    #sobremesas {
+    .sobremesas {
         max-width: 100%;
         height: auto;
         border-radius: 5px;
+        
     }
 
 }

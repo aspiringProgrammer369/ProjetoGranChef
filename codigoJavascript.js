@@ -1,19 +1,21 @@
-const imagens = document.querySelectorAll('.carousel img');
-let index = 0;
 
-function trocarImagem() {
-  // remove classe active de todas
-  imagens.forEach(img => img.classList.remove('active'));
-  
-  // adiciona active na próxima
-  imagens[index].classList.add('active');
-  
-  // atualiza índice
-  index = (index + 1) % imagens.length;
+
+function iniciarCarrossel(seletor, intervalo) {
+  const imagens = document.querySelectorAll(`${seletor} img`);
+  let index = 0;
+
+  function trocarImagem() {
+    imagens.forEach(img => img.classList.remove('active'));
+    imagens[index].classList.add('active');
+    index = (index + 1) % imagens.length;
+  }
+
+  trocarImagem();
+  setInterval(trocarImagem, intervalo);
 }
 
-// inicia mostrando a primeira
-trocarImagem();
+// Chamando para cada carrossel
+iniciarCarrossel('.carousel', 5000);
+iniciarCarrossel('.segundo-carousel', 5000);
 
-// troca a cada 8 segundos (8000 ms)
-setInterval(trocarImagem, 5000);
+
