@@ -60,7 +60,7 @@
     }
 
     .segundo-carousel {
-        margin: 1px 15px 15px 15px;
+        
         aspect-ratio: 1/1;
         box-sizing: border-box;
     }
@@ -72,13 +72,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: left 1s ease;
+        transition: left 0.5s ease;
         
     }
 
 .dots {
   position: absolute;
-  bottom: 50px;  /* ajuste esse valor para subir ou descer as bolinhas */
+  bottom: 15px;  /* ajuste esse valor para subir ou descer as bolinhas */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -100,9 +100,6 @@
   background-color: #f97316; /* cor de destaque */
 }
 
-.segundo-carousel .dots {
-    bottom: 275px;
-}
 
     .carousel img.active,
     .segundo-carousel img.active {

@@ -1,9 +1,9 @@
 function iniciarCarrossel(seletor, intervalo) {
   const container = document.querySelector(seletor);
   const imagens = container.querySelectorAll('img');
-  let index = 0;
-  let anterior = null;
   let timer = null;
+  let slideAtual = 0;      // 🟢 agora representa o slide que está visível
+  let anterior = null;     // usado apenas para controle da animação de saída
 
   // ---------- Cria as bolinhas ----------
   const dotsContainer = document.createElement('div');
@@ -12,16 +12,17 @@ function iniciarCarrossel(seletor, intervalo) {
   imagens.forEach((_, i) => {
     const dot = document.createElement('span');
     dot.classList.add('dot');
-    if (i === 0) dot.classList.add('active'); // primeira começa ativa
+    if (i === 0) dot.classList.add('active');
     dot.addEventListener('click', () => irPara(i));
     dotsContainer.appendChild(dot);
   });
-container.appendChild(dotsContainer);
+  container.appendChild(dotsContainer);
 
   const dots = dotsContainer.querySelectorAll('.dot');
 
-  // ---------- Função de troca ----------
-  function trocarImagem(direction = 'next', targetIndex = null) {
+  // ---------- Função de troca (agora recebe o NOVO slide a ser exibido) ----------
+  function exibirSlide(novoIndex) {
+    // Se já existe um slide visível, inicia a saída
     if (anterior !== null) {
       const imgAnterior = imagens[anterior];
       imgAnterior.classList.remove('active');
@@ -37,56 +38,45 @@ container.appendChild(dotsContainer);
       }, 1000);
     }
 
-    // Se foi especificado um índice alvo (clique na bolinha)
-    if (targetIndex !== null) {
-      index = targetIndex;
-    } else if (direction === 'prev') {
-      index = (index - 1 + imagens.length) % imagens.length;
-    }
-    // Se direction === 'next', o index já está na próxima
+    // Exibe o novo slide
+    imagens[novoIndex].classList.add('active');
+    anterior = novoIndex;
 
-    imagens[index].classList.add('active');
-    anterior = index;
-
-    // Atualiza as bolinhas
+    // Atualiza bolinhas
     dots.forEach(dot => dot.classList.remove('active'));
-    dots[index].classList.add('active');
+    dots[novoIndex].classList.add('active');
 
-    // Avança o índice para a próxima (usado apenas no loop automático)
-    index = (index + 1) % imagens.length;
+    slideAtual = novoIndex;   // 🟢 mantém registro do slide atual
   }
 
-  // ---------- Função para ir a um slide específico ----------
-  function irPara(i) {
-    // Para o automático
+  // ---------- Navegação ----------
+  function proximo() {
+    const novo = (slideAtual + 1) % imagens.length;
+    exibirSlide(novo);
+  }
+
+  function anteriorSlide() {
+    const novo = (slideAtual - 1 + imagens.length) % imagens.length;
+    exibirSlide(novo);
+  }
+
+  function irPara(indice) {
     clearInterval(timer);
     timer = null;
-
-    // Precisamos ajustar o índice de "próximo" para que a troca funcione corretamente
-    // Vou chamar trocarImagem com targetIndex
-    trocarImagem(null, i);
-  }
-
-  // Funções para swipe
-  function nextManual() {
-    trocarImagem('next');
-  }
-
-  function prevManual() {
-    trocarImagem('prev');
+    exibirSlide(indice);
   }
 
   // ---------- Timer automático ----------
   function iniciarTimer() {
     if (timer) clearInterval(timer);
-    timer = setInterval(() => trocarImagem('next'), intervalo);
+    timer = setInterval(proximo, intervalo);
   }
 
-  // Inicia
-  trocarImagem('next'); // mostra a primeira (já com dot ativo)
+  // Inicializa mostrando o primeiro slide
+  exibirSlide(0);
   iniciarTimer();
 
-  // ---------- Swipe ----------
+  // ---------- Suporte a toque (swipe) ----------
   let touchStartX = 0, touchStartY = 0;
 
   container.addEventListener('touchstart', (e) => {
@@ -100,15 +90,24 @@ container.appendChild(dotsContainer);
     const diffX = touchEndX - touchStartX;
     const diffY = touchEndY - touchStartY;
 
+    // Considera swipe apenas se movimento horizontal maior que vertical e > 50px
     if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+      // Para o carrossel automático definitivamente
       clearInterval(timer);
       timer = null;
-      if (diffX > 0) prevManual();
-      else nextManual();
+
+      if (diffX > 0) {
+        // Deslizou para a direita -> slide anterior
+        anteriorSlide();
+      } else {
+        // Deslizou para a esquerda -> próximo slide
+        proximo();
+      }
     }
   });
 
-  return { next: nextManual, prev: prevManual, irPara };
+  // Retorna controles (opcional)
+  return { proximo, anterior: anteriorSlide, irPara };
 }
 
 // Inicia os carrosséis
