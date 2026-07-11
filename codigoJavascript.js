@@ -2,8 +2,8 @@ function iniciarCarrossel(seletor, intervalo) {
   const container = document.querySelector(seletor);
   const imagens = container.querySelectorAll('img');
   let timer = null;
-  let slideAtual = 0;      // 🟢 agora representa o slide que está visível
-  let anterior = null;     // usado apenas para controle da animação de saída
+  let slideAtual = 0;
+  let anterior = null;
 
   // ---------- Cria as bolinhas ----------
   const dotsContainer = document.createElement('div');
@@ -20,9 +20,28 @@ function iniciarCarrossel(seletor, intervalo) {
 
   const dots = dotsContainer.querySelectorAll('.dot');
 
-  // ---------- Função de troca (agora recebe o NOVO slide a ser exibido) ----------
+  // ---------- Cria as setas ----------
+  const setaEsquerda = document.createElement('button');
+  setaEsquerda.classList.add('seta', 'seta-esquerda');
+  setaEsquerda.innerHTML = '&#10094;'; // símbolo <
+  setaEsquerda.addEventListener('click', () => {
+    pararTimer();
+    anteriorSlide();
+  });
+
+  const setaDireita = document.createElement('button');
+  setaDireita.classList.add('seta', 'seta-direita');
+  setaDireita.innerHTML = '&#10095;'; // símbolo >
+  setaDireita.addEventListener('click', () => {
+    pararTimer();
+    proximo();
+  });
+
+  container.appendChild(setaEsquerda);
+  container.appendChild(setaDireita);
+
+  // ---------- Função de troca de slide ----------
   function exibirSlide(novoIndex) {
-    // Se já existe um slide visível, inicia a saída
     if (anterior !== null) {
       const imgAnterior = imagens[anterior];
       imgAnterior.classList.remove('active');
@@ -38,15 +57,13 @@ function iniciarCarrossel(seletor, intervalo) {
       }, 1000);
     }
 
-    // Exibe o novo slide
     imagens[novoIndex].classList.add('active');
     anterior = novoIndex;
 
-    // Atualiza bolinhas
     dots.forEach(dot => dot.classList.remove('active'));
     dots[novoIndex].classList.add('active');
 
-    slideAtual = novoIndex;   // 🟢 mantém registro do slide atual
+    slideAtual = novoIndex;
   }
 
   // ---------- Navegação ----------
@@ -61,22 +78,26 @@ function iniciarCarrossel(seletor, intervalo) {
   }
 
   function irPara(indice) {
-    clearInterval(timer);
-    timer = null;
+    pararTimer();
     exibirSlide(indice);
   }
 
-  // ---------- Timer automático ----------
+  // ---------- Controle do timer ----------
+  function pararTimer() {
+    clearInterval(timer);
+    timer = null;
+  }
+
   function iniciarTimer() {
     if (timer) clearInterval(timer);
     timer = setInterval(proximo, intervalo);
   }
 
-  // Inicializa mostrando o primeiro slide
+  // Inicializa
   exibirSlide(0);
   iniciarTimer();
 
-  // ---------- Suporte a toque (swipe) ----------
+  // ---------- Swipe ----------
   let touchStartX = 0, touchStartY = 0;
 
   container.addEventListener('touchstart', (e) => {
@@ -90,30 +111,19 @@ function iniciarCarrossel(seletor, intervalo) {
     const diffX = touchEndX - touchStartX;
     const diffY = touchEndY - touchStartY;
 
-    // Considera swipe apenas se movimento horizontal maior que vertical e > 50px
     if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
-      // Para o carrossel automático definitivamente
-      clearInterval(timer);
-      timer = null;
-
-      if (diffX > 0) {
-        // Deslizou para a direita -> slide anterior
-        anteriorSlide();
-      } else {
-        // Deslizou para a esquerda -> próximo slide
-        proximo();
-      }
+      pararTimer();
+      if (diffX > 0) anteriorSlide();
+      else proximo();
     }
   });
 
-  // Retorna controles (opcional)
   return { proximo, anterior: anteriorSlide, irPara };
 }
 
 // Inicia os carrosséis
 iniciarCarrossel('.carousel', 5000);
 iniciarCarrossel('.segundo-carousel', 5000);
-
 /* 
 function iniciarCarrossel(seletor, intervalo) {
   const container = document.querySelector(seletor);

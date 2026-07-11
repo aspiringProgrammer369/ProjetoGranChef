@@ -60,7 +60,7 @@
     }
 
     .segundo-carousel {
-        
+        margin-top: 10px 10px;
         aspect-ratio: 1/1;
         box-sizing: border-box;
     }
@@ -76,29 +76,57 @@
         
     }
 
-.dots {
-  position: absolute;
-  bottom: 15px;  /* ajuste esse valor para subir ou descer as bolinhas */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-  margin-top: 0; /* anula qualquer margem anterior */
-}
+    .seta {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 30px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background 0.3s;
+        line-height: 1;
+    }
 
-.dot {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+    .seta:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
 
-.dot.active {
-  background-color: #f97316; /* cor de destaque */
-}
+    .seta-esquerda {
+        left: 15px;
+    }
+
+    .seta-direita {
+        right: 15px;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 15px;  /* ajuste esse valor para subir ou descer as bolinhas */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+        margin-top: 0; /* anula qualquer margem anterior */
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .dot.active {
+        background-color: #f97316; /* cor de destaque */
+    }
 
 
     .carousel img.active,
