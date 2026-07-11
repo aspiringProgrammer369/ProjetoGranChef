@@ -48,24 +48,27 @@
         align-items: center;
     }
 
-    .carousel {
+    .lanches {
         aspect-ratio: 2/3;
     }
 
-    .carousel, .segundo-carousel {
+    .secao-sobremesas {
+        margin: 20px;
+    }
+
+    .lanches, .sobremesas {
         position: relative;
         width: 100%;
     
         overflow: hidden;
     }
 
-    .segundo-carousel {
-        margin-top: 10px 10px;
+    .sobremesas {
         aspect-ratio: 1/1;
         box-sizing: border-box;
     }
 
-    .carousel img, .segundo-carousel img{
+    .lanches img, .sobremesas img{
         position: absolute;
         top: 0;
         left: 100%;
@@ -106,7 +109,7 @@
 
     .dots {
         position: absolute;
-        bottom: 15px;  /* ajuste esse valor para subir ou descer as bolinhas */
+        bottom: 10px;  /* ajuste esse valor para subir ou descer as bolinhas */
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -128,18 +131,7 @@
         background-color: #f97316; /* cor de destaque */
     }
 
-
-    .carousel img.active,
-    .segundo-carousel img.active {
-        left: 0;
-    }
-
-    .carousel img.exit, .segundo-carousel img.exit {
-        left: -100%;
-       
-    }
-
-    .sobremesas {
+    .doces {
         max-width: 100%;
         height: auto;
         border-radius: 5px;
