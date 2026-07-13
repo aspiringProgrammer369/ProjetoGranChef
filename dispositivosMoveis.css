@@ -138,4 +138,10 @@
         
     }
 
+    .Contato {
+        background-color: var(--destaque-inverso);
+        color: var(--cor-neutra);
+        
+    }
+
 }
