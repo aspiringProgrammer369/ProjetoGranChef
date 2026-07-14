@@ -53,7 +53,7 @@
     }
 
     .secao-sobremesas {
-        margin: 20px;
+        
     }
 
     .lanches, .sobremesas {
@@ -143,8 +143,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         background-color: var(--destaque-inverso);
-        width: 100%;
-        height: auto;
+        height: 450px;
         overflow-x: hidden;
     }
 
@@ -155,17 +154,23 @@
         
     }
 
-    
-
     .celular {
         width: 100px;
         height: auto;
         transform: scale(2.7);
     }
 
+    .Bloco-Mensagem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .Bloco-Mensagem p {
-        max-width: 80%;
         color: white;
+        font-family: 'Alfa Slab One', cursive;
+        width: 100%;
     }
 
     .logo-apple {
@@ -202,10 +207,7 @@
     }
 
     
-    .Bloco-Mensagem {
-        font-size: 5vw;
-        background-color: blue;
-    }
+    
     
 
 }
