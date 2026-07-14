@@ -50,22 +50,27 @@
 
     .lanches {
         aspect-ratio: 2/3;
-    }
-
-    .secao-sobremesas {
-        
-    }
-
-    .lanches, .sobremesas {
         position: relative;
         width: 100%;
-    
         overflow: hidden;
     }
 
+
     .sobremesas {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+
+    .secao-sobremesas .sobremesas {
         aspect-ratio: 1/1;
         box-sizing: border-box;
+    }
+
+    .secao-sobremesas .VerMain {
+        width: 60vw;
+        background-color: lightcoral;
     }
 
     .lanches img, .sobremesas img{
@@ -167,11 +172,11 @@
         align-items: center;
     }
 
-    .Bloco-Mensagem p {
+    .Bloco-Mensagem > p {
         color: white;
         font-family: 'Alfa Slab One', cursive;
-        width: 100%;
-        
+        width: 80%;
+        font-size: 1.3rem;
     }
 
     .Bloco-Mensagem img {
@@ -202,7 +207,7 @@
     }
 
     .AppGoogle {
-        width: 38vw;
+        width: 37vw;
     }
 
     
