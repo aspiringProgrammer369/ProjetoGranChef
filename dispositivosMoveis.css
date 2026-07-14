@@ -13,9 +13,13 @@
         font-size: 40px;   /* aumenta o tamanho do ícone */
         cursor: pointer;   /* deixa com aparência de botão clicável */
         padding: 10px;     /* aumenta a área de clique */
+        background-color: var(--cor-header);
     }
 
-    
+    .opcoes button {
+        border: none;
+        color: var(--cor-de-fundo);
+    }
 
     .logo-fundo-laranja, .logo2, .navegacao {
         display: none;
@@ -25,7 +29,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        color: var(--cor-de-fundo);
+        background-color: var(--cor-header);
     }
     
     .logo-rosto {
@@ -75,18 +79,18 @@
         width: 100%;
     }
 
-    .Ver-Mais {
+    .Ver-Mais-Sobremesas {
         display: flex;
         height: 50px;
         background-color: var(--cor-botoes);
-        margin: 15px;
+        margin: 20px;
         color: var(--cor-de-fundo);
         align-items: center;
         justify-content: center;
         font-family: 'Alfa Slab One', cursive;
     }
 
-    .Ver-Mais p {
+    .Ver-Mais-Sobremesas p {
         font-family: 'Passion One', cursive;
     }
 
@@ -107,7 +111,7 @@
         transform: translateY(-50%);
         z-index: 20;
         background: rgba(0, 0, 0, 0.5);
-        color: white;
+        color: var(--cor-de-fundo);
         border: none;
         font-size: 30px;
         padding: 10px 15px;
@@ -139,6 +143,8 @@
         z-index: 10;
         margin-top: 0; /* anula qualquer margem anterior */
     }
+
+    
 
     .dot {
         width: 12px;
@@ -191,7 +197,7 @@
     }
 
     .Bloco-Mensagem > p {
-        color: white;
+        color: var(--cor-de-fundo);
         font-family: 'Passion One', cursive;
         width: 80%;
         font-size: 2rem;
@@ -203,13 +209,9 @@
         transform: scale(3);
     }
 
-    
-
-    
-
     .AppApple, .AppGoogle {
         font-size: 2vw;
-        color: white;
+        color: var(--cor-de-fundo);
         display: flex;
         align-items: center;
         margin: 10px 10px;
@@ -229,7 +231,31 @@
     }
 
     
+    footer {
+        background-color: var(--cor-botoes);
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        color: var(--cor-de-fundo);
+    }
+
+   
+    footer img {
+        display: flex;
+        justify-content: center;
+    }
     
+    footer > .logo-gran-chef {
+        width: 150px;
+        height: auto;
+    }
+
+    footer > .logo-marca {
+        width: 200px;
+        height: auto;
+    }
     
 
 }
