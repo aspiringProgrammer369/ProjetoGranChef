@@ -143,7 +143,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         background-color: var(--destaque-inverso);
-        height: 450px;
+        height: 405px;
         overflow-x: hidden;
     }
 
@@ -171,39 +171,38 @@
         color: white;
         font-family: 'Alfa Slab One', cursive;
         width: 100%;
+        
     }
 
-    .logo-apple {
-        width: 30px;
+    .Bloco-Mensagem img {
+        width: 40px;
         height: auto;
         transform: scale(3);
     }
 
-    .logo-google {
-        width: 30px;
-        height: auto;
-        transform: scale(3);
-    }
+    
 
-    .AppsParaBaixar {
-        font-size: 10px;
-        color: white;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
     .AppApple, .AppGoogle {
         font-size: 2vw;
         color: white;
+        display: flex;
+        align-items: center;
+        margin: 10px 10px;
+        background-color: black;
+        text-align: center;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 10px;
     }
 
-    .Bloco-Mensagem span.AppApple, .Bloco-Mensagem span.AppGoogle {
-        display: inline-block;
-        vertical-align: middle;
-        color: white;
-        background-color: black;
+    .AppApple {
+        width: 31vw;
+    }
+
+    .AppGoogle {
+        width: 38vw;
     }
 
     
