@@ -2,22 +2,22 @@
 
 /* 
   Variáveis para cores:
-  --fundo-principal #F5E600
-  --texto #FCC600
-  --texto-inverso #EB9401
-  --destaque #E06100
-  --destaque-inverso #BD2600
-  --fundo-card #9C0015
+  --cor-logo #F5E600
+  --cor-da-marca #FCC600
+  --cor-header #EB9401
+  --cor-imagem #E06100
+  --cor-poster1 #BD2600
+  --cor-poster2 #9C0015
   --cor-neutra #F5EBDC;
 */
 
 :root {
   --cor-logo: #F5E600;
   --cor-da-marca: #FCC600;
-  --texto-inverso: #EB9401;
-  --destaque: #E06100;
-  --destaque-inverso: #BD2600;
-  --fundo-card: #9C0015;
+  --cor-header: #EB9401;
+  --cor-imagens: #E06100;
+  --cor-poster: #BD2600;
+  --cor-botoes: #9C0015;
   --cor-de-fundo: #F5EBDC;
 }
 
@@ -30,9 +30,10 @@
 }
 
 body {
-    background-color: var(--cor-neutra);
+    background-color: var(--cor-de-fundo);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    
 }
 
 

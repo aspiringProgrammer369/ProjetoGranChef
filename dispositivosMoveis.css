@@ -3,7 +3,7 @@
 @media (max-width: 640px) {
 
     header {
-        background-color: var(--texto-inverso);
+        background-color: var(--cor-header);
         display: grid;
         grid-template: 1fr / 1fr 2fr 1fr;
         align-items: center;
@@ -25,7 +25,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        color: var(--cor-neutra);
+        color: var(--cor-de-fundo);
     }
     
     .logo-rosto {
@@ -71,7 +71,7 @@
     .Ver-Mais {
         height: 30px;
         width: 100vw;
-        background-color: lightcoral;
+        background-color: var(--cor-botoes);
     }
 
     .lanches img, .sobremesas img{
