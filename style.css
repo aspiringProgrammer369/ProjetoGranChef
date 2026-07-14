@@ -12,13 +12,13 @@
 */
 
 :root {
-  --fundo-principal: #F5E600;
-  --texto: #FCC600;
+  --cor-logo: #F5E600;
+  --cor-da-marca: #FCC600;
   --texto-inverso: #EB9401;
   --destaque: #E06100;
   --destaque-inverso: #BD2600;
   --fundo-card: #9C0015;
-  --cor-neutra: #F5EBDC;
+  --cor-de-fundo: #F5EBDC;
 }
 
 

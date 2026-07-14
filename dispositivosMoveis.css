@@ -7,7 +7,6 @@
         display: grid;
         grid-template: 1fr / 1fr 2fr 1fr;
         align-items: center;
-        
     }
 
     .opcoes span.material-symbols-outlined {
@@ -39,6 +38,7 @@
         width: 160px;
         height: auto;
         margin: 0 auto;
+        
     }
 
     .icones-a-direita {
@@ -68,8 +68,9 @@
         box-sizing: border-box;
     }
 
-    .secao-sobremesas .VerMain {
-        width: 60vw;
+    .Ver-Mais {
+        height: 30px;
+        width: 100vw;
         background-color: lightcoral;
     }
 
