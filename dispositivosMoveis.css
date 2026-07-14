@@ -138,10 +138,74 @@
         
     }
 
-    .Contato {
+    .Bloco-Aplicativo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
         background-color: var(--destaque-inverso);
-        color: var(--cor-neutra);
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .Bloco-Celular {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
+
+    
+
+    .celular {
+        width: 100px;
+        height: auto;
+        transform: scale(2.7);
+    }
+
+    .Bloco-Mensagem p {
+        max-width: 80%;
+        color: white;
+    }
+
+    .logo-apple {
+        width: 30px;
+        height: auto;
+        transform: scale(3);
+    }
+
+    .logo-google {
+        width: 30px;
+        height: auto;
+        transform: scale(3);
+    }
+
+    .AppsParaBaixar {
+        font-size: 10px;
+        color: white;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AppApple, .AppGoogle {
+        font-size: 2vw;
+        color: white;
+    }
+
+    .Bloco-Mensagem span.AppApple, .Bloco-Mensagem span.AppGoogle {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        background-color: black;
+    }
+
+    
+    .Bloco-Mensagem {
+        font-size: 5vw;
+        background-color: blue;
+    }
+    
 
 }
