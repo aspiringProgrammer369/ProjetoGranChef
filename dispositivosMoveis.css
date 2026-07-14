@@ -44,7 +44,7 @@
     .icones-a-direita {
         font-size: 40px;
         cursor: pointer;
-        color: var(--cor-neutra);
+        color: var(--cor-de-fundo);
         align-items: center;
     }
 
@@ -63,15 +63,31 @@
         
     }
 
-    .secao-sobremesas .sobremesas {
-        aspect-ratio: 1/1;
+    .secao-sobremesas {
+        padding: 20px;
         box-sizing: border-box;
     }
 
+    .secao-sobremesas .sobremesas {
+        aspect-ratio: 1/1;
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+    }
+
     .Ver-Mais {
-        height: 30px;
-        width: 100vw;
+        display: flex;
+        height: 50px;
         background-color: var(--cor-botoes);
+        margin: 15px;
+        color: var(--cor-de-fundo);
+        align-items: center;
+        justify-content: center;
+        font-family: 'Alfa Slab One', cursive;
+    }
+
+    .Ver-Mais p {
+        font-family: 'Passion One', cursive;
     }
 
     .lanches img, .sobremesas img{
@@ -127,14 +143,15 @@
     .dot {
         width: 12px;
         height: 12px;
-        background-color: #ccc;
+        background-color: var(--cor-de-fundo);
         border-radius: 50%;
         cursor: pointer;
         transition: background-color 0.3s;
+        border: 2px solid var(--cor-escura);
     }
 
     .dot.active {
-        background-color: #f97316; /* cor de destaque */
+        background-color: var(--cor-escura); /* cor de destaque */
     }
 
     .doces {
@@ -148,8 +165,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        background-color: var(--destaque-inverso);
-        height: 405px;
+        background-color: var(--cor-header);
+        height: 510px;
         overflow-x: hidden;
     }
 
@@ -163,7 +180,7 @@
     .celular {
         width: 100px;
         height: auto;
-        transform: scale(2.7);
+        transform: scale(3.4);
     }
 
     .Bloco-Mensagem {
@@ -175,9 +192,9 @@
 
     .Bloco-Mensagem > p {
         color: white;
-        font-family: 'Alfa Slab One', cursive;
+        font-family: 'Passion One', cursive;
         width: 80%;
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .Bloco-Mensagem img {
@@ -196,10 +213,10 @@
         display: flex;
         align-items: center;
         margin: 10px 10px;
-        background-color: black;
+        background-color: var(--cor-escura);
         text-align: center;
         height: 50px;
-        border: 1px solid white;
+        border: 1px solid var(--cor-de-fundo);
         border-radius: 10px;
     }
 

@@ -12,13 +12,13 @@
 */
 
 :root {
-  --cor-logo: #F5E600;
-  --cor-da-marca: #FCC600;
+  
   --cor-header: #EB9401;
   --cor-imagens: #E06100;
   --cor-poster: #BD2600;
   --cor-botoes: #9C0015;
   --cor-de-fundo: #F5EBDC;
+  --cor-escura: #000000;
 }
 
 

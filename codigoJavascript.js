@@ -1,3 +1,6 @@
+
+
+
 function iniciarCarrossel(seletor) {
   const container = document.querySelector(seletor);
   const imagens = container.querySelectorAll('img');
@@ -79,6 +82,8 @@ function iniciarCarrossel(seletor) {
       emTransicao = false;
     }, duracao);
   }
+
+  
 
   // ---------- Navegação ----------
   function proximo() {
