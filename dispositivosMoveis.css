@@ -260,7 +260,7 @@
         margin-top: 20px;
     }
 
-    footer > nav > ul, li > a, footer > nav > ul > li {
+    footer > nav > ul, li > a {
         text-align: center;
         color: var(--cor-de-fundo);
         text-decoration: none;
