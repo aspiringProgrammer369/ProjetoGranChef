@@ -90,8 +90,10 @@
         font-family: 'Alfa Slab One', cursive;
     }
 
-    .Ver-Mais-Sobremesas p {
+    .Ver-Mais-Sobremesas a {
         font-family: 'Passion One', cursive;
+        text-decoration: none;
+        color: var(--cor-de-fundo);
     }
 
     .lanches img, .sobremesas img{
@@ -103,6 +105,11 @@
         object-fit: cover;
         transition: left 0.5s ease;
         
+    }
+
+    .AppTexto {
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 
     .seta {
@@ -253,11 +260,13 @@
         margin-top: 20px;
     }
 
-    footer > nav > div, footer > nav > div > a {
+    footer > nav > ul, li > a, footer > nav > ul > li {
         text-align: center;
         color: var(--cor-de-fundo);
         text-decoration: none;
         font-size: 1.4rem;
+        font-family: 'Passion One', cursive;
+        list-style: none;
     }
     
     
