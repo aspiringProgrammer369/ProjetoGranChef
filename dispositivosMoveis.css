@@ -253,9 +253,11 @@
         margin-top: 20px;
     }
 
-    footer > .logo-marca {
-        width: 200px;
-        height: auto;
+    footer > nav > div, footer > nav > div > a {
+        text-align: center;
+        color: var(--cor-de-fundo);
+        text-decoration: none;
+        font-size: 1.4rem;
     }
     
     
