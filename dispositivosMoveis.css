@@ -247,15 +247,17 @@
         justify-content: center;
     }
     
-    footer > .logo-gran-chef {
-        width: 150px;
+    footer > .logo-oficial {
+        width: 200px;
         height: auto;
+        margin-top: 20px;
     }
 
     footer > .logo-marca {
         width: 200px;
         height: auto;
     }
+    
     
 
 }
