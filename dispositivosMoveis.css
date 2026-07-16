@@ -87,13 +87,11 @@
         color: var(--cor-de-fundo);
         align-items: center;
         justify-content: center;
-        font-family: 'Alfa Slab One', cursive;
+        font-family: 'Passion One', cursive;
     }
 
-    .Ver-Mais-Sobremesas a {
-        font-family: 'Passion One', cursive;
+    a {
         text-decoration: none;
-        color: var(--cor-de-fundo);
     }
 
     .lanches img, .sobremesas img{
@@ -203,11 +201,12 @@
         align-items: center;
     }
 
-    .Bloco-Mensagem > p {
+    .Bloco-Mensagem > span {
         color: var(--cor-de-fundo);
         font-family: 'Playfair Display', cursive;
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.6rem;
+        text-decoration: none;
     }
 
     .Bloco-Mensagem img {
@@ -227,6 +226,7 @@
         height: 50px;
         border: 1px solid var(--cor-de-fundo);
         border-radius: 10px;
+        text-decoration: none;
     }
 
     .AppApple {
@@ -234,7 +234,7 @@
     }
 
     .AppGoogle {
-        width: 37vw;
+        width: 36vw;
     }
 
     
@@ -317,7 +317,7 @@
 
    .fa-x-twitter {
         padding: 1px;
-        color: #1B96E8;
+        color: #000000;
    }
 
    .fa-facebook-f {
