@@ -16,6 +16,13 @@
         background-color: var(--cor-header);
     }
 
+    .fa-bars-staggered {
+        font-size: 40px;
+        color: var(--cor-de-fundo);
+        background-color: var(--cor-header);
+        padding-left: 10px;
+    }
+
     .opcoes button {
         border: none;
         color: var(--cor-de-fundo);
@@ -27,7 +34,7 @@
 
     .opcoes {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         background-color: var(--cor-header);
     }
