@@ -344,10 +344,10 @@
    }
 
    .bottom-nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.1rem;
-    font-weight: bold;
+        text-decoration: none;
+        color: #333;
+        font-size: 0.1rem;
+        font-weight: bold;
    }
 
 }
