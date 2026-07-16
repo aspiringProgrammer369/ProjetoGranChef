@@ -205,7 +205,7 @@
 
     .Bloco-Mensagem > p {
         color: var(--cor-de-fundo);
-        font-family: 'Passion One', cursive;
+        font-family: 'Playfair Display', cursive;
         width: 80%;
         font-size: 2rem;
     }
@@ -265,10 +265,27 @@
         color: var(--cor-de-fundo);
         text-decoration: none;
         font-size: 1.4rem;
-        font-family: 'Passion One', cursive;
+        
         list-style: none;
     }
     
-    
+   footer hr {
+        background-color: var(--cor-de-fundo);
+        height: 1px;
+        width: 90vw;
+   }
+
+   footer .navegacao-principal > li > a {
+        font-family: 'Passion One', cursive;
+        list-style: none;
+   }
+
+   .links-legais {
+        margin-bottom: 35px;
+   }
+
+   footer .links-legais > li > a {
+        font-size: 1rem;
+   }
 
 }
