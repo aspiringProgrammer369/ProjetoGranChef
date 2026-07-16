@@ -248,6 +248,9 @@
         color: var(--cor-de-fundo);
     }
 
+    footer a:hover {
+        text-decoration: underline;
+    }
    
     footer img {
         display: flex;
@@ -265,7 +268,6 @@
         color: var(--cor-de-fundo);
         text-decoration: none;
         font-size: 1.4rem;
-        
         list-style: none;
     }
     
@@ -281,11 +283,15 @@
    }
 
    .links-legais {
-        margin-bottom: 35px;
+       margin-bottom: 20px;
    }
 
    footer .links-legais > li > a {
         font-size: 1rem;
+   }
+
+   footer .compartilhar {
+        margin-top: 20px;
    }
 
 }
