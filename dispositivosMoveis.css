@@ -5,7 +5,7 @@
     header {
         background-color: var(--cor-header);
         display: grid;
-        grid-template: 1fr / 1fr 2fr 1fr;
+        grid-template: 1fr / 3fr 1fr;
         align-items: center;
     }
 
@@ -16,36 +16,37 @@
         background-color: var(--cor-header);
     }
 
-    .fa-bars-staggered {
-        font-size: 40px;
-        color: var(--cor-de-fundo);
-        background-color: var(--cor-header);
-        padding-left: 10px;
-    }
 
-    .opcoes button {
-        border: none;
-        color: var(--cor-de-fundo);
-    }
-
-    .logo-fundo-laranja, .logo2, .navegacao {
+    .logo-fundo-laranja, .navegacao {
         display: none;
     }
 
     .opcoes {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background-color: var(--cor-header);
     }
+
+    .logo > a {
+        display: flex;
+        flex-flow: row wrap;
+    }
     
     .logo-rosto {
-        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 90px;
         height: auto;
     }
 
     .logo-gran-chef {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         width: 160px;
         height: auto;
         margin: 0 auto;
