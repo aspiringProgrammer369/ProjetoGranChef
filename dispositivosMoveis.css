@@ -229,7 +229,7 @@
         color: var(--cor-de-fundo);
         font-family: 'Bevan', serif;
         width: 80%;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-decoration: none;
     }
 
@@ -252,7 +252,7 @@
         color: var(--cor-de-fundo);
         display: flex;
         align-items: center;
-        margin: 10px 10px;
+        margin: 6px 10px;
         background-color: var(--cor-escura);
         text-align: center;
         height: 50px;
