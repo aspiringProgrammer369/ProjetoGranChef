@@ -67,6 +67,22 @@
         overflow: hidden;
     }
 
+    .Ver-Mais-Salgados {
+        position: absolute;
+        color: var(--cor-de-fundo);
+        background-color: var(--cor-botoes);
+        bottom: 23px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        font-family: 'Passion One', cursive;
+        border-radius: 10px;
+    }
+
 
     .sobremesas {
         position: relative;
@@ -246,11 +262,11 @@
     }
 
     .AppApple {
-        width: 31vw;
+        width: 160px;
     }
 
     .AppGoogle {
-        width: 38vw;
+        width: 190px;
     }
 
     
@@ -346,6 +362,7 @@
         font-family: sans-serif;
         font-size: 1.2rem;
         margin-bottom: 90px;
+        text-align: center;
    }
 
    .bottom-nav {
