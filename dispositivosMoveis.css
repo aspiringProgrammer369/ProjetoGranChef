@@ -218,9 +218,17 @@
     }
 
     .Bloco-Mensagem img {
+        transform: scale(3);
+    }
+
+    .Bloco-Mensagem .logo-google {
+        width: 52px;
+        height: auto;
+    }
+
+    .Bloco-Mensagem .logo-apple {
         width: 40px;
         height: auto;
-        transform: scale(3);
     }
 
     .AppApple, .AppGoogle {
@@ -242,7 +250,7 @@
     }
 
     .AppGoogle {
-        width: 36vw;
+        width: 38vw;
     }
 
     
@@ -348,7 +356,7 @@
         background-color: #fff;
         display: grid;
         grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding: 10px 0;
         border-top: 1px solid #F5EBDC;
