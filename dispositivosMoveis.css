@@ -238,7 +238,7 @@
     }
 
     .Bloco-Mensagem .logo-google {
-        width: 52px;
+        width: 50px;
         height: auto;
     }
 
@@ -259,6 +259,15 @@
         border: 1px solid var(--cor-de-fundo);
         border-radius: 10px;
         text-decoration: none;
+    }
+
+    .logo-app-dentro {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .texto-de-cima {
+        font-size: 0.9rem;
     }
 
     .AppApple {
