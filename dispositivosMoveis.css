@@ -229,7 +229,7 @@
         color: var(--cor-de-fundo);
         font-family: 'Bevan', serif;
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-decoration: none;
     }
 
@@ -264,6 +264,7 @@
     .logo-app-dentro {
         display: flex;
         flex-flow: column nowrap;
+        text-align: center;
     }
 
     .texto-de-cima {
