@@ -21,14 +21,8 @@
         display: none;
     }
 
-    .opcoes {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        background-color: var(--cor-header);
-    }
 
-    .logo > a {
+    .logo-rosto > a {
         display: flex;
         flex-flow: row wrap;
     }
@@ -36,23 +30,28 @@
     .logo-rosto {
         grid-area: 1 / 1 / 2 / 2;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         align-content: center;
+    }
+
+    .logo-rosto img {
         width: 70px;
         height: auto;
     }
 
-    .logo-gran-chef {
+    .logo-nome {
         grid-area: 1 / 2 / 2 / 3;
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
+        margin: 0 auto;
+    }
+
+    .logo-nome img {
         width: 160px;
         height: auto;
-        margin: 0 auto;
-        
     }
 
     .icones-a-direita {
