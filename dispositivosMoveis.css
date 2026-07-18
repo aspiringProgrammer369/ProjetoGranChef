@@ -268,23 +268,17 @@
     }
 
     .logo-app-dentro {
-        display: flex;
-        flex-flow: column nowrap;
+        display: grid;
+        grid-template: 1fr;
         text-align: center;
+        justify-content: center;
+        align-content: center;
+        
     }
 
     .texto-de-cima {
         font-size: 0.9rem;
     }
-
-    .AppApple {
-        width: 155px;
-    }
-
-    .AppGoogle {
-        width: 185px;
-    }
-
     
     footer {
         background-color: var(--cor-botoes);
@@ -395,6 +389,7 @@
         border-top: 1px solid #F5EBDC;
         z-index: 1000;
         background-color: var(--cor-de-fundo);
+        font-family: 'Times New Roman', Times, serif;
    }
 
    .bottom-nav > span > a {
