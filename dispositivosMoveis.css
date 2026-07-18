@@ -246,11 +246,17 @@
     .Bloco-Mensagem .logo-google {
         display: flex;
         justify-content: center;
+        align-items: center;
+        align-content: center;
         width: 50px;
         height: auto;
     }
 
     .Bloco-Mensagem .logo-apple {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         width: 40px;
         height: auto;
     }
