@@ -266,7 +266,6 @@
         border: 1px solid var(--cor-de-fundo);
         border-radius: 10px;
         text-decoration: none;
-        width: 180px;
     }
 
     .logo-app-dentro {
@@ -280,6 +279,14 @@
 
     .texto-de-cima {
         font-size: 0.9rem;
+    }
+
+    .AppApple {
+        width: 160px;
+    }
+
+    .AppGoogle {
+        width: 190px;
     }
 
     
