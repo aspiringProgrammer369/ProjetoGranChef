@@ -9,10 +9,9 @@
         align-items: center;
     }
 
-    .opcoes span.material-symbols-outlined {
-        font-size: 40px;   /* aumenta o tamanho do ícone */
+    header .icones-a-direita .material-symbols-outlined {
+        font-size: 24px;   /* aumenta o tamanho do ícone */
         cursor: pointer;   /* deixa com aparência de botão clicável */
-        padding: 10px;     /* aumenta a área de clique */
         background-color: var(--cor-header);
     }
 
