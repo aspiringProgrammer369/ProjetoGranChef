@@ -256,15 +256,17 @@
     .AppApple, .AppGoogle {
         font-size: 2vw;
         color: var(--cor-de-fundo);
-        display: flex;
+        display: grid;
+        grid-template: 1fr / 1fr 4fr;
         align-items: center;
-        margin: 6px 10px;
+        margin: 6px;
         background-color: var(--cor-escura);
         text-align: center;
         height: 50px;
         border: 1px solid var(--cor-de-fundo);
         border-radius: 10px;
         text-decoration: none;
+        width: 180px;
     }
 
     .logo-app-dentro {
@@ -279,6 +281,7 @@
     .texto-de-cima {
         font-size: 0.9rem;
     }
+
     
     footer {
         background-color: var(--cor-botoes);
