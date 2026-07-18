@@ -34,6 +34,7 @@
     }
     
     .logo-rosto {
+        grid-area: ;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,6 +44,7 @@
     }
 
     .logo-gran-chef {
+        grid-area: ;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,6 +56,7 @@
     }
 
     .icones-a-direita {
+        grid-area: ;
         font-size: 40px;
         cursor: pointer;
         color: var(--cor-de-fundo);
