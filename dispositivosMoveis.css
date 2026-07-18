@@ -228,13 +228,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: left;
     }
 
     .Bloco-Mensagem > span {
         color: var(--cor-de-fundo);
         font-family: 'Bevan', serif;
-        width: 80%;
+        width: 90%;
         font-size: 1.6rem;
         text-decoration: none;
     }
