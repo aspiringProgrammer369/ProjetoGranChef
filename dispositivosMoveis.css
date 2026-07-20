@@ -10,13 +10,13 @@
     }
 
     header .icones-a-direita .material-symbols-outlined {
-        font-size: 24px;   /* aumenta o tamanho do ícone */
+        font-size: 26px;   /* aumenta o tamanho do ícone */
         cursor: pointer;   /* deixa com aparência de botão clicável */
         background-color: var(--cor-header);
     }
 
 
-    .logo-fundo-laranja, .navegacao {
+    header .navegacao {
         display: none;
     }
 
