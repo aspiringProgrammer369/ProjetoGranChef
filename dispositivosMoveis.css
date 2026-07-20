@@ -219,11 +219,13 @@
 
     .celular {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         align-content: center;
-        width: 180%;
+        width: 53vw;
         height: auto;
+        transform: translateX(-20%);
+        
     }
 
     .Bloco-Mensagem {
@@ -232,12 +234,14 @@
         justify-content: center;
         align-items: center;
         text-align: left;
+        transform: translateX(-30%);
+        
     }
 
     .Bloco-Mensagem > p {
         color: var(--cor-de-fundo);
         font-family: 'Bevan', serif;
-        width: 100%;
+        width: 120%;
         font-size: 2.0rem;
         text-decoration: none;
     }
@@ -279,6 +283,13 @@
         text-decoration: none;
     }
 
+    .link-aplicacoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .logo-app-dentro {
         display: grid;
         grid-template: 1fr;
@@ -293,11 +304,11 @@
     }
 
     .AppApple {
-        width: 149px;
+        width: 155px;
     }
 
     .AppGoogle {
-        width: 180px;
+        width: 185px;
     }
 
     
