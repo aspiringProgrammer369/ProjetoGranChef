@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 
 
 @media (max-width: 560px) {
@@ -86,7 +88,7 @@
         align-items: center;
         text-align: center;
         align-content: center;
-        font-family: 'Passion One', cursive;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         border-radius: 10px;
     }
 
@@ -180,8 +182,6 @@
         margin-top: 0; /* anula qualquer margem anterior */
     }
 
-    
-
     .dot {
         width: 12px;
         height: 12px;
@@ -200,7 +200,6 @@
         max-width: 100%;
         height: auto;
         border-radius: 5px;
-        
     }
 
     .Bloco-Aplicativo {
@@ -216,10 +215,8 @@
 
     .Bloco-Celular {
         display: flex;
-        
         justify-content: center;
         align-items: center;
-        
     }
 
     .celular {
@@ -227,9 +224,7 @@
         justify-content: flex-start;
         align-items: center;
         align-content: center;
-        
-        height: auto;
-        
+        height: auto;   
     }
 
     .Bloco-Mensagem {
@@ -357,7 +352,7 @@
    }
 
    footer .navegacao-principal > li > a {
-        font-family: 'Passion One', cursive;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         list-style: none;
    }
 
@@ -406,7 +401,7 @@
 
    .licenca {
         width: 80vw;
-        font-family: sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.2rem;
         margin-bottom: 90px;
         text-align: center;
@@ -426,7 +421,7 @@
         border-top: 1px solid #F5EBDC;
         z-index: 1000;
         background-color: var(--cor-de-fundo);
-        font-family: 'Passion One', Times, serif;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
    }
 
    .bottom-nav > span > a {
