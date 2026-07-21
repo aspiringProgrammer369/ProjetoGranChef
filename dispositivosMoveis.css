@@ -277,6 +277,7 @@
         color: var(--cor-de-fundo);
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
         margin: 6px;
         background-color: var(--cor-escura);
@@ -308,11 +309,11 @@
     }
 
     .AppApple {
-        width: 150px;
+        width: 152px;
     }
 
     .AppGoogle {
-        width: 180px;
+        width: 182px;
     }
 
     
