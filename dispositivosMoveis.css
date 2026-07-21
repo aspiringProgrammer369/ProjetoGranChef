@@ -275,8 +275,8 @@
     .AppApple, .AppGoogle {
         font-size: 2vw;
         color: var(--cor-de-fundo);
-        display: grid;
-        grid-template: 1fr / 1fr 4fr;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         margin: 6px;
         background-color: var(--cor-escura);
@@ -308,11 +308,11 @@
     }
 
     .AppApple {
-        width: 155px;
+        width: 150px;
     }
 
     .AppGoogle {
-        width: 185px;
+        width: 180px;
     }
 
     
