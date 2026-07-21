@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
 
 
-@media (max-width: 770px) {
+@media (max-width: 560px) {
 
     header {
         background-color: var(--cor-header);
@@ -245,7 +245,7 @@
     .Bloco-Mensagem > p {
         color: var(--cor-de-fundo);
         font-family: 'Changa One', serif;
-        width: 100%;
+        width: 95%;
         font-size: 2.0rem;
         text-decoration: none;
     }
