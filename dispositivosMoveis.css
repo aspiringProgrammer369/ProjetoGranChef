@@ -320,6 +320,7 @@
         align-items: center;
         flex-flow: column nowrap;
         color: var(--cor-de-fundo);
+        font-weight: bold;
     }
 
     footer a:hover {
