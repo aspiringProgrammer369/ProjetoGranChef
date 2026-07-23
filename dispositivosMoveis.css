@@ -26,13 +26,7 @@
         display: none;
     }
 
-
-    .logo-rosto > a {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    
-    .logo-rosto {
+    header .logo-rosto {
         grid-area: 1 / 1 / 2 / 2;
         display: flex;
         justify-content: flex-start;
@@ -40,12 +34,19 @@
         align-content: center;
     }
 
-    .logo-rosto img {
+
+    header .logo-rosto > a {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+
+    header .logo-rosto img {
         width: 70px;
         height: auto;
     }
 
-    .logo-nome {
+    header .logo-nome {
         grid-area: 1 / 2 / 2 / 3;
         display: flex;
         justify-content: center;
@@ -54,12 +55,12 @@
         margin: 0 auto;
     }
 
-    .logo-nome img {
+    header .logo-nome img {
         width: 160px;
         height: auto;
     }
 
-    .icones-a-direita {
+    header .icones-a-direita {
         grid-area: 1 / 3 / 2 / 4;
         display: flex;
         justify-content: center;
@@ -69,14 +70,14 @@
         gap: 20px;
     }
 
-    .lanches {
+    section .lanches {
         aspect-ratio: 2/3;
         position: relative;
         width: 100%;
         overflow: hidden;
     }
 
-    .Ver-Mais-Salgados {
+    section .Ver-Mais-Salgados {
         position: absolute;
         color: var(--cor-de-fundo);
         background-color: var(--cor-botoes);
@@ -93,26 +94,26 @@
     }
 
 
-    .sobremesas {
+    section .sobremesas {
         position: relative;
         width: 100%;
         overflow: hidden;
         
     }
 
-    .secao-sobremesas {
+    section .secao-sobremesas {
         padding: 10px;
         box-sizing: border-box;
     }
 
-    .secao-sobremesas .sobremesas {
+    section .secao-sobremesas .sobremesas {
         aspect-ratio: 1/1;
         box-sizing: border-box;
         margin: 0;
         width: 100%;
     }
 
-    .Ver-Mais-Sobremesas {
+    section .Ver-Mais-Sobremesas {
         display: flex;
         height: 50px;
         background-color: var(--cor-botoes);
@@ -127,7 +128,7 @@
         text-decoration: none;
     }
 
-    .lanches img, .sobremesas img{
+    section .lanches img, .sobremesas img{
         position: absolute;
         top: 0;
         left: 100%;
@@ -138,7 +139,7 @@
         
     }
 
-    .AppTexto {
+    section .AppTexto {
         font-size: 1.2rem;
         font-weight: bold;
     }
@@ -202,7 +203,7 @@
         border-radius: 5px;
     }
 
-    .Bloco-Aplicativo {
+    section .Bloco-Aplicativo {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -213,13 +214,13 @@
         overflow-x: hidden;
     }
 
-    .Bloco-Celular {
+    section .Bloco-Celular {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .celular {
+    section img.celular {
         display: flex;
         justify-content: flex-start;
         align-items: center;
