@@ -15,17 +15,6 @@
         align-items: center;
     }
 
-    header .icones-a-direita .material-symbols-outlined {
-        font-size: 26px;   /* aumenta o tamanho do ícone */
-        cursor: pointer;   /* deixa com aparência de botão clicável */
-        background-color: var(--cor-header);
-    }
-
-
-    header .navegacao {
-        display: none;
-    }
-
     header .logo-rosto {
         grid-area: 1 / 1 / 2 / 2;
         display: flex;
@@ -34,18 +23,20 @@
         align-content: center;
     }
 
-
     header .logo-rosto > a {
         display: flex;
         flex-flow: row wrap;
     }
-    
 
     header .logo-rosto img {
         width: 70px;
         height: auto;
     }
 
+    header .navegacao {
+        display: none;
+    }
+    
     header .logo-nome {
         grid-area: 1 / 2 / 2 / 3;
         display: flex;
@@ -70,14 +61,24 @@
         gap: 20px;
     }
 
-    section .lanches {
+
+    header .icones-a-direita .material-symbols-outlined {
+        font-size: 26px;   /* aumenta o tamanho do ícone */
+        cursor: pointer;   /* deixa com aparência de botão clicável */
+        background-color: var(--cor-header);
+    }
+
+    
+
+    
+    main .hamburgueres .lanches {
         aspect-ratio: 2/3;
         position: relative;
         width: 100%;
         overflow: hidden;
     }
 
-    section .Ver-Mais-Salgados {
+    main .Ver-Mais-Salgados {
         position: absolute;
         color: var(--cor-de-fundo);
         background-color: var(--cor-botoes);
@@ -94,26 +95,26 @@
     }
 
 
-    section .sobremesas {
+     main .secao-sobremesas > .sobremesas {
         position: relative;
         width: 100%;
         overflow: hidden;
         
     }
 
-    section .secao-sobremesas {
+    main .secao-sobremesas {
         padding: 10px;
         box-sizing: border-box;
     }
 
-    section .secao-sobremesas .sobremesas {
+    main .secao-sobremesas .sobremesas {
         aspect-ratio: 1/1;
         box-sizing: border-box;
         margin: 0;
         width: 100%;
     }
 
-    section .Ver-Mais-Sobremesas {
+    main > a > .Ver-Mais-Sobremesas {
         display: flex;
         height: 50px;
         background-color: var(--cor-botoes);
@@ -128,7 +129,7 @@
         text-decoration: none;
     }
 
-    section .lanches img, .sobremesas img{
+    main .lanches img, main .sobremesas img{
         position: absolute;
         top: 0;
         left: 100%;
@@ -139,7 +140,7 @@
         
     }
 
-    section .AppTexto {
+    main .Bloco-Aplicativo .AppTexto {
         font-size: 1.2rem;
         font-weight: bold;
     }
@@ -197,13 +198,13 @@
         background-color: var(--cor-escura); /* cor de destaque */
     }
 
-    .doces {
+    main .doces {
         max-width: 100%;
         height: auto;
         border-radius: 5px;
     }
 
-    section .Bloco-Aplicativo {
+    main .Bloco-Aplicativo {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -214,13 +215,13 @@
         overflow-x: hidden;
     }
 
-    section .Bloco-Celular {
+    main .Bloco-Celular {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    section img.celular {
+    main .celular {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -228,7 +229,7 @@
         height: auto;   
     }
 
-    .Bloco-Mensagem {
+    main .Bloco-Mensagem {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -238,7 +239,7 @@
         height: 426px;
     }
 
-    .Bloco-Mensagem > p {
+    main .Bloco-Mensagem  p {
         color: var(--cor-de-fundo);
         font-family: 'Changa One', serif;
         width: 95%;
@@ -246,30 +247,29 @@
         text-decoration: none;
     }
 
-    .Bloco-Mensagem img {
+    main .Bloco-Mensagem img {
         transform: scale(3);
     }
 
-    .Bloco-Mensagem .logo-google {
+    main span:nth-child(1) {
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
+    }
+
+    main .AppGoogle img {
         width: 50px;
         height: auto;
     }
 
-    .Bloco-Mensagem .logo-apple {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+    main .AppApple img {
         width: 40px;
         height: auto;
     }
 
-    .AppApple, .AppGoogle {
-        font-size: 2vw;
+    main .AppApple, main .AppGoogle {
+         font-size: 2vw;
         color: var(--cor-de-fundo);
         display: flex;
         flex-direction: row;
@@ -284,14 +284,16 @@
         text-decoration: none;
     }
 
-    .link-aplicacoes {
+    
+
+    main .link-aplicacoes {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
-    .logo-app-dentro {
+    main .logo-app-dentro {
         display: grid;
         grid-template: 1fr;
         text-align: center;
@@ -300,15 +302,15 @@
         
     }
 
-    .texto-de-cima {
+    main .texto-de-cima {
         font-size: 0.9rem;
     }
 
-    .AppApple {
+    main .AppApple {
         width: 151px;
     }
 
-    .AppGoogle {
+    main .AppGoogle {
         width: 182px;
     }
 
