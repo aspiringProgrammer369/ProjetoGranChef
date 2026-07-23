@@ -335,17 +335,22 @@
         justify-content: center;
     }
     
-    footer > .logo-oficial {
+    footer .logo-oficial {
         width: 200px;
         height: auto;
         margin-top: 20px;
     }
 
-    footer > nav > ul, li > a {
-        text-align: center;
+    footer a {
         color: var(--cor-de-fundo);
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1.4rem; 
+    }
+    
+
+    footer ul {
+        
+        text-align: center;
         list-style: none;
     }
     
@@ -355,16 +360,24 @@
         width: 90vw;
    }
 
-   footer .navegacao-principal > li > a {
+   footer .navegacao-principal {
+        margin-bottom: 10px;
+   }
+
+   footer .navegacao-principal li {
+        margin-bottom: 5px;
+   }
+
+   footer .navegacao-principal a {
         font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         list-style: none;
    }
 
-   .links-legais {
+   footer .links-legais {
        margin-bottom: 20px;
    }
 
-   footer .links-legais > li > a {
+   footer .links-legais a {
         font-size: 1rem;
    }
 
@@ -382,36 +395,37 @@
         gap: 30px;
    }
 
-   footer .icones i {
+   footer i {
         border: 5px solid var(--cor-de-fundo);
         background-color: var(--cor-de-fundo);
         border-radius: 4px;
    }
 
-   .fa-instagram {
+   footer .fa-instagram {
         padding: 1px;
         color: #B0338D;
    }
 
-   .fa-x-twitter {
+   footer .fa-x-twitter {
         padding: 1px;
         color: #000000;
    }
 
-   .fa-facebook-f {
+   footer .fa-facebook-f {
         padding: 1px 3px;
         color: #0036BA;
    }
 
-   .licenca {
+   footer .licenca {
         width: 80vw;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 90px;
         text-align: center;
+        font-weight: normal;
    }
 
-   .bottom-nav {
+   body .bottom-nav {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -428,7 +442,7 @@
         font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
    }
 
-   .bottom-nav > span > a {
+   body a {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -436,14 +450,14 @@
         gap: 5px;
    }
 
-   .bottom-nav a {
+   body .bottom-nav a {
         text-decoration: none;
         color: #9E8172;
         font-size: 0.8rem;
         font-weight: bold;
    }
 
-   .bottom-nav i {
+   body .bottom-nav i {
         font-size: 1.5rem;
    }
 
