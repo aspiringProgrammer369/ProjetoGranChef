@@ -141,6 +141,7 @@ function iniciarCarrossel(seletor) {
 // Inicia os carrosséis
 iniciarCarrossel('.lanches');
 iniciarCarrossel('.sobremesas');
+iniciarCarrossel('.');
 /* 
 function iniciarCarrossel(seletor, intervalo) {
   const container = document.querySelector(seletor);

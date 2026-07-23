@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
+
 @media (max-width: 760px) {
-    section picture#Cupom {
+    section picture.Cupom {
         position: relative;
-        
         overflow: hidden;
     }
 
-    section picture#Cupom img {
+    section picture.Cupom img {
         width: 100%;
         height: 100%;
         object-fit: cover;
