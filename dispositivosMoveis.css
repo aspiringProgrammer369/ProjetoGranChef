@@ -107,14 +107,14 @@
         box-sizing: border-box;
     }
 
-    main .secao-sobremesas .sobremesas {
+    main .sobremesas {
         aspect-ratio: 1/1;
         box-sizing: border-box;
         margin: 0;
         width: 100%;
     }
 
-    main > a > .Ver-Mais-Sobremesas {
+    main .Ver-Mais-Sobremesas {
         display: flex;
         height: 50px;
         background-color: var(--cor-botoes);
@@ -123,6 +123,7 @@
         align-items: center;
         justify-content: center;
         font-family: 'Passion One', cursive;
+        width: 95%;
     }
 
     a {
@@ -269,7 +270,7 @@
     }
 
     main .AppApple, main .AppGoogle {
-         font-size: 2vw;
+        font-size: 2vw;
         color: var(--cor-de-fundo);
         display: flex;
         flex-direction: row;
@@ -307,11 +308,11 @@
     }
 
     main .AppApple {
-        width: 151px;
+        width: 161px;
     }
 
     main .AppGoogle {
-        width: 182px;
+        width: 192px;
     }
 
     
