@@ -6,7 +6,7 @@
 
 
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
 
     
     header {
@@ -141,121 +141,241 @@
         
     }
 
-   
+    @media (min-width: 561px) and (max-width: 760px) {
 
-    main .Bloco-Aplicativo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        background-color: var(--cor-header);
-        height: 426px;
-        overflow-x: hidden;
+            main .Bloco-Aplicativo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                background-color: var(--cor-header);
+                height: 426px;
+                overflow-x: hidden;
+            }
+
+            main .Bloco-Celular {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            main .celular {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+                height: auto;   
+            }
+
+            main .Bloco-Mensagem {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: left;
+                padding-bottom: 50px;
+                height: 426px;
+            }
+
+            main .Bloco-Mensagem  p {
+                color: var(--cor-de-fundo);
+                font-family: 'Changa One', serif;
+                width: 80%;
+                font-size: 2.5rem;
+                text-decoration: none;
+            }
+
+            main .link-aplicacoes {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            main .Bloco-Mensagem img {
+                transform: scale(3);
+            }
+
+            main span:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+
+            main .logo-app-dentro {
+                display: grid;
+                grid-template: 1fr;
+                text-align: center;
+                justify-content: center;
+                align-content: center;
+                
+            }
+
+            main .AppApple, main .AppGoogle {
+                font-size: 2vw;
+                color: var(--cor-de-fundo);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 6px;
+                background-color: var(--cor-escura);
+                text-align: center;
+                height: 50px;
+                border: 1px solid var(--cor-de-fundo);
+                border-radius: 10px;
+                text-decoration: none;
+            }
+
+            main .AppApple {
+                width: 161px;
+            }
+
+            main .AppGoogle {
+                width: 192px;
+            }
+
+            main .AppGoogle img {
+                width: 50px;
+                height: auto;
+            }
+
+            main .AppApple img {
+                width: 40px;
+                height: auto;
+            }
+
+            main .texto-de-cima {
+                font-size: 0.9rem;
+            }
+
+            main .AppTexto {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
     }
 
-    main .Bloco-Celular {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    main .celular {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
-        height: auto;   
-    }
+   @media (max-width: 560px) {
+    
+        main .Bloco-Aplicativo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            background-color: var(--cor-header);
+            height: 426px;
+            overflow-x: hidden;
+        }
 
-    main .Bloco-Mensagem {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        text-align: left;
-        padding-bottom: 50px;
-        height: 426px;
-    }
+        main .Bloco-Celular {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    main .Bloco-Mensagem  p {
-        color: var(--cor-de-fundo);
-        font-family: 'Changa One', serif;
-        width: 95%;
-        font-size: 2.0rem;
-        text-decoration: none;
-    }
+        main .celular {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            height: auto;   
+        }
 
-    main .link-aplicacoes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+        main .Bloco-Mensagem {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: left;
+            padding-bottom: 50px;
+            height: 426px;
+        }
+
+        main .Bloco-Mensagem  p {
+            color: var(--cor-de-fundo);
+            font-family: 'Changa One', serif;
+            width: 95%;
+            font-size: 2.0rem;
+            text-decoration: none;
+        }
+
+        main .link-aplicacoes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
 
-    main .Bloco-Mensagem img {
-        transform: scale(3);
-    }
+        main .Bloco-Mensagem img {
+            transform: scale(3);
+        }
 
-    main span:nth-child(1) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
+        main span:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
 
-    main .logo-app-dentro {
-        display: grid;
-        grid-template: 1fr;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        
-    }
+        main .logo-app-dentro {
+            display: grid;
+            grid-template: 1fr;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            
+        }
 
-    main .AppApple, main .AppGoogle {
-        font-size: 2vw;
-        color: var(--cor-de-fundo);
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 6px;
-        background-color: var(--cor-escura);
-        text-align: center;
-        height: 50px;
-        border: 1px solid var(--cor-de-fundo);
-        border-radius: 10px;
-        text-decoration: none;
-    }
+        main .AppApple, main .AppGoogle {
+            font-size: 2vw;
+            color: var(--cor-de-fundo);
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 6px;
+            background-color: var(--cor-escura);
+            text-align: center;
+            height: 50px;
+            border: 1px solid var(--cor-de-fundo);
+            border-radius: 10px;
+            text-decoration: none;
+        }
 
-    main .AppApple {
-        width: 161px;
-    }
+        main .AppApple {
+            width: 161px;
+        }
 
-    main .AppGoogle {
-        width: 192px;
-    }
+        main .AppGoogle {
+            width: 192px;
+        }
 
-    main .AppGoogle img {
-        width: 50px;
-        height: auto;
-    }
+        main .AppGoogle img {
+            width: 50px;
+            height: auto;
+        }
 
-    main .AppApple img {
-        width: 40px;
-        height: auto;
-    }
+        main .AppApple img {
+            width: 40px;
+            height: auto;
+        }
 
-    main .texto-de-cima {
-        font-size: 0.9rem;
-    }
+        main .texto-de-cima {
+            font-size: 0.9rem;
+        }
 
-     main .AppTexto {
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
+        main .AppTexto {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+   }
+
 
     .seta {
         position: absolute;
@@ -470,6 +590,3 @@
 }
 
 
-@media (max-width: 560px) { 
-    
-}

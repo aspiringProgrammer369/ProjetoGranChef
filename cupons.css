@@ -2,15 +2,91 @@
 
 
 @media (max-width: 760px) {
-    section picture.Cupom {
+    /* Arquivo CSS geral (sem media query) */
+    /* Container principal do carrossel - formato RETRATO */
+    .carrossel-cupons {
         position: relative;
+        width: 100%;
+        max-width: 500px;      /* mais estreito para retrato */
+        margin: 0 auto;
         overflow: hidden;
+        /* Proporção 9:16 (retrato) → 16/9 = 177.78% */
+        height: 0;
+        padding-bottom: 177.78%; /* 9:16 - formato retrato alto */
     }
 
-    section picture.Cupom img {
+    /* Todas as imagens dentro do container */
+    .carrossel-cupons img {
+        position: absolute;
+        top: 0;
+        left: 100%;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position:  center;
+        transition: none;
     }
+
+    /* A primeira imagem visível */
+    .carrossel-cupons img:first-child {
+        left: 0;
+    }
+
+    /* Setas */
+    .seta {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.2s;
+    }
+    .seta-esquerda {
+        left: 10px;
+    }
+    .seta-direita {
+        right: 10px;
+    }
+    .seta:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Bolinhas */
+    .dots {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 10;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    .dot.active {
+        background: white;
+    }
+
+/* Ajuste para mobile - tela cheia */
+
+    .carrossel-cupons {
+        max-width: 100%;
+        padding-bottom: 150%; /* mantém 9:16 */
+    }
+
+    .lanches-preco div {
+        
+    }
+
 }
