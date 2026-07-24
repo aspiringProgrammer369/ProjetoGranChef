@@ -8,6 +8,10 @@
 
 @media (max-width: 560px) {
 
+    a {
+        text-decoration: none;
+    }
+
     header {
         background-color: var(--cor-header);
         display: grid;
@@ -94,24 +98,27 @@
         border-radius: 10px;
     }
 
-
-     main .secao-sobremesas > .sobremesas {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        
-    }
-
     main .secao-sobremesas {
         padding: 10px;
         box-sizing: border-box;
     }
 
-    main .sobremesas {
+
+     main .sobremesas {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
         aspect-ratio: 1/1;
         box-sizing: border-box;
         margin: 0;
         width: 100%;
+        
+    }
+
+   main .doces {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
     }
 
     main .Ver-Mais-Sobremesas {
@@ -126,9 +133,7 @@
         width: 95%;
     }
 
-    a {
-        text-decoration: none;
-    }
+    
 
     main .lanches img, main .sobremesas img{
         position: absolute;
@@ -141,9 +146,20 @@
         
     }
 
-    main .Bloco-Aplicativo .AppTexto {
+    main .AppTexto {
         font-size: 1.2rem;
         font-weight: bold;
+    }
+
+    main .Bloco-Aplicativo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: var(--cor-header);
+        height: 426px;
+        overflow-x: hidden;
     }
 
     .seta {
@@ -199,22 +215,9 @@
         background-color: var(--cor-escura); /* cor de destaque */
     }
 
-    main .doces {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
+    
 
-    main .Bloco-Aplicativo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        background-color: var(--cor-header);
-        height: 426px;
-        overflow-x: hidden;
-    }
+    
 
     main .Bloco-Celular {
         display: flex;
