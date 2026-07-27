@@ -55,7 +55,7 @@
     header .icones-a-direita {
         grid-area: 1 / 3 / 2 / 4;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         cursor: pointer;
         color: var(--cor-de-fundo);
         align-items: center;
@@ -139,6 +139,59 @@
         object-fit: cover;
         transition: left 0.5s ease;
         
+    }
+
+     .seta {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+        background: rgba(0, 0, 0, 0.5);
+        color: var(--cor-de-fundo);
+        border: none;
+        font-size: 30px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background 0.3s;
+        line-height: 1;
+    }
+
+    .seta:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .seta-esquerda {
+        left: 15px;
+    }
+
+    .seta-direita {
+        right: 15px;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 10px;  /* ajuste esse valor para subir ou descer as bolinhas */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+        margin-top: 0; /* anula qualquer margem anterior */
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background-color: var(--cor-de-fundo);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border: 2px solid var(--cor-escura);
+    }
+
+    .dot.active {
+        background-color: var(--cor-escura); /* cor de destaque */
     }
 
     @media (min-width: 561px) and (max-width: 760px) {
@@ -377,58 +430,7 @@
    }
 
 
-    .seta {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 20;
-        background: rgba(0, 0, 0, 0.5);
-        color: var(--cor-de-fundo);
-        border: none;
-        font-size: 30px;
-        padding: 10px 15px;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: background 0.3s;
-        line-height: 1;
-    }
-
-    .seta:hover {
-        background: rgba(0, 0, 0, 0.8);
-    }
-
-    .seta-esquerda {
-        left: 15px;
-    }
-
-    .seta-direita {
-        right: 15px;
-    }
-
-    .dots {
-        position: absolute;
-        bottom: 10px;  /* ajuste esse valor para subir ou descer as bolinhas */
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 10px;
-        z-index: 10;
-        margin-top: 0; /* anula qualquer margem anterior */
-    }
-
-    .dot {
-        width: 12px;
-        height: 12px;
-        background-color: var(--cor-de-fundo);
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        border: 2px solid var(--cor-escura);
-    }
-
-    .dot.active {
-        background-color: var(--cor-escura); /* cor de destaque */
-    }
+   
     
 
     
@@ -500,11 +502,6 @@
         width: 90vw;
    }
 
-   
-
-   
-
-   
 
    footer .compartilhar {
         margin-top: 20px;
@@ -590,3 +587,196 @@
 }
 
 
+@media (min-width: 761px) and (max-width: 1020px) {
+
+
+    header {
+        background-color: var(--cor-header);
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+     header .logo-rosto {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    header .logo-rosto > a {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header .logo-rosto img {
+        width: 70px;
+        height: auto;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+    
+    header .logo-nome {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    header .logo-nome img {
+        width: 160px;
+        height: auto;
+    }
+
+    header .icones-a-direita {
+        grid-area: 1 / 3 / 2 / 4;
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+        color: var(--cor-de-fundo);
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    header .icones-a-direita .material-symbols-outlined {
+        font-size: 26px;   /* aumenta o tamanho do ícone */
+        cursor: pointer;   /* deixa com aparência de botão clicável */
+        background-color: var(--cor-header);
+    }
+
+    main .hamburgueres .lanches {
+        aspect-ratio: 4/3;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    main .hamburgueres .lanches img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* preenche sem distorcer */
+    }
+
+    main .Ver-Mais-Salgados {
+        position: absolute;
+        color: var(--cor-de-fundo);
+        background-color: var(--cor-botoes);
+        bottom: 23px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vw;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 10px;
+    }
+
+    main .secao-sobremesas {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    main .sobremesas {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        
+    }
+
+    main .doces {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: hidden;
+    }
+
+    main .Ver-Mais-Sobremesas {
+        display: flex;
+        height: 50px;
+        background-color: var(--cor-botoes);
+        margin: 20px 10px;
+        color: var(--cor-de-fundo);
+        align-items: center;
+        justify-content: center;
+        font-family: 'Passion One', cursive;
+        width: 95%;
+    }
+
+     .seta {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+        background: rgba(0, 0, 0, 0.5);
+        color: var(--cor-de-fundo);
+        border: none;
+        font-size: 30px;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background 0.3s;
+        line-height: 1;
+    }
+
+    .seta:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .seta-esquerda {
+        left: 15px;
+    }
+
+    .seta-direita {
+        right: 15px;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 10px;  /* ajuste esse valor para subir ou descer as bolinhas */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+        margin-top: 0; /* anula qualquer margem anterior */
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background-color: var(--cor-de-fundo);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border: 2px solid var(--cor-escura);
+    }
+
+    .dot.active {
+        background-color: var(--cor-escura); /* cor de destaque */
+    }
+
+}
+
+@media (min-width: 1020px) {
+
+
+    header {
+        background-color: var(--cor-header);
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+}
