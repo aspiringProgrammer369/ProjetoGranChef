@@ -161,6 +161,11 @@
         background-color: var(--cor-escura); /* cor de destaque */
     }
 
+    main .logo {
+        width: 1vw;
+        height: auto;
+    }
+
     footer {
         background-color: var(--cor-botoes);
         width: 100%;
@@ -314,7 +319,7 @@
 
 
 
-    @media (max-width: 561px) {
+@media (max-width: 561px) {
         main .Ver-Mais-Sobremesas {
             display: flex;
             height: 50px;
@@ -350,175 +355,8 @@
             height: auto;
             border-radius: 5px;
         }
-    }
 
-
-@media (min-width: 561px) and (max-width: 760px) {
-            main .Bloco-Aplicativo {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                align-content: center;
-                background-color: var(--cor-header);
-                height: 436px;
-                overflow-x: hidden;
-            }
-
-            main .Bloco-Celular {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            main .celular {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                align-content: center;
-                height: auto;   
-            }
-
-            main .Bloco-Mensagem {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                text-align: left;
-                padding-bottom: 50px;
-                height: 426px;
-            }
-
-            main .Bloco-Mensagem  p {
-                color: var(--cor-de-fundo);
-                font-family: 'Changa One', serif;
-                width: 80%;
-                font-size: 2.5rem;
-                text-decoration: none;
-            }
-
-            main .link-aplicacoes {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-            }
-
-
-            main .Bloco-Mensagem img {
-                transform: scale(3);
-            }
-
-            main span:nth-child(1) {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-            }
-
-            main .logo-app-dentro {
-                display: grid;
-                grid-template: 1fr;
-                text-align: center;
-                justify-content: center;
-                align-content: center;
-                
-            }
-
-            main .AppApple, main .AppGoogle {
-                font-size: 2vw;
-                color: var(--cor-de-fundo);
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
-                margin: 6px;
-                background-color: var(--cor-escura);
-                text-align: center;
-                height: 50px;
-                border: 1px solid var(--cor-de-fundo);
-                border-radius: 10px;
-                text-decoration: none;
-            }
-
-            main .AppApple {
-                width: 161px;
-            }
-
-            main .AppGoogle {
-                width: 192px;
-            }
-
-            main .AppGoogle img {
-                width: 50px;
-                height: auto;
-            }
-
-            main .AppApple img {
-                width: 40px;
-                height: auto;
-            }
-
-            main .texto-de-cima {
-                font-size: 0.9rem;
-            }
-
-            main .AppTexto {
-                font-size: 1.2rem;
-                font-weight: bold;
-            }
-
-             main .secao-sobremesas {
-                box-sizing: border-box;
-            }
-
-            main .sobremesas {
-                position: relative;
-                width: 100%;
-                overflow: hidden;
-                aspect-ratio: 1 / 1;
-                box-sizing: border-box;
-                height: 100%;
-            }
-
-            main .doces {
-                position: absolute;
-                top: 0;
-                left: 100%;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            main .Ver-Mais-Sobremesas-telaGrande {
-                display: flex;
-                position: absolute;
-                height: 50px;
-                background-color: var(--cor-botoes);
-                color: var(--cor-de-fundo);
-                align-items: center;
-                justify-content: center;
-                font-family: 'Passion One', cursive;
-                width: 30vw;
-                border-radius: 10px;
-                z-index: 1;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 4%;
-            }
-
-            .Ver-Mais-Sobremesas {
-                display: none;
-                color: var(--cor-de-fundo);
-                color: var(--cor-header);
-                height: 0;
-            }
-}
-
-
-@media (max-width: 560px) {
-    
-        main .Bloco-Aplicativo {
+         main .Bloco-Aplicativo {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -562,16 +400,15 @@
         }
 
         main .link-aplicacoes {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+    }
 
 
-        main .Bloco-Mensagem img {
-            transform: scale(3);
-        }
+        
 
         main span:nth-child(1) {
             display: flex;
@@ -580,57 +417,9 @@
             align-content: center;
         }
 
-        main .logo-app-dentro {
-            display: grid;
-            grid-template: 1fr;
-            text-align: center;
-            justify-content: center;
-            align-content: center;
-            
-        }
+        
 
-        main .AppApple, main .AppGoogle {
-            font-size: 2vw;
-            color: var(--cor-de-fundo);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            margin: 6px;
-            background-color: var(--cor-escura);
-            text-align: center;
-            height: 50px;
-            border: 1px solid var(--cor-de-fundo);
-            border-radius: 10px;
-            text-decoration: none;
-        }
-
-        main .AppApple {
-            width: 161px;
-        }
-
-        main .AppGoogle {
-            width: 192px;
-        }
-
-        main .AppGoogle img {
-            width: 50px;
-            height: auto;
-        }
-
-        main .AppApple img {
-            width: 40px;
-            height: auto;
-        }
-
-        main .texto-de-cima {
-            font-size: 0.9rem;
-        }
-
-        main .AppTexto {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
+        
 
         footer {
             background-color: var(--cor-botoes);
@@ -781,18 +570,125 @@
         body .bottom-nav i {
                 font-size: 1.5rem;
         }
-
 }
 
 
-   
-    
+@media (min-width: 561px) and (max-width: 760px) {
+
+            main .secao-sobremesas {
+                box-sizing: border-box;
+            }
+
+            main .sobremesas {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                aspect-ratio: 1 / 1;
+                box-sizing: border-box;
+                height: 100%;
+            }
+
+            main .doces {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            main .Ver-Mais-Sobremesas-telaGrande {
+                display: flex;
+                position: absolute;
+                height: 50px;
+                background-color: var(--cor-botoes);
+                color: var(--cor-de-fundo);
+                align-items: center;
+                justify-content: center;
+                font-family: 'Passion One', cursive;
+                width: 30vw;
+                border-radius: 10px;
+                z-index: 1;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 4%;
+            }
+
+            .Ver-Mais-Sobremesas {
+                display: none;
+                color: var(--cor-de-fundo);
+                color: var(--cor-header);
+                height: 0;
+            }
+
+            main .Bloco-Aplicativo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                background-color: var(--cor-header);
+                height: 436px;
+                overflow-x: hidden;
+            }
+
+            main .Bloco-Celular {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            main .celular {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+                height: auto;   
+            }
+
+            main .Bloco-Mensagem {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: left;
+                padding-bottom: 50px;
+                height: 426px;
+            }
+
+            main .Bloco-Mensagem  p {
+                color: var(--cor-de-fundo);
+                font-family: 'Changa One', serif;
+                width: 80%;
+                font-size: 2.5rem;
+                text-decoration: none;
+            }
+
+            main .link-aplicacoes {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+    }
+
+
+            main span:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+
+            
+
+            
+}
+
+
+
 
     
-    
-
-
-
 
 @media (min-width: 761px) and (max-width: 1020px) {
 
@@ -1001,23 +897,23 @@
                 background-color: var(--cor-header);
                 height: 436px;
                 overflow-x: hidden;
-            }
+    }
 
-            main .Bloco-Celular {
+    main .Bloco-Celular {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
+    }
 
-            main .celular {
+    main .celular {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 align-content: center;
                 height: auto;   
-            }
+    }
 
-            main .Bloco-Mensagem {
+    main .Bloco-Mensagem {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -1025,89 +921,46 @@
                 text-align: left;
                 padding-bottom: 50px;
                 height: 426px;
-            }
+    }
 
-            main .Bloco-Mensagem  p {
+    main .Bloco-Mensagem  p {
                 color: var(--cor-de-fundo);
                 font-family: 'Changa One', serif;
                 width: 80%;
                 font-size: 3.0rem;
                 text-decoration: none;
-            }
+    }
 
-            main .link-aplicacoes {
+    main .link-aplicacoes {
                 display: flex;
-                flex-wrap: wrap;
+                flex-flow: column wrap;
                 justify-content: space-around;
                 align-items: center;
                 align-content: center;
-            }
+    }
 
+   
+
+    main span:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+    }
+
+
+   
             
 
+    main .link-app {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
 
-            main .Bloco-Mensagem img {
-                transform: scale(3);
-            }
-
-            main span:nth-child(1) {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
-            }
-
-            main .logo-app-dentro {
-                display: grid;
-                grid-template: 1fr;
-                text-align: center;
-                justify-content: center;
-                align-content: center;
-                
-            }
-
-            main .AppApple, main .AppGoogle {
-                font-size: 2vw;
-                color: var(--cor-de-fundo);
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
-                margin: 6px;
-                background-color: var(--cor-escura);
-                text-align: center;
-                height: 100%;
-                border: 1px solid var(--cor-de-fundo);
-                border-radius: 10px;
-                text-decoration: none;
-            }
-
-            main .AppApple {
-                width: 30%;
-            }
-
-            main .AppGoogle {
-                width: 30%;
-            }
-
-            main .AppGoogle img {
-                width: 100px;
-                height: auto;
-            }
-
-            main .AppApple img {
-                width: 1%;
-                height: auto;
-            }
-
-            main .texto-de-cima {
-                font-size: 0.9rem;
-            }
-
-            main .AppTexto {
-                font-size: 1.2rem;
-                font-weight: bold;
-            }
+            
 
     footer {
         background-color: var(--cor-botoes);
