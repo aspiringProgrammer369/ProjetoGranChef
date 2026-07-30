@@ -6,6 +6,7 @@
 
 
 
+
 @media (max-width: 760px) {
 
     
@@ -742,7 +743,7 @@
     }
 
     header .logo-nome img {
-        width: 160px;
+        width: 180px;
         height: auto;
     }
 
@@ -1127,14 +1128,50 @@
 
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1021px) {
 
 
     header {
         background-color: var(--cor-header);
         display: grid;
-        grid-template: 1fr / 1fr 1fr 1fr;
+        grid-template: 1fr / 1% 99%;
+        justify-content: center;
+        align-content: center;
         align-items: center;
+    }
+
+    header .logo-oficial {
+        grid-area: 1 / 1 / 2 / 2;
+        align-items: center;
+        align-content: center;
+        width: 200px;
+        height: auto;
+        padding-right: 20px;
+    }
+
+    header .logo-rosto , header .icones-a-direita, header .logo-nome {
+        display: none;
+    }
+
+    header .navegacao {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    header ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 2.7vw;
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--cor-de-fundo);
+        font-family: 'Bevan' , Arial, Helvetica, sans-serif
     }
 
 }
