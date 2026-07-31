@@ -167,14 +167,14 @@
 
     main .link-aplicacoes {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row wrap-reverse;
         justify-content: space-evenly;
         align-items: center;
         align-content: space-evenly;
     }
 
     main .logos {
-        width: 31vw;
+        width: 33vw;
         height: auto;
     }
 
@@ -377,7 +377,7 @@
             align-items: center;
             align-content: center;
             background-color: var(--cor-header);
-            height: 446px;
+            height: 490px;
             overflow-x: hidden;
         }
 
@@ -409,7 +409,7 @@
             color: var(--cor-de-fundo);
             font-family: 'Changa One', serif;
             width: 95%;
-            font-size: 2.0rem;
+            font-size: 1.9rem;
             text-decoration: none;
         }
 
@@ -642,7 +642,7 @@
                 align-items: center;
                 align-content: center;
                 background-color: var(--cor-header);
-                height: 436px;
+                height: 456px;
                 overflow-x: hidden;
             }
 
@@ -674,7 +674,7 @@
                 color: var(--cor-de-fundo);
                 font-family: 'Changa One', serif;
                 width: 80%;
-                font-size: 2.2rem;
+                font-size: 1.9rem;
                 text-decoration: none;
             }
 
@@ -694,7 +694,10 @@
                 align-content: center;
             }
 
-            
+           main .logos {
+                width: 30vw;
+                height: auto;
+           } 
 
             
 }
@@ -797,7 +800,6 @@
     }
 
     main .secao-sobremesas {
-        
         box-sizing: border-box;
     }
 
@@ -906,7 +908,7 @@
                 align-items: center;
                 align-content: center;
                 background-color: var(--cor-header);
-                height: 436px;
+                height: 50vh;
                 overflow-x: hidden;
     }
 
@@ -927,7 +929,7 @@
     main .Bloco-Mensagem {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 text-align: left;
                 padding-bottom: 50px;
@@ -938,14 +940,14 @@
                 color: var(--cor-de-fundo);
                 font-family: 'Changa One', serif;
                 width: 85%;
-                font-size: 3.0rem;
+                font-size: 2.6rem;
                 text-decoration: none;
     }
 
     main .link-aplicacoes {
                 display: flex;
                 flex-flow: row wrap;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 align-content: center;
     }
@@ -961,7 +963,7 @@
 
 
    .logos {
-        width: 30vw;
+        width: 25vw;
         height: auto;
    }
             
@@ -1172,6 +1174,38 @@
         text-decoration: none;
         color: var(--cor-de-fundo);
         font-family: 'Bevan' , Arial, Helvetica, sans-serif
+    }
+
+    main .lanches {
+        aspect-ratio: 4/3;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    main .hamburgueres .lanches img {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .Ver-Mais-Salgados {
+        position: absolute;
+        color: var(--cor-de-fundo);
+        background-color: var(--cor-botoes);
+        bottom: 23px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vw;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 10px;
     }
 
 }
