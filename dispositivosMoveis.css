@@ -1184,7 +1184,7 @@
     }
 
     main .lanches {
-        aspect-ratio: 4/3;
+        aspect-ratio: 21/9;
         position: relative;
         width: 100%;
         overflow: hidden;
