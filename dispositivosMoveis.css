@@ -46,7 +46,7 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        margin: 0 auto;
+        
     }
 
     header .logo-nome img {
@@ -312,7 +312,7 @@
         border-top: 1px solid #F5EBDC;
         z-index: 1000;
         background-color: var(--cor-de-fundo);
-        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
    }
 
    body a {
@@ -327,8 +327,8 @@
    body .bottom-nav a {
         text-decoration: none;
         color: #9E8172;
-        font-size: 0.8rem;
-        font-weight: bold;
+        font-size: 0.9rem;
+        
    }
 
    body .bottom-nav i {
@@ -568,7 +568,7 @@
                 border-top: 1px solid #F5EBDC;
                 z-index: 1000;
                 background-color: var(--cor-de-fundo);
-                font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+                 font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
         }
 
         body a {
@@ -584,7 +584,7 @@
                 text-decoration: none;
                 color: #9E8172;
                 font-size: 0.8rem;
-                font-weight: bold;
+                
         }
 
         body .bottom-nav i {
@@ -1112,7 +1112,7 @@
         border-top: 1px solid #F5EBDC;
         z-index: 1000;
         background-color: var(--cor-de-fundo);
-        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
    }
 
    body a {
@@ -1127,8 +1127,7 @@
    body .bottom-nav a {
         text-decoration: none;
         color: #9E8172;
-        font-size: 0.8rem;
-        font-weight: bold;
+        font-size: 0.9rem;
    }
 
    body .bottom-nav i {
@@ -1853,6 +1852,7 @@
        display: flex;
        flex-direction: row;
        font-weight: bold;
+       gap: 40px;
    }
 
    footer .links-legais a {
