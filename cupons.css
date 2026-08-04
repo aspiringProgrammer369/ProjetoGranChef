@@ -58,6 +58,13 @@
         width: 40vw;
         height: auto;
         border: 1px solid black;
+        
+    }
+
+    .lanches-preco {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        place-items: center;
     }
 
     /* Arquivo CSS geral (sem media query) */
@@ -127,13 +134,13 @@
     .dot {
         width: 10px;
         height: 10px;
-        background: rgba(255, 255, 255, 0.5);
+        background: var(--cor-de-fundo);
         border-radius: 50%;
         cursor: pointer;
         transition: background 0.2s;
     }
     .dot.active {
-        background: white;
+        background: var(--cor-de-fundo);
     }
 
 /* Ajuste para mobile - tela cheia */
