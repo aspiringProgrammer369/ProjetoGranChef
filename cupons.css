@@ -8,35 +8,35 @@
 
 
 @media (max-width: 760px) {
-    .comeco {
+    body .comeco {
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif
     }
 
-    .botao-voltar {
+    header .botao-voltar {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
     }
 
-    .voltar:hover {
+    header .voltar:hover {
         text-decoration: underline;
         cursor: pointer;
     }
 
-    .voltar {
+    header .voltar {
         padding-left: 8px;
     }
 
-    .Cupom {
+    body .cupom {
         display: flex;
         justify-content: center;
     }
 
-    .cupons {
+    main .cupons {
         display: flex;
         flex-direction: flex-start;
         padding: 30px 0px 30px 10px;
@@ -45,7 +45,7 @@
         font-size: 5vw;
     }
 
-    .ofertas {
+    main .ofertas {
         display: flex;
         flex-direction: flex-start;
         padding: 0px 0px 0px 10px;
@@ -54,14 +54,20 @@
         font-weight: bold;
     }
 
-    .lanches {
+    main .lanches {
         width: 40vw;
         height: auto;
         border: 1px solid black;
-        
+        display: flex;
+        flex-direction: row;
     }
 
-    .lanches-preco {
+    main .lanches img {
+        width: 40px;
+        height: auto;
+    }
+
+    main .lanches-preco {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
         place-items: center;
@@ -150,7 +156,7 @@
         padding-bottom: 150%; /* mantém 9:16 */
     }
 
-    .lanches-preco div {
+    main .lanches-preco div {
         
     }
 
