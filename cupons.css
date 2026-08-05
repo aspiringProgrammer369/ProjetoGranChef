@@ -54,16 +54,20 @@
         font-weight: bold;
     }
 
-    main .lanches {
-        width: 40vw;
+    main .refeicoes {
+        width: 45vw;
         height: auto;
         border: 1px solid black;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        border: 1px solid ;
+        border-radius: 20px;
     }
 
-    main .lanches img {
-        width: 40px;
+    main .refeicoes img {
+        width: 100%;
         height: auto;
     }
 
