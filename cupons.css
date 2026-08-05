@@ -56,25 +56,61 @@
 
     main .refeicoes {
         width: 45vw;
-        height: auto;
-        border: 1px solid black;
+        height: 24vh;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-flow: column nowrap;
+        align-items: left;
         margin: 10px;
-        border: 1px solid ;
-        border-radius: 20px;
+        border: 1px solid var(--cor-header);
+        border-radius: 20px 20px 20px 20px;
+        font-weight: 100;
+    }
+
+    main .refeicoes p {
+        font-family: 'Bevan', serif;
+        padding-left: 10px;
+    }
+
+    main .refeicoes .preco-oferta {
+        color: var(--cor-botoes);
+    }
+
+   main .preco-ofertaX {
+        color: var(--cor-botoes);
+        padding-top: 25px;
+   }
+
+    main .preco-final p {
+        display: flex;
+        align-items: center;
+    }
+   
+    main .reais {
+        display: flex;
+        padding-top: 13px;
+    }
+
+    main .numero-maior {
+        font-size: 2.0rem;
+        font-weight: bold;
+    }
+
+    main .numero-menor {
+        padding-bottom: 12px;
     }
 
     main .refeicoes img {
         width: 100%;
         height: auto;
+        border: 1px solid var(--cor-header);
+        border-radius: 20px 20px 0 0;
     }
 
     main .lanches-preco {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
         place-items: center;
+        padding-bottom: 30px;
     }
 
     /* Arquivo CSS geral (sem media query) */
@@ -160,8 +196,6 @@
         padding-bottom: 150%; /* mantém 9:16 */
     }
 
-    main .lanches-preco div {
-        
-    }
+    
 
 }
