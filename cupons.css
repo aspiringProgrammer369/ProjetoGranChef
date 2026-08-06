@@ -56,9 +56,9 @@
 
     main .refeicoes {
         width: 45vw;
-        height: 24vh;
+        height: 25vh;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         align-items: left;
         margin: 10px;
         border: 1px solid var(--cor-header);
@@ -79,6 +79,8 @@
         color: var(--cor-botoes);
         padding-top: 25px;
    }
+
+   
 
     main .preco-final p {
         display: flex;
