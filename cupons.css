@@ -56,7 +56,7 @@
 
     main .refeicoes {
         width: 45vw;
-        height: 25vh;
+        height: 235px;
         display: flex;
         flex-flow: column nowrap;
         align-items: left;
@@ -103,9 +103,11 @@
 
     main .refeicoes img {
         width: 100%;
-        height: auto;
+        height: 130px;
         border: 1px solid var(--cor-header);
         border-radius: 20px 20px 0 0;
+        object-fit: contain;
+        background-color: var(--cor-header);
     }
 
     main .lanches-preco {
@@ -115,17 +117,16 @@
         padding-bottom: 30px;
     }
 
+
+
     /* Arquivo CSS geral (sem media query) */
     /* Container principal do carrossel - formato RETRATO */
     .carrossel-cupons {
         position: relative;
         width: 100%;
-        max-width: 500px;      /* mais estreito para retrato */
         margin: 0 auto;
         overflow: hidden;
-        /* Proporção 9:16 (retrato) → 16/9 = 177.78% */
-        height: 0;
-        padding-bottom: 177.78%; /* 9:16 - formato retrato alto */
+        height: 100%;
     }
 
     /* Todas as imagens dentro do container */
@@ -199,5 +200,99 @@
     }
 
     
+
+}
+
+@media (min-width: 761px) and (max-width: 1120px) {
+
+    main .refeicoes {
+            width: 45vw;
+            height: 210px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: left;
+            margin: 10px;
+            border: 1px solid var(--cor-header);
+            border-radius: 20px 20px 20px 20px;
+            font-weight: 100;
+        }
+
+        main .refeicoes p {
+            font-family: 'Bevan', serif;
+            padding-left: 10px;
+        }
+
+        main .refeicoes .preco-oferta {
+            color: var(--cor-botoes);
+        }
+
+        main .preco-ofertaX {
+            color: var(--cor-botoes);
+            padding-right: 10px;
+        }
+
+        main .preco-final {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: 80px;
+            padding-right: 10px;
+        }
+
+        main .preco-final p {
+            display: flex;
+            align-items: center;
+        }
+        
+        main .reais {
+            display: flex;
+            padding-top: 13px;
+        }
+
+        main .numero-maior {
+            font-size: 2.0rem;
+            font-weight: bold;
+        }
+
+        main .numero-menor {
+            padding-bottom: 12px;
+        }
+
+        main .refeicoes img {
+            width: 100%;
+            height: 130px;
+            border: 1px solid var(--cor-header);
+            border-radius: 20px 20px 0 0;
+            object-fit: contain;
+            background-color: var(--cor-header);
+        }
+
+        main .lanches-preco {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            place-items: center;
+            padding-bottom: 30px;
+        }
+
+    .carrossel-cupons {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 2;   /* formato paisagem widescreen */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrossel-cupons img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* cobre todo o espaço sem distorcer */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 }
