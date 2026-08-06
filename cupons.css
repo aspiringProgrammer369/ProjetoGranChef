@@ -58,7 +58,7 @@
         width: 45vw;
         height: 25vh;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         align-items: left;
         margin: 10px;
         border: 1px solid var(--cor-header);
