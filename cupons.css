@@ -37,6 +37,8 @@
         justify-content: center;
     }
 
+    /*TRECHO BODY*/
+
     /* Arquivo CSS geral (sem media query) */
     /* Container principal do carrossel - formato RETRATO */
     .carrossel-cupons {
@@ -208,6 +210,35 @@
 }
 
 @media (min-width: 561px) and (max-width: 800px) {
+
+    /* SEÇÃO HEADER */
+    body .comeco {
+        background-color: var(--cor-de-fundo);
+        padding-top: 70px;
+        font-size: 1.3rem;
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    header .botao-voltar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    header .voltar:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    header .voltar {
+        padding-left: 8px;
+    }
+
+    body .cupom {
+        display: flex;
+        justify-content: center;
+    }
 
     main .refeicoes {
             width: 45vw;
