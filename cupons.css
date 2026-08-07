@@ -162,7 +162,7 @@
         height: 130px;
         border: 1px solid var(--cor-header);
         border-radius: 20px 20px 0 0;
-        object-fit: contain;
+        object-fit: cover;
         background-color: var(--cor-header);
         position: relative;
         object-fit: cover;
@@ -290,7 +290,7 @@
     .carrossel-cupons img {
         width: 100%;
         height: 100%;
-        object-fit: contain;       /* cobre todo o espaço sem distorcer */
+        object-fit: cover;       /* cobre todo o espaço sem distorcer */
         position: absolute;
         top: 0;
         left: 0;
