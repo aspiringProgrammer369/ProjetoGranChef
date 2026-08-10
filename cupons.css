@@ -23,6 +23,10 @@
         align-items: center;
     }
 
+    header .tela-navegar {
+        display: none;
+    }
+
     header .voltar:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -232,6 +236,10 @@
         padding-left: 8px;
     }
 
+    header .tela-navegar {
+        display: none;
+    }
+
     body .cupom {
         display: flex;
         justify-content: center;
@@ -351,7 +359,7 @@
 
 }
 
-@media (min-width: 766px) and (max-width: 900px) {
+@media (min-width: 766px) and (max-width: 1030px) {
 
      /* SEÇÃO HEADER */
     body .comeco {
@@ -375,6 +383,10 @@
 
     header .voltar {
         padding-left: 8px;
+    }
+
+    header .tela-navegar {
+        display: none;
     }
 
     body .cupom {
@@ -401,8 +413,8 @@
     }
 
     main .refeicoes {
-            width: 45vw;
-            height: 265px;
+            width: 30vw;
+            height: 280px;
             display: flex;
             flex-flow: column nowrap;
             align-items: left;
@@ -468,7 +480,7 @@
 
         main .lanches-preco {
             display: grid;
-            grid-template: 1fr 1fr / 1fr 1fr;
+            grid-template: auto auto / 1fr 1fr 1fr;
             place-items: center;
             padding-bottom: 30px;
         }
@@ -491,7 +503,7 @@
 
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1031px) {
 
      /* SEÇÃO HEADER */
     body .comeco {
@@ -499,6 +511,26 @@
         padding-top: 70px;
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    header .botao-voltar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+     header .voltar:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    header .voltar {
+        padding-left: 8px;
+    }
+
+    header .tela-navegar {
+        display: center;
     }
 
 }
