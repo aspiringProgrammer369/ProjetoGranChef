@@ -140,31 +140,60 @@
     }
 
     main .lanches-preco {
-        display: grid;
-        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+        display: flex;
+        width: 100vw;
         place-items: center;
         padding-bottom: 30px;
+        gap: 16px;
     }
 
     
 
 
-    main #refeicoes {
+    main .refeicoes {
         width: 90%;
         height: 90%;
         display: flex;
         flex-flow: column nowrap;
-        align-items: left;
+        align-items: flex-start;
         margin: 10px;
         border: 1px solid var(--cor-header);
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 20px;
         font-weight: 100;
         position: relative;
         
     }
 
+    .hide2, .hide3 {
+        display: none;
+    }
+
+    main .cupom-oferta {
+        grid-area: 1 / 1 / -2 / -3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    main .primeiro {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    main .segundo {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    main .terceiro {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    main .quarto {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
     
-    main #refeicoes img {
+    main .refeicoes img {
         width: 100%;
         height: 130px;
         border: 1px solid var(--cor-header);
@@ -175,12 +204,12 @@
         object-fit: cover;
     }
 
-    main #refeicoes p {
+    main .refeicoes p {
         font-family: 'Bevan', serif;
         padding-left: 10px;
     }
 
-    main #refeicoes .preco-oferta {
+    main .refeicoes .preco-oferta {
         color: var(--cor-botoes);
     }
 
