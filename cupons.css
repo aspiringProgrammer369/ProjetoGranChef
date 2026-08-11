@@ -510,7 +510,7 @@
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
-        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     }
 
     header .botao-voltar {
