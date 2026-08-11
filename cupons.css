@@ -134,19 +134,20 @@
 
     main .refeicoes {
         width: 90%;
-        height: 90%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-start;
+        height: 220px;
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, auto);
         margin: 10px;
-        border: 1px solid var();
+        border: 1px solid var(--cor-header);
         border-radius: 20px;
         font-weight: 100;
         position: relative;
         
     }
 
-    
+    main .img-lanches {
+        grid-area: 1 / 1 / 2 / 3;
+    }
 
     main .cupom-oferta {
         grid-area: 1 / 1 / 2 / 3;
@@ -178,16 +179,43 @@
     }
 
     
-
     
     main .refeicoes img {
         width: 100%;
-        height: auto;
+        height: 110px;
+        grid-area: 1 / 1 / 2 / 3;
         border: 1px solid var(--cor-header);
         border-radius: 20px 20px 0 0;
         object-fit: cover;
-        background-color: var(--cor-header);
-        position: relative;
+        background-color: var();
+        position: absolute;
+    }
+
+    main .refeicoes .preco-oferta {
+        color: var(--cor-botoes);
+        grid-area: 2 / 2 / 3 / 3;
+        
+    }
+
+   main .preco-ofertaX, main .preco-oferta {
+        color: var(--cor-botoes);
+        padding-top: 35px;
+        grid-area: 1 / 2 / 2 / 3;
+        
+   }
+
+   main .nome-produto {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        justify-content: flex-start;
+        
+        
+    }
+
+    main .preco-final {
+        display: grid;
+        grid-template: repeat(1, auto) / repeat(2, auto);
+        padding-top: 50px;
     }
 
     main .refeicoes p {
@@ -195,20 +223,14 @@
         padding-left: 10px;
     }
 
-    main .refeicoes .preco-oferta {
-        color: var(--cor-botoes);
-    }
-
-   main .preco-ofertaX {
-        color: var(--cor-botoes);
-        padding-top: 25px;
-   }
+    
 
    
 
     main .preco-final p {
         display: flex;
         align-items: center;
+        padding-top: 45px;
     }
    
     main .reais {
