@@ -204,18 +204,27 @@
         
    }
 
-   main .nome-produto {
+   main .nome-produto, main .preco-oferta, main .preco-ofertaX {
         grid-area: 1 / 1 / 2 / 2;
         display: flex;
+        height: 35px;
         justify-content: flex-start;
-        
         
     }
 
+    main .img-lanches {
+        height: 110px;
+        width: 100%;
+    }
+
     main .preco-final {
-        display: grid;
-        grid-template: repeat(1, auto) / repeat(2, auto);
-        padding-top: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        align-items: left;
+        width: 100%;
+        height: 110px;
+        
     }
 
     main .refeicoes p {
@@ -350,7 +359,7 @@
         height: 30%;
         padding-right: 10px;
         padding-top: 200px;
-        
+        width: 100%;
     }
 
     main .cupom-oferta {
@@ -383,7 +392,7 @@
         border: 1px solid var(--cor-header);
         border-radius: 20px 20px 0 0;
         object-fit: cover;
-        background-color: var(--cor-header);
+        
         position: absolute;
     }
 

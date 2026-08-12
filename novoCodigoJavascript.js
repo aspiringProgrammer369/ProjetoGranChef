@@ -122,3 +122,16 @@ function iniciarCarrossel(seletor) {
 
 // Inicia o carrossel na seção de cupons
 iniciarCarrossel('.carrossel-cupons');
+
+const link = document.getElementById('troca-imagem');
+const imagemSecundaria = document.getElementById('imagem-secundaria');
+
+link.addEventListener('click', (event) => {
+  event.preventDefault(); // evita navegação
+  // alterna visibilidade
+  if (imagemSecundaria.style.display === 'none') {
+    imagemSecundaria.style.display = 'block';
+  } else {
+    imagemSecundaria.style.display = 'none';
+  }
+});
