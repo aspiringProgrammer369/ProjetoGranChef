@@ -145,6 +145,12 @@
         
     }
 
+    main .refeicoes a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
     main .img-lanches {
         grid-area: 1 / 1 / 2 / 3;
     }
