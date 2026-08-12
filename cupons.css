@@ -145,10 +145,44 @@
         
     }
 
+    #imagem-secundaria {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* cria camada transparente */
+  background-color: rgba(255, 255, 255, 0.0);
+
+  /* aplica blur no que está atrás */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
+}
+
+
+#imagem-secundaria img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+
     main .refeicoes a {
         display: block;
         text-decoration: none;
         color: inherit;
+    }
+
+    main .imagem-secundaria {
+        display: none;
     }
 
     main .img-lanches {

@@ -127,11 +127,11 @@ const link = document.getElementById('troca-imagem');
 const imagemSecundaria = document.getElementById('imagem-secundaria');
 
 link.addEventListener('click', (event) => {
-  event.preventDefault(); // evita navegação
-  // alterna visibilidade
-  if (imagemSecundaria.style.display === 'none') {
-    imagemSecundaria.style.display = 'block';
-  } else {
-    imagemSecundaria.style.display = 'none';
-  }
+  event.preventDefault();
+  imagemSecundaria.style.display = 'flex'; // mostra como overlay
+});
+
+// fecha ao clicar no overlay
+imagemSecundaria.addEventListener('click', () => {
+  imagemSecundaria.style.display = 'none';
 });
