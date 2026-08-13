@@ -3,25 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cupons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="telaGrande.css">
+    <link rel="stylesheet" href="telasMedias.css">
+    <link rel="stylesheet" href="dispositivosMoveis.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title></title>
 </head>
 <body>
-    <section>
-        <span></span>
-        <span>Voltar</span>
-        <span>Cardápio</span>
-    </section>
-
-    <section>
-        <picture>
-            <source>
-            <source>
-            <source>
-            <img src="" alt="">
-        </picture>
-    </section>
+     <header class="comeco">
+            <a class="botao-voltar">
+                <i class="fa-solid fa-chevron-left"></i>
+                <p class="voltar">Voltar</p>
+            </a>
+            <p class="cupom">Cupom</p>
+                <nav class="tela-navegar">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="cupons.html">Cupons</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="#">App GC</a></li>
+                        <li><a href="#">Clube GC</a></li>
+                        <li><a href="#">Delivery</a></li>
+                    </ul>
+                </nav>
+        </header>
+    
 
     <main>
+        <section class="lanches-opcoes">
+        <div class="cardapio-carrosel">
+            <picture class="promocao">
+                <source srcset="imagens/quadrado-test.webp" media="(max-width: 560px)" type="image/webp">
+                <source srcset="imagens/ultra-wide-test.webp" media="(min-width: 561px)" type="image/webp">
+                
+                <img src="imagens/ultra-wide-test.jpg" alt="foto do combo">
+            </picture>
+            <picture class="promocao">
+                <source srcset="imagens/entrega-quadrado.webp" media="(max-width: 560px)" type="image/webp">
+                <source srcset="imagens/entrega-wide.webp" media="(min-width: 561px)" type="image/webp">
+                <img src="imagens/entrega-wide.jpg" alt="foto-promoção">
+            </picture>
+            <picture class="promocao">
+                <source srcset="imagens/little-boy-square.webp" media="(max-width: 560px)" type="image/webp">
+                <source srcset="imagens/little-boy-ultra-wide.webp" media="(min-width: 561px)" type="image/webp">
+                <img src="imagens/little-boy-jpg.jpg" alt="foto do combo">
+            </picture>
+            <picture class="promocao">
+                <source srcset="imagens/smallMilkshake.webp" media="(max-width: 560px)" type="image/webp">
+                <source srcset="imagens/milkshake-ultra-wide.webp" media="(min-width: 561px) " type="image/webp">
+                <img src="imagens/.jpg" alt="foto-promoção">
+            </picture>
+        </div>
+    </section>
         <section>
             <span>Cardápio</span>
             <span>Sanduíches Especiais</span>
@@ -57,5 +94,72 @@
             </div>
         </section>
     </main>
+
+     <footer>
+        <img class="logo-oficial" src="imagens/logo-oficial.webp" alt="logo-gran-chef">
+        
+        </div>
+            <nav class="Termos-Condicoes">
+                <ul class="navegacao-principal">
+                    <li><a href="#">App GC</a></li>
+                    <li><a href="#">Sobre o GC</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Relações com investidores</a></li>
+                </ul>
+                <ul class="links-legais">
+                    <li><a href="#">Diretrizes de Privacidade de Dados</a></li>
+                    <li><a href="#">Regulamento do Clube GC</a></li>
+                    <li><a href="#">Política de Publicidade Infantil</a></li>
+                    <li><a href="#">Informações Legais</a></li>
+                    <li><a href="#">Opções de Privacidade</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="compartilhar">
+                <span>Compartilhe nosso sabor</span>
+                <div class="icones">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <span class="licenca">Sujeito à disponibilidade em estoque. Imagens meramente ilustrativas. TM & *2025 Gran Chef Company LLC. Usado sob licença. Todos os direitos reservados.</span>
+            </div>
+    </footer>
+    <div class="bottom-nav">
+        <span>
+            <a href="index.html">
+                <i class="fa-solid fa-burger"></i>
+                
+            <span>Início</span>
+            </a>
+        </span>
+        <span>
+            <a href="cupons.html">
+                <i class="fa-solid fa-tag"></i>
+                <span>Cupons</span>
+            </a>
+        </span>
+        <span>
+            <a href="cardapio.html">
+                <i class="fa-solid fa-book-open"></i>
+                
+                <span>Cardápio</span>
+            </a>
+        </span>
+        <span>
+            <a href="#">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Restaurante</span>
+            </a>
+        </span>
+        <span>
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+                <span>Menu</span>
+            </a>
+        </span>
+        
+    </div>
+    <script src="cardapio.js"></script>
 </body>
 </html>
