@@ -171,6 +171,7 @@
   max-height: 90%;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  
 }
 
 
@@ -264,7 +265,7 @@
         align-items: left;
         width: 100%;
         height: 110px;
-        
+        padding-top: 90px;
     }
 
     main .refeicoes p {
@@ -374,6 +375,45 @@
         font-weight: 100;
         position: relative;
     
+    }
+
+     #imagem-secundaria {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* cria camada transparente */
+  background-color: rgba(255, 255, 255, 0.0);
+
+  /* aplica blur no que está atrás */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
+}
+
+
+#imagem-secundaria img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  
+}
+
+main .refeicoes a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    main .imagem-secundaria {
+        display: none;
     }
 
     main .refeicoes p {
@@ -546,6 +586,45 @@
             font-weight: 100;
         }
 
+        #imagem-secundaria {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* cria camada transparente */
+  background-color: rgba(255, 255, 255, 0.0);
+
+  /* aplica blur no que está atrás */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
+}
+
+
+#imagem-secundaria img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  
+}
+
+main .refeicoes a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    main .imagem-secundaria {
+        display: none;
+    }
+
         main .refeicoes p {
             font-family: 'Bevan', serif;
             padding-left: 10px;
@@ -686,7 +765,7 @@
 
     main .refeicoes {
             width: 30vw;
-            height: 280px;
+            height: 260px;
             display: flex;
             flex-flow: column nowrap;
             align-items: left;
@@ -695,6 +774,45 @@
             border-radius: 20px 20px 20px 20px;
             font-weight: 100;
         }
+
+        #imagem-secundaria {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* cria camada transparente */
+  background-color: rgba(255, 255, 255, 0.0);
+
+  /* aplica blur no que está atrás */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
+}
+
+
+#imagem-secundaria img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  
+}
+
+main .refeicoes a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    main .imagem-secundaria {
+        display: none;
+    }
 
         main .refeicoes p {
             font-family: 'Bevan', serif;
@@ -754,6 +872,7 @@
             flex-direction: column;
             width: 100%;
             justify-content: flex-start;
+            align-items: center;
             padding-left: 10px;
        }
 
@@ -784,7 +903,7 @@
 
             main .refeicoes {
                 width: 300px;
-                height: 240px;
+                height: 260px;
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: left;
@@ -793,6 +912,8 @@
                 border-radius: 20px 20px 20px 20px;
                 font-weight: 100;
             }
+
+            
         }
 
        

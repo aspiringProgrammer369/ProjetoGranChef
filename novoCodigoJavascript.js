@@ -123,12 +123,14 @@ function iniciarCarrossel(seletor) {
 // Inicia o carrossel na seção de cupons
 iniciarCarrossel('.carrossel-cupons');
 
-const link = document.getElementById('troca-imagem');
+const links = document.querySelectorAll('.troca-imagem');
 const imagemSecundaria = document.getElementById('imagem-secundaria');
 
-link.addEventListener('click', (event) => {
-  event.preventDefault();
-  imagemSecundaria.style.display = 'flex'; // mostra como overlay
+links.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    imagemSecundaria.style.display = 'flex'; // mostra overlay
+  });
 });
 
 // fecha ao clicar no overlay
