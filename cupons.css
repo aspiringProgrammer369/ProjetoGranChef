@@ -13,7 +13,7 @@
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
-        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     }
 
     header .botao-voltar {
@@ -27,14 +27,16 @@
         display: none;
     }
 
+    header .voltar {
+        padding-left: 8px;
+    }
+
     header .voltar:hover {
         text-decoration: underline;
         cursor: pointer;
     }
 
-    header .voltar {
-        padding-left: 8px;
-    }
+    
 
     body .cupom {
         display: flex;
@@ -51,7 +53,11 @@
         margin: 0 auto;
         overflow: hidden;
         height: 100%;
+        padding-bottom: 150%; /* mantém 9:16 */
     }
+
+    
+
 
     /* Todas as imagens dentro do container */
     main .carrossel-cupons img {
@@ -115,11 +121,7 @@
 
 /* SEÇÃO MAIN */
 
-    .carrossel-cupons {
-        max-width: 100%;
-        padding-bottom: 150%; /* mantém 9:16 */
-    }
-
+    
 
     
 
@@ -130,64 +132,6 @@
         place-items: center;
         padding-bottom: 30px;
         
-    }
-
-    main .refeicoes {
-        width: 90%;
-        height: 220px;
-        display: grid;
-        grid-template: repeat(2, auto) / repeat(2, auto);
-        margin: 10px;
-        border: 1px solid var(--cor-header);
-        border-radius: 20px;
-        font-weight: 100;
-        position: relative;
-        
-    }
-
-    #imagem-secundaria {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* cria camada transparente */
-  background-color: rgba(255, 255, 255, 0.0);
-
-  /* aplica blur no que está atrás */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
-}
-
-
-#imagem-secundaria img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  
-}
-
-
-
-    main .refeicoes a {
-        display: block;
-        text-decoration: none;
-        color: inherit;
-    }
-
-    main .imagem-secundaria {
-        display: none;
-    }
-
-    main .img-lanches {
-        grid-area: 1 / 1 / 2 / 3;
     }
 
     main .cupom-oferta {
@@ -217,6 +161,37 @@
         font-size: 5vw;
         font-weight: bold;
         
+    }
+
+    main .refeicoes {
+        width: 90%;
+        height: 220px;
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, auto);
+        margin: 10px;
+        border: 1px solid var(--cor-header);
+        border-radius: 20px;
+        font-weight: 100;
+        position: relative;
+        
+    }
+
+
+    main .refeicoes a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    main .refeicoes p {
+        font-family: 'Bevan', serif;
+        padding-left: 10px;
+    }
+
+    main .img-lanches {
+        grid-area: 1 / 1 / 2 / 3;
+        height: 110px;
+        width: 100%;
     }
 
     
@@ -253,10 +228,7 @@
         
     }
 
-    main .img-lanches {
-        height: 110px;
-        width: 100%;
-    }
+    
 
     main .preco-final {
         display: flex;
@@ -268,14 +240,9 @@
         padding-top: 90px;
     }
 
-    main .refeicoes p {
-        font-family: 'Bevan', serif;
-        padding-left: 10px;
-    }
-
     
 
-   
+    
 
     main .preco-final p {
         display: flex;
@@ -296,8 +263,39 @@
     main .numero-menor {
         padding-bottom: 12px;
     }
+
+    main .imagem-secundaria {
+        display: none;
+    }
     
-    
+    main #imagem-secundaria {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* cria camada transparente */
+        background-color: rgba(255, 255, 255, 0.0);
+
+        /* aplica blur no que está atrás */
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
+    }
+
+
+    main #imagem-secundaria img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        
+    }
 
 }
 
@@ -318,30 +316,60 @@
         align-items: center;
     }
 
-    header .voltar:hover {
-        text-decoration: underline;
-        cursor: pointer;
+    header .tela-navegar {
+        display: none;
     }
 
     header .voltar {
         padding-left: 8px;
     }
 
-    header .tela-navegar {
-        display: none;
+    header .voltar:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
+
+    
 
     body .cupom {
         display: flex;
         justify-content: center;
     }
 
+    main .carrossel-cupons {
+        width: 100%;
+        aspect-ratio: 3 / 2;   /* formato paisagem widescreen */
+        overflow: hidden;
+        position: relative;
+    }
+
+    main .carrossel-cupons img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;       /* cobre todo o espaço sem distorcer */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    main .lanches-preco {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        padding-bottom: 30px;
+    }
+
+
     main .cupom-oferta {
+        grid-area: 1 / 1 / 2 / 3;
         display: flex;
         width: 100%;
         flex-direction: column;
         
     }
+
+    
 
     main .cupons {
         display: flex;
@@ -377,45 +405,23 @@
     
     }
 
-     #imagem-secundaria {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    main .refeicoes img {
+        width: 100%;
+        height: 70%;
+        border: 1px solid var(--cor-header);
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        
+        position: absolute;
+    }
 
-  /* cria camada transparente */
-  background-color: rgba(255, 255, 255, 0.0);
-
-  /* aplica blur no que está atrás */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
-}
-
-
-#imagem-secundaria img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  
-}
-
-main .refeicoes a {
+    main .refeicoes a {
         display: block;
         text-decoration: none;
         color: inherit;
     }
 
-    main .imagem-secundaria {
-        display: none;
-    }
-
+    
     main .refeicoes p {
         font-family: 'Bevan', serif;
         padding-left: 10px;
@@ -442,9 +448,7 @@ main .refeicoes a {
         width: 100%;
     }
 
-    main .cupom-oferta {
-        grid-area: 1 / 1 / 2 / 3;
-    }
+    
 
     main .preco-final p {
         display: flex;
@@ -466,40 +470,42 @@ main .refeicoes a {
         padding-bottom: 12px;
     }
 
-    main .refeicoes img {
-        width: 100%;
-        height: 70%;
-        border: 1px solid var(--cor-header);
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
-        
-        position: absolute;
+    
+
+    main .imagem-secundaria {
+        display: none;
     }
 
-    main .lanches-preco {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        place-items: center;
-        padding-bottom: 30px;
-    }
-
-    .carrossel-cupons {
-        width: 100%;
-        aspect-ratio: 3 / 2;   /* formato paisagem widescreen */
-        overflow: hidden;
-        position: relative;
-    }
-
-    .carrossel-cupons img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;       /* cobre todo o espaço sem distorcer */
-        position: absolute;
+    
+    main #imagem-secundaria {
+        display: none;
+        position: fixed;
         top: 0;
         left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* cria camada transparente */
+        background-color: rgba(255, 255, 255, 0.0);
+
+        /* aplica blur no que está atrás */
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
     }
 
+
+    main #imagem-secundaria img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        
+    }
+    
 
 }
 
@@ -529,23 +535,39 @@ main .refeicoes a {
         padding-left: 8px;
     }
 
-    header .tela-navegar {
-        display: none;
-    }
-
     body .cupom {
         display: flex;
         justify-content: center;
     }
 
+    header .tela-navegar {
+        display: none;
+    }
+
+    
+     main .carrossel-cupons {
+        width: 100%;
+        aspect-ratio: 3 / 2;   /* formato paisagem widescreen */
+        overflow: hidden;
+        position: relative;
+    }
+
+    main .carrossel-cupons img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;       /* cobre todo o espaço sem distorcer */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     
 
     main .lanches-preco {
-            display: grid;
-            grid-template: auto auto auto / 1fr 1fr 1fr;
-            place-items: center;
-            padding-bottom: 30px;
-        }
+        display: grid;
+        grid-template: auto auto auto / 1fr 1fr 1fr;
+        place-items: center;
+        padding-bottom: 30px;
+    }
 
     main .cupom-oferta {
         grid-area: 1 / 1 / 2 / 4;
@@ -586,44 +608,22 @@ main .refeicoes a {
             font-weight: 100;
         }
 
-        #imagem-secundaria {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+        
 
-  /* cria camada transparente */
-  background-color: rgba(255, 255, 255, 0.0);
+        main .refeicoes a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
 
-  /* aplica blur no que está atrás */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
-}
-
-
-#imagem-secundaria img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  
-}
-
-main .refeicoes a {
-        display: block;
-        text-decoration: none;
-        color: inherit;
-    }
-
-    main .imagem-secundaria {
-        display: none;
-    }
+        main .refeicoes img {
+            width: 100%;
+            height: 176px;
+            border: 1px solid var(--cor-header);
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+            background-color: var(--cor-header);
+        }
 
         main .refeicoes p {
             font-family: 'Bevan', serif;
@@ -639,14 +639,7 @@ main .refeicoes a {
             padding-right: 10px;
         }
 
-        main .refeicoes img {
-            width: 100%;
-            height: 176px;
-            border: 1px solid var(--cor-header);
-            border-radius: 20px 20px 0 0;
-            object-fit: cover;
-            background-color: var(--cor-header);
-        }
+        
 
         main .preco-final {
             display: flex;
@@ -677,26 +670,52 @@ main .refeicoes a {
             padding-bottom: 12px;
         }
 
-        
-    .carrossel-cupons {
-        width: 100%;
-        aspect-ratio: 3 / 2;   /* formato paisagem widescreen */
-        overflow: hidden;
-        position: relative;
-    }
+        main .imagem-secundaria {
+            display: none;
+        }
 
-    .carrossel-cupons img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;       /* cobre todo o espaço sem distorcer */
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+        main #imagem-secundaria {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* cria camada transparente */
+            background-color: rgba(255, 255, 255, 0.0);
+
+            /* aplica blur no que está atrás */
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
+        }
+
+
+        main #imagem-secundaria img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        
+        }
+   
 
 }
 
 @media (min-width: 1031px) {
+
+    header .tela-navegar a{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        color: var(--cor-botoes);
+        
+    }
 
      /* SEÇÃO HEADER */
     body .comeco {
@@ -714,22 +733,13 @@ main .refeicoes a {
         color: var(--cor-botoes);
     }
 
-     header .voltar:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
     header .voltar {
         padding-left: 8px;
     }
 
-    header .tela-navegar a{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        color: var(--cor-botoes);
-        
+     header .voltar:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     header .cupom {
@@ -738,146 +748,24 @@ main .refeicoes a {
 
     
 
-    
-    main .cupons {
-        display: flex;
-        flex-direction: flex-start;
-        padding: 30px 0px 30px 10px;
-        font-family: 'Merriweather', serif;
-        font-weight: bold;
-        font-size: 50px;
-        
+    main .carrossel-cupons {
+        width: 100%;
+        aspect-ratio: 21 / 9;   /* formato paisagem widescreen */
+        overflow: hidden;
+        position: relative;
+        padding-top: 10px;
     }
 
-    main .ofertas {
-        display: flex;
-        flex-direction: flex-start;
-        padding: 0px 0px 10px 10px;
-        font-family: 'Merriweather', serif;
-        font-size: 50px;
-        font-weight: bold;
-    }
-    
-
-    
-
-   
-
-    main .refeicoes {
-            width: 30vw;
-            height: 260px;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: left;
-            margin: 10px;
-            border: 1px solid var(--cor-header);
-            border-radius: 20px 20px 20px 20px;
-            font-weight: 100;
-        }
-
-        #imagem-secundaria {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* cria camada transparente */
-  background-color: rgba(255, 255, 255, 0.0);
-
-  /* aplica blur no que está atrás */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
-}
-
-
-#imagem-secundaria img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  
-}
-
-main .refeicoes a {
-        display: block;
-        text-decoration: none;
-        color: inherit;
+    main .carrossel-cupons img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;       /* cobre todo o espaço sem distorcer */
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
-    main .imagem-secundaria {
-        display: none;
-    }
-
-        main .refeicoes p {
-            font-family: 'Bevan', serif;
-            padding-left: 10px;
-        }
-
-        main .refeicoes .preco-oferta {
-            color: var(--cor-botoes);
-        }
-
-        main .preco-ofertaX {
-            color: var(--cor-botoes);
-            padding-right: 10px;
-        }
-
-        main .refeicoes img {
-            width: 100%;
-            height: 176px;
-            border: 1px solid var(--cor-header);
-            border-radius: 20px 20px 0 0;
-            object-fit: cover;
-            background-color: var(--cor-header);
-        }
-
-        main .preco-final {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: center;
-            align-content: center;
-            height: 88px;
-            padding-right: 10px;
-        }
-
-        main .preco-final p {
-            display: flex;
-            align-items: center;
-        }
-        
-        main .reais {
-            display: flex;
-            padding-top: 13px;
-        }
-
-        main .numero-maior {
-            font-size: 2.0rem;
-            font-weight: bold;
-        }
-
-        main .numero-menor {
-            padding-bottom: 12px;
-        }
-
-        main .cupom-oferta {
-            grid-area: 1 / 1 / 2 / 4;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: flex-start;
-            align-items: center;
-            padding-left: 10px;
-       }
-
-        
-        @media (max-width: 1365px) {
+     @media (max-width: 1365px) {
             main .lanches-preco {
                 display: grid;
                 grid-template: auto auto auto / 1fr 1fr 1fr;
@@ -917,22 +805,147 @@ main .refeicoes a {
         }
 
        
+     main .cupom-oferta {
+            grid-area: 1 / 1 / 2 / 4;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+       }
 
-    .carrossel-cupons {
-        width: 100%;
-        aspect-ratio: 21 / 9;   /* formato paisagem widescreen */
-        overflow: hidden;
-        position: relative;
-        padding-top: 10px;
+        main .cupons {
+            display: flex;
+            flex-direction: flex-start;
+            padding: 30px 0px 30px 10px;
+            font-family: 'Merriweather', serif;
+            font-weight: bold;
+            font-size: 50px;
+        
+        }
+
+    main .ofertas {
+        display: flex;
+        flex-direction: flex-start;
+        padding: 0px 0px 10px 10px;
+        font-family: 'Merriweather', serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+   
+
+    main .refeicoes {
+            width: 30vw;
+            height: 260px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: left;
+            margin: 10px;
+            border: 1px solid var(--cor-header);
+            border-radius: 20px 20px 20px 20px;
+            font-weight: 100;
+        }
+
+        
+
+main .refeicoes a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
     }
 
-    .carrossel-cupons img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;       /* cobre todo o espaço sem distorcer */
-        position: absolute;
-        top: 0;
-        left: 0;
+    main .imagem-secundaria {
+        display: none;
     }
+
+        main .refeicoes p {
+            font-family: 'Bevan', serif;
+            padding-left: 10px;
+        }
+
+        main .refeicoes .preco-oferta {
+            color: var(--cor-botoes);
+        }
+
+        main .preco-ofertaX {
+            color: var(--cor-botoes);
+            padding-right: 10px;
+        }
+
+        main .refeicoes img {
+            width: 100%;
+            height: 176px;
+            border: 1px solid var(--cor-header);
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+            background-color: var(--cor-header);
+        }
+
+        main .preco-final {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: 88px;
+            padding-right: 10px;
+        }
+
+        main .preco-final p {
+            display: flex;
+            align-items: center;
+        }
+        
+        main .reais {
+            display: flex;
+            padding-top: 13px;
+        }
+
+        main .numero-maior {
+            font-size: 2.0rem;
+            font-weight: bold;
+        }
+
+        main .numero-menor {
+            padding-bottom: 12px;
+        }
+
+        
+
+        
+       
+
+       #imagem-secundaria {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* cria camada transparente */
+            background-color: rgba(255, 255, 255, 0.0);
+
+            /* aplica blur no que está atrás */
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px); /* compatibilidade Safari */
+        }
+
+
+        #imagem-secundaria img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            
+        }
+
+    
 
 }
