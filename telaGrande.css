@@ -32,7 +32,6 @@
     main .lanches-opcoes {
         position: relative;
         width: 100%;
-        background-color: pink;
         overflow: hidden;
         aspect-ratio: 1 / 1;
     }
@@ -50,8 +49,7 @@
         object-fit: cover;
         aspect-ratio: 1 / 1;
         width: 100%;
-        
-        background-color: red;
+        background-color: var(--cor-poster);
     }
 
     main .cardapio-carrosel picture {
