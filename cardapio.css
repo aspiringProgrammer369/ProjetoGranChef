@@ -87,7 +87,7 @@ html {
 
     main .bloco-lanche {
         display: grid;
-        grid-template: auto / repeat(2, 1fr);
+        grid-template: auto / 1fr 1fr;
         justify-content: center;
         width: 100%;
         height: 300px;
@@ -96,21 +96,26 @@ html {
         
     }
 
-    main .refeicoes-cardapio1, main .refeicoes-cardapio2 {
-        width: 100%;
-        height: 100%;
-        border: 2px solid black;
-        overflow: hidden;
-        align-items: center;
-        align-content: center;
+    main .refeicao-cardapio1, main .refeicao-cardapio2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        
     }
 
-    main .refeicoes-cardapio1 {
+    main .refeicao-cardapio1 a, main .refeicao-cardapio2 a{
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        
+    }
+
+    main .refeicao-cardapio1 {
         grid-area: 1 / 1 / 2 / 2;
         
     }
 
-    main .refeicoes-cardapio2 {
+    main .refeicao-cardapio2 {
         grid-area: 1 / 2 / 2 / 3;
         
     }
@@ -121,18 +126,20 @@ html {
         display: grid;
         grid-template: 3fr 1fr / 1fr;
         background-color: lightblue;
+       
     }
 
-    main .img-lanches {
-        height: 80%;
+    main .foto-lanches {
+        height: 100%;
         width: 100%;
         object-fit: cover;
         overflow: hidden;
         grid-area: 1 / 1 / 2 / 2;
         border: 2px solid lightgreen;
+        border-radius: 10px;
     }
 
-    main .img-lanches img {
+    main .foto-lanches img {
         height: 100%;
         width: 100%;
         object-fit: cover;
