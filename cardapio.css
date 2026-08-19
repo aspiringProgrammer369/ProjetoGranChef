@@ -88,24 +88,23 @@ html {
     main .bloco-lanche {
         display: grid;
         grid-template: auto / 1fr 1fr;
-        justify-content: center;
         width: 100%;
         height: 300px;
-        align-items: center;
-        align-content: center;
         
     }
 
     main .refeicao-cardapio1, main .refeicao-cardapio2 {
         padding-left: 10px;
         padding-right: 10px;
-        
+        height: 300px;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 
     main .refeicao-cardapio1 a, main .refeicao-cardapio2 a{
         width: 100%;
         height: 100%;
-        border: 1px solid black;
+        border: 5px solid #F2E5D4;
         border-radius: 10px;
         
     }
@@ -125,7 +124,7 @@ html {
         width: 80%;
         display: grid;
         grid-template: 3fr 1fr / 1fr;
-        background-color: lightblue;
+        background-color: var(--cor-de-fundo);
        
     }
 
@@ -135,8 +134,9 @@ html {
         object-fit: cover;
         overflow: hidden;
         grid-area: 1 / 1 / 2 / 2;
-        border: 2px solid lightgreen;
-        border-radius: 10px;
+        border: 2px solid #F2E5D4;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     main .foto-lanches img {
@@ -146,23 +146,39 @@ html {
     }
 
     main .nome-do-produto {
-        border-radius: 2px solid black;
+        border-radius: 2px solid #F2E5D4;
         display: grid;
         grid-area: 2 / 1 / 3 / 2;
         height: 20px;
         width: 100%;
+        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        justify-content: center;
+        padding-bottom: 30px;
     }
 
     
-
-    main .lanches-nomes {
-        font-family: 'Merirweather' ,Verdana, Geneva, Tahoma, sans-serif;
-        
+    
+    main .lanches-nomes , main #cardapio {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        padding-left: 5px;
     }
 
     #clique1, #clique2, #clique3, #clique4, #clique5, #clique6 {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main #tabela {
+        background-color: #F4EBDA;
+        width: 100%;
+        height: 10%;
     }
     
      footer {
