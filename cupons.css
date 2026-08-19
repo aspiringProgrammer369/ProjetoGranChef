@@ -782,6 +782,8 @@
                 place-items: center;
                 padding-bottom: 30px;
                 grid-auto-flow: row;
+                
+                
             }
 
             main .cupom-oferta {
@@ -795,11 +797,12 @@
                 height: 260px;
                 display: flex;
                 flex-flow: column nowrap;
-                align-items: left;
+                align-items: right;
                 margin: 10px;
                 border: 1px solid var(--cor-header);
                 border-radius: 20px 20px 20px 20px;
                 font-weight: 100;
+                
             }
 
             
@@ -840,7 +843,7 @@
    
 
     main .refeicoes {
-            width: 22vw;
+            width: 230px;
             height: 300px;
             display: flex;
             flex-flow: column nowrap;
@@ -849,7 +852,8 @@
             border: 1px solid var(--cor-header);
             border-radius: 20px 20px 20px 20px;
             font-weight: 100;
-        }
+            
+    }
 
         
 
@@ -973,7 +977,7 @@ main .refeicoes a {
    }
 
    footer .navegacao-principal a {
-        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
         list-style: none;
    }
 
