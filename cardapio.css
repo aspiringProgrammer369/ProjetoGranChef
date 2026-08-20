@@ -262,7 +262,9 @@ html {
         
     }
 
-    
+    main .fa-file-lines {
+        display: none;
+    }
 
     main .conteudo-superior {
         grid-area: 1 / 1 / 2 / 2;
@@ -649,7 +651,9 @@ html {
         
     }
 
-    
+    main .fa-file-lines {
+        display: none;
+    }
 
     main .conteudo-superior {
         grid-area: 1 / 1 / 2 / 2;
@@ -1029,23 +1033,28 @@ html {
     main #tabela {
         background-color: #F4EBDA;
         display: grid;
-        grid-template: 1fr / 2fr;
-        height: auto;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
         width: 100%;
-        justify-content: center;
+        gap: 10px;
+    }
+
+    
+
+    main #tabela .material-symbols-outlined {
+        display: none;
         
     }
 
-    main .material-symbols-outlined {
-        grid-area: 1 / 1 / 2 / 2;
+    main .fa-file-lines {
+        grid-column: 1;
     }
 
     main .tabela-geral, main .botao-tabela {
-        grid-area: 1 / 2 / 2 / 3;
+        grid-column: 2;
     }
 
     main .conteudo-superior {
-        
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
