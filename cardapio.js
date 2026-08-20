@@ -5,10 +5,9 @@ function iniciarCarrossel(seletor) {
   let emTransicao = false;
   const duracao = 500;
 
-  // ---------- Bolinhas ----------
+  // Bolinhas
   const dotsContainer = document.createElement('div');
   dotsContainer.classList.add('dots');
-
   slides.forEach((_, i) => {
     const dot = document.createElement('span');
     dot.classList.add('dot');
@@ -19,7 +18,7 @@ function iniciarCarrossel(seletor) {
   container.appendChild(dotsContainer);
   const dots = dotsContainer.querySelectorAll('.dot');
 
-  // ---------- Setas ----------
+  // Setas
   const setaEsquerda = document.createElement('button');
   setaEsquerda.classList.add('seta', 'seta-esquerda');
   setaEsquerda.innerHTML = '&#10094;';
@@ -37,7 +36,7 @@ function iniciarCarrossel(seletor) {
   container.appendChild(setaEsquerda);
   container.appendChild(setaDireita);
 
-  // ---------- Transição ----------
+  // Transição
   function exibirSlide(novoIndice, direcao) {
     if (emTransicao || novoIndice === indiceAtual) return;
     emTransicao = true;
@@ -81,7 +80,7 @@ function iniciarCarrossel(seletor) {
     exibirSlide(indice, direcao);
   }
 
-  // ---------- Inicialização ----------
+  // Inicialização
   slides.forEach(slide => {
     slide.style.position = 'absolute';
     slide.style.top = '0';
@@ -89,31 +88,7 @@ function iniciarCarrossel(seletor) {
     slide.style.width = '100%';
   });
   slides[0].style.left = '0';
-
-  // ---------- Teclas ----------
-  document.addEventListener('keydown', (e) => {
-    if (emTransicao) return;
-    if (e.key === 'ArrowRight') proximoSlide();
-    if (e.key === 'ArrowLeft') anteriorSlide();
-  });
-
-  // ---------- Swipe ----------
-  let touchStartX = 0;
-  container.addEventListener('touchstart', (e) => {
-    touchStartX = e.touches[0].clientX;
-  }, { passive: true });
-
-  container.addEventListener('touchend', (e) => {
-    if (emTransicao) return;
-    const diffX = e.changedTouches[0].clientX - touchStartX;
-    if (Math.abs(diffX) > 50) {
-      if (diffX > 0) anteriorSlide();
-      else proximoSlide();
-    }
-  });
-
-  return { proximoSlide, anteriorSlide, irPara };
 }
 
-// Inicia o carrossel
+// Inicia o carrossel do cardápio
 iniciarCarrossel('.cardapio-carrosel');
