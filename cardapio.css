@@ -222,7 +222,7 @@ html {
         grid-area: 2 / 1 / 3 / 2;
         height: 100%;
         width: 100%;
-        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         justify-content: center;
         align-content: center;
         background-color: #FFFFFF;
@@ -287,7 +287,7 @@ html {
     main .tabela-geral {
         text-align: center;
         font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2.6rem;
+        font-size: 2.8rem;
         width: 100%;
         height: auto;
     }
@@ -673,13 +673,16 @@ html {
         padding-top: 15px;
     }
 
-    main .tabela-geral {
+    #tabela .tabela-geral {
         text-align: center;
         font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2.6rem;
+        font-size: 3.3rem;
+        font-weight: bold;
         width: 100%;
         height: auto;
     }
+
+    
 
     
 
@@ -1030,6 +1033,7 @@ html {
         font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    
     main #tabela {
         background-color: #F4EBDA;
         display: grid;
@@ -1037,6 +1041,7 @@ html {
         align-items: center;
         width: 100%;
         gap: 10px;
+        height: 50vh;
     }
 
     
@@ -1048,6 +1053,12 @@ html {
 
     main .fa-file-lines {
         grid-column: 1;
+        font-size: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 80px;
     }
 
     main .tabela-geral, main .botao-tabela {
@@ -1074,7 +1085,7 @@ html {
     main .tabela-geral {
         text-align: center;
         font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2.6rem;
+        font-size: 4rem;
         width: 100%;
         height: auto;
     }
@@ -1431,52 +1442,32 @@ html {
     main #tabela {
         background-color: #F4EBDA;
         display: grid;
-        grid-template: 3fr 1fr / 1fr;
-        height: auto;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
         width: 100%;
-        justify-content: center;
+        gap: 10px;
+        height: 50vh;
+    }
+
+    
+
+    main #tabela .material-symbols-outlined {
+        display: none;
         
     }
 
-    
-
-    main .conteudo-superior {
-        grid-area: 1 / 1 / 2 / 2;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
-
-    main .material-symbols-outlined {
+    main .fa-file-lines {
+        grid-column: 1;
+        font-size: 20rem;
         display: flex;
         justify-content: center;
-        font-size: 8rem;
-        width: 100%;
-        height: auto;
-        padding-top: 15px;
-    }
-
-    main .tabela-geral {
-        text-align: center;
-        font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2.6rem;
-        width: 100%;
-        height: auto;
-    }
-
-    
-
-    main .botao-tabela {
-        grid-area: 2 / 1 / 3 / 2;
-        display: flex;
-        justify-content: center;
-        align-content: center;
         align-items: center;
-        width: 100%;
-        color: var(--cor-de-fundo);
-        background-color: var(--cor-neutra);
+        align-content: center;
+        padding-top: 80px;
+    }
+
+    main .tabela-geral, main .botao-tabela {
+        grid-column: 2;
     }
 
     
