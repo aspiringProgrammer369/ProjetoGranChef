@@ -256,7 +256,7 @@ html {
         background-color: #F4EBDA;
         display: grid;
         grid-template: 3fr 1fr / 1fr;
-        height: auto;
+        height: 400px;
         width: 100%;
         justify-content: center;
         
@@ -500,6 +500,10 @@ html {
         padding-left: 8px;
     }
 
+    header .cupom {
+        color: black;
+    }
+
     main .lanches-opcoes {
         position: relative;
         width: 100%;
@@ -645,7 +649,7 @@ html {
         background-color: #F4EBDA;
         display: grid;
         grid-template: 3fr 1fr / 1fr;
-        height: 50%;
+        height: 400px;
         width: 100%;
         justify-content: center;
         
@@ -864,7 +868,16 @@ html {
 
 @media (min-width: 766px) and (max-width: 1030px) {
 
-      /* SEÇÃO HEADER */
+   header .tela-navegar a{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        color: var(--cor-botoes);
+        
+    }
+
+     /* SEÇÃO HEADER */
     body .comeco {
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
@@ -877,20 +890,22 @@ html {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-    }
-
-    header .tela-navegar {
-        display: none;
-    }
-
-    header .voltar:hover {
-        text-decoration: underline;
-        cursor: pointer;
+        color: var(--cor-botoes);
     }
 
     header .voltar {
         padding-left: 8px;
     }
+
+     header .voltar:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    header .cupom {
+        color: black;
+    }
+
 
     main .lanches-opcoes {
         position: relative;
@@ -938,9 +953,11 @@ html {
     main .bloco-lanche {
         display: grid;
         grid-template: auto / 1fr 1fr;
-        width: 100%;
+        width: 95%;
         height: 300px;
-        
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
     }
 
     main .refeicao-cardapio1, main .refeicao-cardapio2 {
@@ -949,10 +966,12 @@ html {
         height: 300px;
         padding-top: 10px;
         padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     main .refeicao-cardapio1 a, main .refeicao-cardapio2 a{
-        width: 100%;
+        width: 97%;
         height: 100%;
         border: 5px solid #F2E5D4;
         border-radius: 10px;
@@ -1041,7 +1060,7 @@ html {
         align-items: center;
         width: 100%;
         gap: 10px;
-        height: 50vh;
+        height: 500px;
     }
 
     
@@ -1286,7 +1305,7 @@ html {
     }
 
     header .tela-navegar {
-        display: none;
+        color: black;
     }
 
     header .voltar:hover {
@@ -1344,14 +1363,14 @@ html {
     main .bloco-lanche {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: center;
         width: 100%;
         height: 300px;
-        
+        gap: 70px;
     }
 
     main .refeicao-cardapio1, main .refeicao-cardapio2 {
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 450px;
         height: 300px;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -1427,7 +1446,7 @@ html {
         padding-bottom: 40px;
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         font-size: 1.5rem;
         padding-left: 5px;
     }
@@ -1439,14 +1458,14 @@ html {
         font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    main #tabela {
+     main #tabela {
         background-color: #F4EBDA;
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: center;
         width: 100%;
-        gap: 10px;
-        height: 50vh;
+       
+        height: 460px;
     }
 
     
@@ -1470,6 +1489,44 @@ html {
         grid-column: 2;
     }
 
+    main .conteudo-superior {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    main .material-symbols-outlined {
+        display: flex;
+        justify-content: center;
+        font-size: 8rem;
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+    }
+
+    main .tabela-geral {
+        text-align: center;
+        font-family: 'Bevan' ,Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 5.7rem;
+        width: 100%;
+        height: auto;
+    }
+
+    
+
+    main .botao-tabela {
+       
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        color: var(--cor-de-fundo);
+        background-color: var(--cor-neutra);
+    }
+
     
     main .ver-tabela {
         background-color: var(--cor-botoes);
@@ -1481,6 +1538,7 @@ html {
         font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1rem;
     }
+    
     
     
      footer {
