@@ -228,7 +228,7 @@ html {
         background-color: #FFFFFF;
     }
 
-    main .nome-produto {
+    main .nome-do-lanche {
         width: 100%;
         height: 100%;
         background-color: #FFFFFF;
@@ -617,7 +617,7 @@ html {
         background-color: #FFFFFF;
     }
 
-    main .nome-produto {
+    main .nome-do-lanche {
         width: 100%;
         height: 100%;
         background-color: #FFFFFF;
@@ -645,7 +645,7 @@ html {
         background-color: #F4EBDA;
         display: grid;
         grid-template: 3fr 1fr / 1fr;
-        height: auto;
+        height: 50%;
         width: 100%;
         justify-content: center;
         
@@ -1009,7 +1009,7 @@ html {
         background-color: #FFFFFF;
     }
 
-    main .nome-produto {
+    main .nome-do-lanche {
         width: 100%;
         height: 100%;
         background-color: #FFFFFF;
@@ -1415,7 +1415,7 @@ html {
         background-color: #FFFFFF;
     }
 
-    main .nome-produto {
+    main .nome-do-lanche {
         width: 100%;
         height: 100%;
         background-color: #FFFFFF;

@@ -259,7 +259,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 align-content: center;
-                height: auto;   
+                height: 100%;   
                 margin-left: 10px;
             }
 
@@ -726,7 +726,7 @@
                 align-items: center;
                 align-content: center;
                 background-color: var(--cor-header);
-                height: 50vh;
+                height: 440px;
                 overflow-x: hidden;
     }
 
@@ -1081,7 +1081,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: var(--cor-header);
-        height: 70vh;
+        height: 600px;
         overflow-x: hidden;
     }
 
@@ -1096,7 +1096,7 @@
                 justify-content: center;
                 align-items: center;
                 align-content: center;
-                height: 40vh;   
+                height: 350px;   
                 transform: scale(1.5);
                 margin-left: 70px;
     }
@@ -1108,7 +1108,7 @@
                 align-items: center;
                 text-align: left;
                 padding-bottom: 50px;
-                height: 50vh;
+                height: 400px;
                 margin-left: 50px;
     }
 
