@@ -199,16 +199,20 @@ html {
 
     
 
-    main .foto-lanches img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    main .foto-lanches img {  
+        max-width: 220px;
+        max-height: 220px;
+        object-fit: contain;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     main .foto-lanches {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        position: relative;
         overflow: hidden;
         grid-area: 1 / 1 / 2 / 2;
         border: 2px solid #F2E5D4;
@@ -592,16 +596,21 @@ html {
 
     
 
-    main .foto-lanches img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    main .foto-lanches img {  
+        max-width: 220px;
+        max-height: 220px;
+        object-fit: contain;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     main .foto-lanches {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        position: relative;
         overflow: hidden;
         grid-area: 1 / 1 / 2 / 2;
         border: 2px solid #F2E5D4;
@@ -999,16 +1008,21 @@ html {
 
     
 
-    main .foto-lanches img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    main .foto-lanches img {  
+        max-width: 220px;
+        max-height: 220px;
+        object-fit: contain;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     main .foto-lanches {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        position: relative;
         overflow: hidden;
         grid-area: 1 / 1 / 2 / 2;
         border: 2px solid #F2E5D4;
@@ -1405,16 +1419,21 @@ html {
 
     
 
-    main .foto-lanches img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    main .foto-lanches img {  
+        max-width: 220px;
+        max-height: 220px;
+        object-fit: contain;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     main .foto-lanches {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        position: relative;
         overflow: hidden;
         grid-area: 1 / 1 / 2 / 2;
         border: 2px solid #F2E5D4;
