@@ -11,61 +11,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 
+@media (max-width: 560px) {
 
-body .comeco {
-    padding-bottom: 10px;
-}
+    body .comeco {
+        padding-bottom: 10px;
+    }
 
-main .infoAppGC {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
+    main .infoAppGC {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
 
-main .infoAppGC img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    main .infoAppGC img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-main .vantagens-do-app {
-    background-color: var(--cor-imagens);
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    main .vantagens-do-app {
+        background-color: var(--cor-imagens);
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+    }
+
+    main .vantagens-do-app h1 {
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.3rem;
+    }
+
+    main .vantagens-do-app h2 {
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+    }
+
+    main .vantagens-do-app p {
+        font-size: 1.5rem;
+        font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .vantagens-do-app .material-symbols-outlined {
+        color: white;
+        font-size: 5rem;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+
+
+    main .vantagens-do-app span {
+        font-weight: bold;
+    }
+
+    main .fa-solid {
+        font-size: 5rem;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+
     
+    main .como-funciona-app h1 {
+       text-align: center; 
+       padding-top: 100px;
+    }
+
+     main .bloco-promocao {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: 100%;
+       
+        align-items: center;
+    }
+
+    main .bloco-promocao picture {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        display: flex;
+        background-color: navajowhite;
+        border-radius: 50%;
+        
+    }
+
+    main .bloco-promocao img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    main .texto-informativo {
+        
+        text-align: center;
+    }
+
 }
 
-main .vantagens-do-app h1 {
-    font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.3rem;
+@media (min-width: 561px) and (max-width: 765px) {
+
 }
 
-main .vantagens-do-app h2 {
-     font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 2rem;
+@media (min-width: 766px) and (max-width: 1030px) {
+
 }
 
-main .vantagens-do-app p {
-    font-size: 1.5rem;
-    font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
-}
+@media (min-width: 1031px) {
 
-main .vantagens-do-app .material-symbols-outlined {
-    color: white;
-    font-size: 5rem;
-    padding-top: 40px;
-    padding-bottom: 5px;
-}
-
-
-main .vantagens-do-app span {
-    font-weight: bold;
-}
-
-main .fa-solid {
-    font-size: 5rem;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 5px;
 }
