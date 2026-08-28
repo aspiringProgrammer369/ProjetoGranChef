@@ -96,10 +96,18 @@
         
     }
 
-    main .bloco-promocao img {
+    main .bloco-promocao .imagem-circular1 {
         width: 100%;
         height: auto;
         border-radius: 50%;
+    }
+
+
+    main .bloco-promocao .imagem-circular2 {
+        width: 350px;
+        height: auto;
+        border-radius: 50%;
+        
     }
 
     main .texto-informativo {
