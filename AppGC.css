@@ -71,10 +71,29 @@
         padding-bottom: 5px;
     }
 
+    main .como-funciona-app {
+        padding-bottom: 60px;
+        background-color: var(--cor-de-fundo);
+    }
+
     
     main .como-funciona-app h1 {
        text-align: center; 
        padding-top: 100px;
+       font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 2.5rem;
+    }
+
+    main .como-funciona-app h2 {
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.9rem;
+    }
+
+    main .como-funciona-app .texto-explicativo {
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.1rem;
+        padding: 0px 20px;
+        font-weight: bold;
     }
 
      main .bloco-promocao {
@@ -82,8 +101,8 @@
         flex-flow: column nowrap;
         width: 100%;
         height: 100%;
-       
         align-items: center;
+        padding-bottom: 50px;
     }
 
     main .bloco-promocao picture {
@@ -91,28 +110,41 @@
         height: 50%;
         object-fit: cover;
         display: flex;
-        
         border-radius: 50%;
-        
+        padding-top: 40px;
     }
 
-    main .bloco-promocao .imagem-circular1 {
+    main .bloco-promocao img {
         width: 100%;
         height: auto;
         border-radius: 50%;
+        background-color: navajowhite;
     }
 
 
-    main .bloco-promocao .imagem-circular2 {
-        width: 350px;
-        height: auto;
-        border-radius: 50%;
-        
+    main .fa-down-long {
+        color: var(--cor-header);
     }
 
     main .texto-informativo {
         
         text-align: center;
+    }
+
+    main .botao-do-aplicativo {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        color: var(--cor-de-fundo);
+        align-items: center;
+        width: 100%;
+    }
+
+    main .para-baixar {
+        background-color: var(--cor-botoes);
+        padding: 20px 50px 20px 50px;
+        border-radius: 10px;
+        font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
     }
 
 }
