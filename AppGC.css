@@ -222,7 +222,97 @@
         text-align: center;
         padding-top: 60px;
         font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 80px;
     }
+
+    main .faca-um-pix > p:first-of-type {
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    main .formas-de-pagamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    
+
+    main .formas-de-pagamento img {
+        height: auto;
+        width: 100px;
+    }
+
+    main .perguntas-frequentes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    main .perguntas-frequentes h1 {
+        padding-bottom: 40px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .perguntas-frequentes a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        height: 60px;
+        background-color: var(--cor-de-fundo);
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+
+    main .perguntas-frequentes a p:first-of-type {
+        
+    }
+
+    main .perguntas-frequentes a p:nth-of-type(2) {
+        display: none;
+    }
+
+    main .fa-circle-plus {
+        transform: translateY(-25%);
+        color: black;
+        font-size: 1.9rem;
+        display: flex;
+        align-content: center;
+    }
+
+    main .fa-circle-minus {
+        color: black;
+        font-size: 1.9rem;
+        display: none;
+    }
+    
+    main .bateu-preguica {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .bateu-preguica > span {
+        display: none;
+    }
+
+
 
     /*
 
