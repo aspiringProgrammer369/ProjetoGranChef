@@ -214,6 +214,16 @@
         height: auto;
     }
 
+    main .celular_pix {
+        display: none;
+    }
+
+    main .faca-um-pix {
+        text-align: center;
+        padding-top: 60px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
     /*
 
 }
