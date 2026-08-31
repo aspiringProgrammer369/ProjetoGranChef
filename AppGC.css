@@ -60,9 +60,7 @@
     }
 
 
-    main .vantagens-do-app span {
-        font-weight: bold;
-    }
+    
 
     main .fa-solid {
         font-size: 5rem;
@@ -89,11 +87,11 @@
         font-size: 1.9rem;
     }
 
-    main .como-funciona-app .texto-explicativo {
+    main .como-funciona-app p {
         font-family:  Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.1rem;
         padding: 0px 20px;
-        font-weight: bold;
+        
     }
 
      main .bloco-promocao {
@@ -142,7 +140,7 @@
 
     main .para-baixar {
         background-color: var(--cor-botoes);
-        padding: 20px 50px 20px 50px;
+        
         border-radius: 10px;
         font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -304,13 +302,17 @@
     main .bateu-preguica {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        padding: 30px 30px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
     }
+
+    
 
     main .bateu-preguica > span {
         display: none;
     }
+
 
 
 
