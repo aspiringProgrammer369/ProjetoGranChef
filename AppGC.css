@@ -11,8 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 
-/*@media (max-width: 560px) {*/
-
+@media (max-width: 765px) {
     body .comeco {
         padding-bottom: 10px;
     }
@@ -30,6 +29,8 @@
     }
 
     main .vantagens-do-app {
+        display: grid;
+        grid-template: 2fr / 2fr;
         background-color: var(--cor-imagens);
         text-align: center;
         padding-top: 60px;
@@ -125,7 +126,6 @@
     }
 
     main .texto-informativo {
-        
         text-align: center;
     }
 
@@ -139,8 +139,12 @@
     }
 
     main .para-baixar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: var(--cor-botoes);
-        
+        width: 50%;
+        height: 50px;
         border-radius: 10px;
         font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -303,7 +307,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 30px 30px;
+        padding: 50px 30px;
         font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
     }
 
@@ -312,20 +316,315 @@
     main .bateu-preguica > span {
         display: none;
     }
-
-
-
-
-    /*
+    
 
 }
 
-
-@media (min-width: 561px) and (max-width: 765px) {
-
-}
 
 @media (min-width: 766px) and (max-width: 1030px) {
+
+      body .comeco {
+        padding-bottom: 10px;
+    }
+
+    main .infoAppGC {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    main .infoAppGC img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .vantagens-do-app {
+        background-color: var(--cor-imagens);
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+    }
+
+    main .vantagens-do-app h1 {
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.3rem;
+    }
+
+    main .vantagens-do-app h2 {
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+    }
+
+    main .vantagens-do-app p {
+        font-size: 1.5rem;
+        font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .vantagens-do-app .material-symbols-outlined {
+        color: white;
+        font-size: 5rem;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+
+
+    
+
+    main .fa-solid {
+        font-size: 5rem;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+
+    main .como-funciona-app {
+        padding-bottom: 60px;
+        background-color: var(--cor-de-fundo);
+    }
+
+    
+    main .como-funciona-app h1 {
+       text-align: center; 
+       padding-top: 100px;
+       font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 2.5rem;
+    }
+
+    main .como-funciona-app h2 {
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.9rem;
+    }
+
+    main .como-funciona-app p {
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.1rem;
+        padding: 0px 20px;
+        
+    }
+
+     main .bloco-promocao {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    main .bloco-promocao picture {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        display: flex;
+        border-radius: 50%;
+        padding-top: 40px;
+    }
+
+    main .bloco-promocao img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        background-color: navajowhite;
+    }
+
+
+    main .fa-down-long {
+        color: var(--cor-header);
+    }
+
+    main .texto-informativo {
+        text-align: center;
+    }
+
+    main .botao-do-aplicativo {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        color: var(--cor-de-fundo);
+        align-items: center;
+        width: 100%;
+    }
+
+    main .para-baixar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-botoes);
+        width: 50%;
+        height: 50px;
+        border-radius: 10px;
+        font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .so-no-app-gc {
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 530px;
+    }
+
+    main .so-no-app-gc h1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    main .so-no-app-gc .os-melhores {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding-bottom: 40px;
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+         
+    }
+
+    main .opcoes-de-lanche {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 20px;
+        height: auto;
+        width: 5100px;
+        height: 250px;
+    }
+
+    main .opcoes-de-lanche a {
+        margin-left: 10px;
+        height: 100%;
+        width: 250px;
+        border: 1px solid pink;
+        border-radius: 10px;
+    }
+
+    main .opcoes-de-lanche picture {
+        height: 65%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: pink;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+    
+
+    main .opcoes-de-lanche div {
+        height: 35%;
+        width: 100%;
+        display: grid;
+        grid-template: 1fr / 60% 40%;
+        place-items: center;
+        padding-left: 10px;
+    }
+
+    main .opcoes-de-lanche img {
+        width: 160px;
+        height: auto;
+    }
+
+    main .celular_pix {
+        display: none;
+    }
+
+    main .faca-um-pix {
+        text-align: center;
+        padding-top: 60px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 80px;
+    }
+
+    main .faca-um-pix > p:first-of-type {
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    main .formas-de-pagamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    
+
+    main .formas-de-pagamento img {
+        height: auto;
+        width: 100px;
+    }
+
+    main .perguntas-frequentes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    main .perguntas-frequentes h1 {
+        padding-bottom: 40px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .perguntas-frequentes a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        height: 60px;
+        background-color: var(--cor-de-fundo);
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+
+    main .perguntas-frequentes a p:first-of-type {
+        
+    }
+
+    main .perguntas-frequentes a p:nth-of-type(2) {
+        display: none;
+    }
+
+    main .fa-circle-plus {
+        transform: translateY(-25%);
+        color: black;
+        font-size: 1.9rem;
+        display: flex;
+        align-content: center;
+    }
+
+    main .fa-circle-minus {
+        color: black;
+        font-size: 1.9rem;
+        display: none;
+    }
+    
+    main .bateu-preguica {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 30px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    
+
+    main .bateu-preguica > span {
+        display: none;
+    }
 
 }
 
