@@ -104,8 +104,8 @@
     }
 
     main .como-funciona-app div picture {
-        width: 50%;
-        height: 50%;
+        width: 200px;
+        height: auto;
         object-fit: cover;
         display: flex;
         border-radius: 50%;
@@ -145,7 +145,7 @@
         align-items: center;
         justify-content: center;
         background-color: var(--cor-botoes);
-        width: 50%;
+        width: 280px;
         height: 50px;
         border-radius: 10px;
         font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
@@ -323,7 +323,7 @@
 }
 
 
-@media (min-width: 766px) and (max-width: 1030px) {
+@media (min-width: 766px) and (max-width: 1350px) {
 
       body .comeco {
         padding-bottom: 10px;
@@ -424,7 +424,7 @@
 
     
     main .como-funciona-app h1 {
-       grid-area: 1 / 1 / 2 / 3;
+       grid-area: 1 / 1 / 2 / 4;
        text-align: center; 
        padding-top: 100px;
        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
@@ -444,16 +444,19 @@
     }
 
     main .como-funciona-app picture {
-        width: 25%;
+        width: 100%;
         height: 25%;
         object-fit: cover;
         display: flex;
+        justify-content: center;
         border-radius: 50%;
         padding-top: 40px;
     }
 
     main .como-funciona-app img {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        width: 200px;
         height: auto;
         border-radius: 50%;
         background-color: navajowhite;
@@ -485,7 +488,7 @@
 
     main #primeira-seta {
         grid-area: 2 / 2 / 3 / 3;
-        transform: rotate(270deg);
+        transform: rotate(-90deg);
     }
 
     main #segunda-seta {
@@ -494,7 +497,7 @@
 
     main #terceira-seta {
         grid-area: 3 / 2 / 4 / 3;
-        transform: rotate(270deg);
+        transform: rotate(-90deg);
     }
 
     main .fa-down-long {
@@ -510,7 +513,7 @@
     }
 
     main .botao-do-aplicativo {
-        grid-area: 4 / 1 / 5 / 3;
+        grid-area: 4 / 1 / 5 / 4;
         display: flex;
         justify-content: center;
         height: 100px;
@@ -519,15 +522,17 @@
         width: 100%;
     }
 
-    main .para-baixar {
+    main .botao-do-aplicativo .para-baixar {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: var(--cor-botoes);
-        width: 50%;
+
+        width: 280px;
         height: 50px;
         border-radius: 10px;
-        font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
     }
 
     main .so-no-app-gc {
@@ -700,6 +705,6 @@
 
 }
 
-@media (min-width: 1031px) {
+@media (min-width: 1351px) {
 
 }
