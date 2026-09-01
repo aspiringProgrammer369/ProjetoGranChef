@@ -29,13 +29,12 @@
     }
 
     main .vantagens-do-app {
-        display: grid;
-        grid-template: 2fr / 2fr;
         background-color: var(--cor-imagens);
         text-align: center;
         padding-top: 60px;
         padding-bottom: 60px;
-        
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     main .vantagens-do-app h1 {
@@ -45,7 +44,7 @@
 
     main .vantagens-do-app h2 {
         font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     main .vantagens-do-app p {
@@ -95,7 +94,7 @@
         
     }
 
-     main .bloco-promocao {
+     main .como-funciona-app div {
         display: flex;
         flex-flow: column nowrap;
         width: 100%;
@@ -104,7 +103,7 @@
         padding-bottom: 50px;
     }
 
-    main .bloco-promocao picture {
+    main .como-funciona-app div picture {
         width: 50%;
         height: 50%;
         object-fit: cover;
@@ -113,16 +112,19 @@
         padding-top: 40px;
     }
 
-    main .bloco-promocao img {
+    main .como-funciona-app div img {
         width: 100%;
         height: auto;
         border-radius: 50%;
         background-color: navajowhite;
     }
 
+   
 
     main .fa-down-long {
         color: var(--cor-header);
+        display: flex;
+        justify-content: center;
     }
 
     main .texto-informativo {
@@ -340,27 +342,56 @@
     }
 
     main .vantagens-do-app {
+        display: grid;
+        grid-template: 1fr 2fr 2fr / 1fr 1fr;
         background-color: var(--cor-imagens);
         text-align: center;
         padding-top: 60px;
         padding-bottom: 60px;
+        width: 100%;
         
     }
 
+    main .vantagens-do-app div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     main .vantagens-do-app h1 {
+        grid-area: 1 / 1 / 2 / 3;
         font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
         font-size: 2.3rem;
-    }
+        place-items: center;
+        
+    } 
 
     main .vantagens-do-app h2 {
         font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     main .vantagens-do-app p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
     }
+
+    main .cupons_exclusivos {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    main .pratico_segura {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    main .retire_sem_filas {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    main .clube_gc {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    
 
     main .vantagens-do-app .material-symbols-outlined {
         color: white;
@@ -380,12 +411,20 @@
     }
 
     main .como-funciona-app {
+        display: grid;
+        grid-template: 1fr 2fr 2fr 1fr / 2fr 1fr 2fr;
+        place-items: center;
         padding-bottom: 60px;
         background-color: var(--cor-de-fundo);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding-bottom: 50px;
     }
 
     
     main .como-funciona-app h1 {
+       grid-area: 1 / 1 / 2 / 3;
        text-align: center; 
        padding-top: 100px;
        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
@@ -394,51 +433,84 @@
 
     main .como-funciona-app h2 {
         font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     main .como-funciona-app p {
         font-family:  Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.1rem;
-        padding: 0px 20px;
+        font-size: 0.9rem;
+        
         
     }
 
-     main .bloco-promocao {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        padding-bottom: 50px;
-    }
-
-    main .bloco-promocao picture {
-        width: 50%;
-        height: 50%;
+    main .como-funciona-app picture {
+        width: 25%;
+        height: 25%;
         object-fit: cover;
         display: flex;
         border-radius: 50%;
         padding-top: 40px;
     }
 
-    main .bloco-promocao img {
+    main .como-funciona-app img {
         width: 100%;
         height: auto;
         border-radius: 50%;
         background-color: navajowhite;
     }
 
+    main .va-para-o-app {
+        grid-area: 2 / 1 / 3 / 2;
+       width: 300px;
+       height: auto;
+    }
+
+    main .escolha-seu-favorito {
+        grid-area: 2 / 3 / 3 / 4;
+        width: 300px;
+        height: auto;
+    }
+
+    main .pague-pelo-app {
+        grid-area: 3 / 1 / 4 / 2;
+        width: 300px;
+        height: auto;
+    }
+
+    main .retire-no-gc {
+        grid-area: 3 / 3 / 4 / 4;
+        width: 300px;
+        height: auto;
+    }
+
+    main #primeira-seta {
+        grid-area: 2 / 2 / 3 / 3;
+        transform: rotate(270deg);
+    }
+
+    main #segunda-seta {
+        display: none;
+    }
+
+    main #terceira-seta {
+        grid-area: 3 / 2 / 4 / 3;
+        transform: rotate(270deg);
+    }
 
     main .fa-down-long {
         color: var(--cor-header);
+        font-size: 4rem;
     }
+
+
+    
 
     main .texto-informativo {
         text-align: center;
     }
 
     main .botao-do-aplicativo {
+        grid-area: 4 / 1 / 5 / 3;
         display: flex;
         justify-content: center;
         height: 100px;
