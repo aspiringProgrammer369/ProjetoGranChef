@@ -690,21 +690,416 @@
     }
     
     main .bateu-preguica {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        display: grid;
+        grid-template: 1fr / 1fr 3fr;
+        text-align: left;
         padding: 50px 30px;
+        
+    }
+
+    main .bateu-preguica h1 {
+        font-size: 3.0rem;
         font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    
+    main .bateu-preguica p {
+        font-size: 1.3rem;
+    }
 
-    main .bateu-preguica > span {
-        display: none;
+    main .bateu-preguica span {
+        font-size: 15rem;
     }
 
 }
 
 @media (min-width: 1351px) {
+
+    body .comeco {
+        padding-bottom: 10px;
+    }
+
+    main .infoAppGC {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    main .infoAppGC img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .vantagens-do-app {
+        display: grid;
+        grid-template: 1fr 2fr / 1fr 4fr 4fr 4fr 4fr 1fr;
+        background-color: var(--cor-imagens);
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+        
+    }
+
+    main .vantagens-do-app div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main .vantagens-do-app h1 {
+        grid-area: 1 / 1 / 2 / -1;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.3rem;
+        place-items: center;
+        
+    } 
+
+    main .vantagens-do-app h2 {
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.9rem;
+    }
+
+    main .vantagens-do-app p {
+        font-size: 1rem;
+        font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .cupons_exclusivos div {
+        width: ;
+        height: auto;
+    }
+
+    main .cupons_exclusivos {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    main .pratico_segura {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    main .retire_sem_filas {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    main .clube_gc {
+        grid-area: 2 / 5 / 3 / 6;
+    }
+
+    
+
+    main .vantagens-do-app .material-symbols-outlined {
+        color: white;
+        font-size: 5rem;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+
+
+    
+
+    main .fa-solid {
+        font-size: 5rem;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+
+    main .como-funciona-app {
+        display: grid;
+        grid-template: 1fr 2fr 2fr 1fr / 2fr 1fr 2fr;
+        place-items: center;
+        padding-bottom: 60px;
+        background-color: var(--cor-de-fundo);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    
+    main .como-funciona-app h1 {
+       grid-area: 1 / 1 / 2 / 4;
+       text-align: center; 
+       padding-top: 100px;
+       font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 2.5rem;
+    }
+
+    main .como-funciona-app h2 {
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    main .como-funciona-app p {
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.9rem;
+        
+        
+    }
+
+    main .como-funciona-app picture {
+        width: 100%;
+        height: 25%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        padding-top: 40px;
+    }
+
+    main .como-funciona-app img {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        background-color: navajowhite;
+    }
+
+    main .va-para-o-app {
+        grid-area: 2 / 1 / 3 / 2;
+       width: 300px;
+       height: auto;
+    }
+
+    main .escolha-seu-favorito {
+        grid-area: 2 / 3 / 3 / 4;
+        width: 300px;
+        height: auto;
+    }
+
+    main .pague-pelo-app {
+        grid-area: 3 / 1 / 4 / 2;
+        width: 300px;
+        height: auto;
+    }
+
+    main .retire-no-gc {
+        grid-area: 3 / 3 / 4 / 4;
+        width: 300px;
+        height: auto;
+    }
+
+    main #primeira-seta {
+        grid-area: 2 / 2 / 3 / 3;
+        transform: rotate(-90deg);
+    }
+
+    main #segunda-seta {
+        display: none;
+    }
+
+    main #terceira-seta {
+        grid-area: 3 / 2 / 4 / 3;
+        transform: rotate(-90deg);
+    }
+
+    main .fa-down-long {
+        color: var(--cor-header);
+        font-size: 4rem;
+    }
+    
+
+    main .texto-informativo {
+        text-align: center;
+    }
+
+    main .botao-do-aplicativo {
+        grid-area: 4 / 1 / 5 / 4;
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        color: var(--cor-de-fundo);
+        align-items: center;
+        width: 100%;
+    }
+
+    main .botao-do-aplicativo .para-baixar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-botoes);
+
+        width: 280px;
+        height: 50px;
+        border-radius: 10px;
+        font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    main .so-no-app-gc {
+        background-color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 530px;
+    }
+
+    main .so-no-app-gc h1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    main .so-no-app-gc .os-melhores {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding-bottom: 40px;
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+         
+    }
+
+    main .opcoes-de-lanche {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 20px;
+        height: auto;
+        width: 5100px;
+        height: 250px;
+    }
+
+    main .opcoes-de-lanche a {
+        margin-left: 10px;
+        height: 100%;
+        width: 250px;
+        border: 1px solid pink;
+        border-radius: 10px;
+    }
+
+    main .opcoes-de-lanche picture {
+        height: 65%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: pink;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+    
+
+    main .opcoes-de-lanche div {
+        height: 35%;
+        width: 100%;
+        display: grid;
+        grid-template: 1fr / 60% 40%;
+        place-items: center;
+        padding-left: 10px;
+    }
+
+    main .opcoes-de-lanche img {
+        width: 160px;
+        height: auto;
+    }
+
+    main .celular_pix {
+        display: none;
+    }
+
+    main .faca-um-pix {
+        text-align: center;
+        padding-top: 60px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 80px;
+    }
+
+    main .faca-um-pix > p:first-of-type {
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    main .formas-de-pagamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    
+
+    main .formas-de-pagamento img {
+        height: auto;
+        width: 100px;
+    }
+
+    main .perguntas-frequentes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    main .perguntas-frequentes h1 {
+        padding-bottom: 40px;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .perguntas-frequentes a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        height: 60px;
+        background-color: var(--cor-de-fundo);
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+
+    main .perguntas-frequentes a p:first-of-type {
+        
+    }
+
+    main .perguntas-frequentes a p:nth-of-type(2) {
+        display: none;
+    }
+
+    main .fa-circle-plus {
+        transform: translateY(-25%);
+        color: black;
+        font-size: 1.9rem;
+        display: flex;
+        align-content: center;
+    }
+
+    main .fa-circle-minus {
+        color: black;
+        font-size: 1.9rem;
+        display: none;
+    }
+    
+    main .bateu-preguica {
+        display: grid;
+        grid-template: 1fr / 1fr 3fr;
+        text-align: left;
+        padding: 50px 30px;
+        
+    }
+
+    main .bateu-preguica h1 {
+        font-size: 3.0rem;
+        font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .bateu-preguica p {
+        font-size: 1.3rem;
+    }
+
+    main .bateu-preguica span {
+        font-size: 15rem;
+    }
 
 }
