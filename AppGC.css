@@ -229,6 +229,10 @@
         padding-bottom: 80px;
     }
 
+    main .faca-um-pix .primeiro_trecho img {
+        display: none;
+    }
+
     main .faca-um-pix > p:first-of-type {
         padding-bottom: 40px;
         padding-top: 20px;
@@ -613,6 +617,10 @@
         padding-bottom: 80px;
     }
 
+    main .faca-um-pix .primeiro_trecho img {
+        display: none;
+    }
+
     main .faca-um-pix > p:first-of-type {
         padding-bottom: 40px;
         padding-top: 20px;
@@ -764,10 +772,7 @@
         font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    main .cupons_exclusivos div {
-        width: ;
-        height: auto;
-    }
+    
 
     main .cupons_exclusivos {
         grid-area: 2 / 2 / 3 / 3;
@@ -814,6 +819,7 @@
         height: auto;
         align-items: center;
         padding-bottom: 50px;
+        position: relative;
     }
 
     
@@ -895,7 +901,6 @@
         height: auto;
     }
 
-    
 
     
 
@@ -913,18 +918,7 @@
         display: none;
     }
 
-    main .botao-do-aplicativo .para-baixar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--cor-botoes);
-
-        width: 280px;
-        height: 50px;
-        border-radius: 10px;
-        font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.5rem;
-    }
+   
 
     main .so-no-app-gc {
         background-color: white;
@@ -993,15 +987,55 @@
         height: auto;
     }
 
-    main .celular_pix {
-        display: none;
-    }
+    
 
     main .faca-um-pix {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         text-align: center;
         padding-top: 60px;
         font-family: 'Yeseva One' , Verdana, Geneva, Tahoma, sans-serif;
         padding-bottom: 80px;
+        height: 450px;
+    }
+
+    main .primeiro_trecho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 200px;
+        height: 200px;
+    }
+
+    main .primeiro_trecho img {
+        width: 300px;
+        height: 100%;
+
+    }
+
+    main .segundo_trecho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 1000px;
+        height: 100%;
+    }
+
+    main .segundo_trecho h1 {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    main .segundo_trecho p {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 1rem;
     }
 
     main .faca-um-pix > p:first-of-type {
@@ -1013,19 +1047,22 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: left;
         background-color: white;
+        width: 100%;
         height: auto;
         border-radius: 10px;
         margin-left: 10px;
         margin-right: 10px;
         padding-top: 30px;
         padding-bottom: 30px;
+        
     }
 
     
 
     main .formas-de-pagamento img {
+       
         height: auto;
         width: 100px;
     }
