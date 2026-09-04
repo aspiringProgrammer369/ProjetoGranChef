@@ -151,6 +151,26 @@
         font-family: 'Bevan' , Verdana, Geneva, Tahoma, sans-serif;
     }
 
+    /* ===== ANIMAÇÃO DE REVELAÇÃO (SCROLL) ===== */
+/* Estado inicial: invisível e deslocado para baixo */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estado visível (quando entra na tela) */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pequeno delay em cascata (opcional, mas dá um charme) */
+.reveal:nth-child(1) { transition-delay: 0.1s; }
+.reveal:nth-child(2) { transition-delay: 0.2s; }
+.reveal:nth-child(3) { transition-delay: 0.3s; }
+.reveal:nth-child(4) { transition-delay: 0.4s; }
+
     main .so-no-app-gc {
         background-color: white;
         padding-top: 50px;
@@ -218,9 +238,7 @@
         height: auto;
     }
 
-    main .celular_pix {
-        display: none;
-    }
+    
 
     main .faca-um-pix {
         text-align: center;
@@ -233,7 +251,11 @@
         display: none;
     }
 
-    main .faca-um-pix > p:first-of-type {
+    main .celular_pix {
+        display: none;
+    }
+
+    main .faca-um-pix .segundo_trecho p:first-of-type {
         padding-bottom: 40px;
         padding-top: 20px;
     }
@@ -538,6 +560,26 @@
         font-family: 'Noto Serif' , Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.5rem;
     }
+
+        /* ===== ANIMAÇÃO DE REVELAÇÃO (SCROLL) ===== */
+/* Estado inicial: invisível e deslocado para baixo */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estado visível (quando entra na tela) */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pequeno delay em cascata (opcional, mas dá um charme) */
+.reveal:nth-child(1) { transition-delay: 0.1s; }
+.reveal:nth-child(2) { transition-delay: 0.2s; }
+.reveal:nth-child(3) { transition-delay: 0.3s; }
+.reveal:nth-child(4) { transition-delay: 0.4s; }
 
     main .so-no-app-gc {
         background-color: white;
@@ -919,6 +961,26 @@
     }
 
    
+        /* ===== ANIMAÇÃO DE REVELAÇÃO (SCROLL) ===== */
+/* Estado inicial: invisível e deslocado para baixo */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estado visível (quando entra na tela) */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pequeno delay em cascata (opcional, mas dá um charme) */
+.reveal:nth-child(1) { transition-delay: 0.1s; }
+.reveal:nth-child(2) { transition-delay: 0.2s; }
+.reveal:nth-child(3) { transition-delay: 0.3s; }
+.reveal:nth-child(4) { transition-delay: 0.4s; }
+
 
     main .so-no-app-gc {
         background-color: white;
@@ -1010,9 +1072,9 @@
     }
 
     main .primeiro_trecho img {
-        width: 300px;
+        width: 400px;
         height: 100%;
-
+        transform: translate(-10%,14%);
     }
 
     main .segundo_trecho {
@@ -1062,7 +1124,7 @@
     
 
     main .formas-de-pagamento img {
-       
+       transform: translateX(-25%);
         height: auto;
         width: 100px;
     }
@@ -1086,7 +1148,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 95%;
+        width: 1300px;
         height: 60px;
         background-color: var(--cor-de-fundo);
         margin-bottom: 10px;
@@ -1118,11 +1180,15 @@
     }
     
     main .bateu-preguica {
-        display: grid;
-        grid-template: 1fr / 1fr 3fr;
+        display: flex;
+        justify-content: center;
         text-align: left;
         padding: 50px 30px;
-        
+        width: 100%;
+    }
+
+    main .pede_gc {
+        width: 900px;
     }
 
     main .bateu-preguica h1 {
@@ -1132,10 +1198,14 @@
 
     main .bateu-preguica p {
         font-size: 1.3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     main .bateu-preguica span {
+        width: 300px;
         font-size: 15rem;
     }
+
+    
 
 }
