@@ -202,6 +202,9 @@
         height: auto;
         width: 5100px;
         height: 250px;
+
+          transition: transform 0.4s ease;  /* animação suave */
+    will-change: transform;
     }
 
     main .opcoes-de-lanche a {
@@ -210,6 +213,8 @@
         width: 250px;
         border: 1px solid pink;
         border-radius: 10px;
+
+            margin-left: 0;    
     }
 
     main .opcoes-de-lanche picture {
@@ -238,7 +243,106 @@
         height: auto;
     }
 
-    
+    /* ======= AJUSTES PARA O CARROSSEL ======= */
+/* O container do carrossel (já estava no seu HTML) */
+.carrossel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px; /* espaço para as setas */
+}
+
+.carrossel-palco {
+    overflow: hidden;  /* esconde o que sai da área */
+    width: 100%;
+}
+
+.carrossel-track {
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* ======= BOTÕES DAS SETAS ======= */
+.carrossel-btn {
+    background: rgba(230, 57, 70, 0.95);
+    border: 2px solid white;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.carrossel-btn:hover {
+    background: #c62836;
+    transform: translateY(-50%) scale(1.1);
+}
+.carrossel-btn-esquerdo {
+    left: 10px;
+}
+.carrossel-btn-direito {
+    right: 10px;
+}
+
+/* ======= BOLINHAS INDICADORAS ======= */
+.carrossel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.carrossel-indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.carrossel-indicador.ativo {
+    background: #e63946;
+}
+
+/* ======= RESPONSIVIDADE (opcional, mas recomendado) ======= */
+/* Ajuste quantos itens aparecem por vez conforme a tela */
+@media (max-width: 1024px) {
+    main .opcoes-de-lanche a {
+        width: 200px;   /* ou use flex-basis: calc(33.33% - 14px) */
+    }
+}
+@media (max-width: 768px) {
+    main .opcoes-de-lanche a {
+        width: 160px;
+    }
+    .carrossel-container {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 480px) {
+    main .opcoes-de-lanche a {
+        width: 130px;
+    }
+    .carrossel-container {
+        padding: 0 20px;
+    }
+}
+
 
     main .faca-um-pix {
         text-align: center;

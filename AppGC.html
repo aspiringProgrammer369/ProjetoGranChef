@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="AppGC.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
@@ -150,9 +151,19 @@
                     <h1>Só no App GC</h1>
                     <p class="os-melhores">Os melhores cupons você só encontra lá. Corre!</p>
                 </div>
-                
+                 <div class="carrossel-container">
+        <!-- Botão esquerdo -->
+        <button class="carrossel-btn carrossel-btn-esquerdo" aria-label="Anterior">
+    <i class="fas fa-chevron-left"></i>  <!-- use 'fas' em vez de 'fa-solid' para compatibilidade -->
+</button>
+
+        <!-- Palco com overflow hidden -->
+        <div class="carrossel-palco">
+            <!-- Esta div é a que vai se mover -->
+            <div class="carrossel-track">
+
                 <div class="opcoes-de-lanche">
-                    <a href="">
+                    <a href="#" class="carrossel-item">
                         <picture>
                             <source srcset="imagens/fish-burguer.png" media="(max-width: 760px)" type="image/png">
                             <source srcset="imagens/" media="(min-width: 761px) and (max-width: 1120px)" type="image/">
@@ -243,6 +254,18 @@
                         </div>
                     </a>
                 </div>
+            </div>
+        </div>
+
+        <!-- Botão direito -->
+        <button class="carrossel-btn carrossel-btn-direito" aria-label="Próximo">
+    <i class="fas fa-chevron-right"></i>
+</button>
+    </div>
+
+    <!-- Bolinhas -->
+    <div class="carrossel-indicadores"></div>
+            
                 
             </section>
 
