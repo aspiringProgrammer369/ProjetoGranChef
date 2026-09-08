@@ -99,3 +99,10 @@
     criarIndicadores();
     goToSlide(0);
 })();
+
+document.querySelectorAll('.faq-toggle').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault(); // evita o comportamento padrão do link
+    item.classList.toggle('active'); // alterna a classe
+  });
+});

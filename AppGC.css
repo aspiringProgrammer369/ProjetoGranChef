@@ -10,6 +10,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
+.faq-text {
+  display: none; /* começa escondido */
+}
+
+.fa-circle-minus {
+  display: none; /* começa escondido */
+}
+
+.faq-toggle.active .faq-text {
+  display: flex; /* mostra o texto */
+  flex-direction: column;
+}
+
+.faq-toggle.active .fa-circle-plus {
+  display: none; /* esconde o plus */
+}
+
+.faq-toggle.active .fa-circle-minus {
+  display: inline; /* mostra o minus */
+}
+
+
 
 @media (max-width: 765px) {
     body .comeco {

@@ -102,7 +102,7 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        
+        transform: translateY(10px);
     }
 
     header .logo-nome img {
@@ -616,6 +616,7 @@
         align-items: center;
         align-content: center;
         margin: 0 auto;
+        transform: translateY(10px);
     }
 
     header .logo-nome img {
