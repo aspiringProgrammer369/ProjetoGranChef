@@ -390,8 +390,9 @@
 
     main .perguntas-frequentes {
         display: flex;
+        text-align: left;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background-color: white;
         padding-top: 80px;
@@ -402,7 +403,12 @@
     
 .faq-text {
   display: none; /* começa escondido */
+  margin: 5px;
+  padding-top: 10px;
+  height: 90%;
 }
+
+
 
 .fa-circle-minus {
   display: none; /* começa escondido */
@@ -411,22 +417,79 @@
 .faq-toggle.active .faq-text {
   display: flex; /* mostra o texto */
   flex-direction: column;
+  height: auto;
+
 }
+
+
 
 .faq-toggle.active .fa-circle-plus {
   display: none; /* esconde o plus */
-  
+  height: auto;
 }
 
 .faq-toggle.active .fa-circle-minus {
-  display: inline; /* mostra o minus */
+  height: auto;
+  display: flex; /* mostra o minus */
+  transform: translateY(-17%);
+  width: 1px;
+  padding-right: 30.5px;
 }
+
+.faq-title {
+   display: flex;
+   align-items: center;
+    align-content: center;
+    
+    text-align: left;
+}
+
 
 
 main .parte-texto {
     display: flex;
     flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    align-items: left;
+    align-content: center;
 }
+
+main .parte_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    height: 30px;
+    margin: 5px;
+    width: 100%;
+}
+
+main .fa-circle-plus {
+        transform: translateY(-70%);
+        color: black;
+        font-size: 1.9rem;
+        display: flex;
+        align-content: center;
+        height: 0px;
+    
+    }
+
+    main .fa-circle-minus {
+        color: black;
+        font-size: 1.9rem;
+        display: none;
+        
+    }
+
+
+
+
+
+
+
+
 
     main .perguntas-frequentes h1 {
         padding-bottom: 40px;
@@ -438,7 +501,7 @@ main .parte-texto {
         flex-direction: row;
         justify-content: space-between;
         width: 95%;
-      
+        height: auto;
         background-color: var(--cor-de-fundo);
         margin-bottom: 10px;
         padding-right: 10px;
@@ -454,21 +517,9 @@ main .parte-texto {
         display: none;
     }
 
-    main .fa-circle-plus {
-        transform: translateY(-25%);
-        color: black;
-        font-size: 1.9rem;
-        display: flex;
-        align-content: center;
-        
-        background-color: red;
-    }
+    
 
-    main .fa-circle-minus {
-        color: black;
-        font-size: 1.9rem;
-        display: none;
-    }
+    
     
     main .bateu-preguica {
         display: flex;
