@@ -400,12 +400,17 @@
         
     }
 
+
+
+
+
     
 .faq-text {
   display: none; /* começa escondido */
   margin: 5px;
   padding-top: 10px;
   height: 90%;
+  width: 100%;
 }
 
 
@@ -451,9 +456,16 @@ main .parte-texto {
     flex-direction: column;
     text-align: left;
     justify-content: space-between;
-    align-items: left;
-    align-content: center;
+   
 }
+
+.faq-toggle.active .parte-texto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 main .parte_1 {
     display: flex;
