@@ -406,11 +406,24 @@
 
     
 .faq-text {
-  display: none; /* começa escondido */
-  margin: 5px;
-  padding-top: 10px;
-  height: 90%;
+   /* estado inicial: escondido mas animável */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin: 5px 5px 0 5px;   /* margem lateral, sem bottom */
+  padding-top: 0;
   width: 100%;
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    padding-top 0.4s ease;
+}
+
+.faq-toggle.active .faq-text {
+  max-height: 500px;    /* valor maior que a altura real do texto */
+  opacity: 1;
+  padding-top: 10px;
 }
 
 
