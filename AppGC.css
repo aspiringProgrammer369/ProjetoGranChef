@@ -10,11 +10,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
-
-
-@media (max-width: 765px) {
-
-    
+  
     /* ===== ANIMAÇÃO DE REVELAÇÃO (SCROLL) ===== */
 /* Estado inicial: invisível e deslocado para baixo */
 .reveal {
@@ -135,6 +131,25 @@
         padding: 0 20px;
     }
 }
+
+main .opcoes-de-lanche {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 20px;
+        height: auto;
+        width: 5100px;
+        height: 250px;
+
+        transition: transform 0.4s ease;  /* animação suave */
+        will-change: transform;
+    }
+
+
+
+@media (max-width: 765px) {
+
+  
 
 
     body .comeco {
@@ -300,18 +315,7 @@
          
     }
 
-    main .opcoes-de-lanche {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        gap: 20px;
-        height: auto;
-        width: 5100px;
-        height: 250px;
-
-          transition: transform 0.4s ease;  /* animação suave */
-    will-change: transform;
-    }
+    
 
     main .opcoes-de-lanche a {
         margin-left: 10px;
@@ -473,13 +477,6 @@ main .fa-circle-minus {
 .faq-toggle.no-transition .fa-circle-minus {
   transition: none !important;
 }
-
-
-
-
-
-
-
 
 
 
