@@ -415,26 +415,53 @@ main .fa-circle-plus,
 main .fa-circle-minus {
   color: black;
   font-size: 1.9rem;
-  transform: translateY(-70%);
+  
   transform-origin: center center;
   transition: opacity 0.3s ease;
+  
 }
 
 main .fa-circle-plus {
   opacity: 1;
   pointer-events: auto;
+  
+  transform: translateY(-20px);
+  
+}
+
+main .parte_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    height: 30px;
+    margin: 5px;
+    width: 100%;
+}
+
+main .faq-title {
+    width: 92%;
+}
+
+main .icones_plus_minus {
+    
+    transform: translateX(-28px);
+    
+    width: 1%;
 }
 
 main .fa-circle-minus {
-  opacity: 0;
-  pointer-events: none;
+  display: none;
 }
 
+main .faq-toggle {
+    padding: 10px;
+}
+
+
 .faq-toggle.active .fa-circle-plus {
-  opacity: 0;
-  pointer-events: none;
-  display: none; /* esconde o plus */
-  
+  display: none;
 }
 
 .faq-toggle.active .fa-circle-minus {
@@ -446,6 +473,8 @@ main .fa-circle-minus {
   opacity: 1;
   pointer-events: auto;
 }
+
+
 
 /* ===== "Desliga" TODAS as transições ===== */
 .faq-toggle.no-transition .faq-text,
@@ -461,6 +490,7 @@ main .parte-texto {
     flex-direction: column;
     text-align: left;
     justify-content: space-between;
+    width: 100%;
    
 }
 
@@ -473,35 +503,11 @@ main .parte-texto {
 
 
 
-main .parte_1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    height: 30px;
-    margin: 5px;
-    width: 100%;
-}
 
 
 
-main .fa-circle-plus {
-        transform: translateY(-70%);
-        color: black;
-        font-size: 1.9rem;
-        display: flex;
-        align-content: center;
-        height: 0px;
-    
-    }
 
-    main .fa-circle-minus {
-        color: black;
-        font-size: 1.9rem;
-        display: none;
-        
-    }
+   
 
 
     main .perguntas-frequentes h1 {
