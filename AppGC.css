@@ -108,29 +108,6 @@
     background: #e63946;
 }
 
-/* ======= RESPONSIVIDADE (opcional, mas recomendado) ======= */
-/* Ajuste quantos itens aparecem por vez conforme a tela */
-@media (max-width: 1024px) {
-    main .opcoes-de-lanche a {
-        width: 200px;   /* ou use flex-basis: calc(33.33% - 14px) */
-    }
-}
-@media (max-width: 768px) {
-    main .opcoes-de-lanche a {
-        width: 160px;
-    }
-    .carrossel-container {
-        padding: 0 30px;
-    }
-}
-@media (max-width: 480px) {
-    main .opcoes-de-lanche a {
-        width: 130px;
-    }
-    .carrossel-container {
-        padding: 0 20px;
-    }
-}
 
 main .opcoes-de-lanche {
         display: flex;
@@ -903,13 +880,37 @@ main .fa-circle-plus {
         display: flex;
         flex-direction: column;
         
-        align-items: left;
+        align-items: center;
         background-color: white;
         padding-top: 80px;
         padding-bottom: 100px;
     }
 
+    .faq-text {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+
+        transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease,
+            padding-top 0.4s ease;
+        
+    }
+
+    .faq-toggle.active .faq-text {
+        max-height: 500px;
+        opacity: 1;
+        padding: 5px;
+    }
+
     
+    .faq-toggle.active .fa-circle-plus {
+        opacity: 0;
+        pointer-events: none;
+        display: none;
+    }
+
 
     main .perguntas-frequentes h1 {
         padding-bottom: 40px;
@@ -943,12 +944,14 @@ main .fa-circle-plus {
         font-size: 1.9rem;
         display: flex;
         align-content: center;
+        
     }
 
     main .fa-circle-minus {
         color: black;
         font-size: 1.9rem;
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
     
     main .bateu-preguica {
