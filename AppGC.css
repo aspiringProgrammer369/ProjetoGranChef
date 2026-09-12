@@ -1176,25 +1176,6 @@ main .fa-circle-plus {
     }
 
    
-        /* ===== ANIMAÇÃO DE REVELAÇÃO (SCROLL) ===== */
-/* Estado inicial: invisível e deslocado para baixo */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Estado visível (quando entra na tela) */
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Pequeno delay em cascata (opcional, mas dá um charme) */
-.reveal:nth-child(1) { transition-delay: 0.1s; }
-.reveal:nth-child(2) { transition-delay: 0.2s; }
-.reveal:nth-child(3) { transition-delay: 0.3s; }
-.reveal:nth-child(4) { transition-delay: 0.4s; }
 
 
     main .so-no-app-gc {
