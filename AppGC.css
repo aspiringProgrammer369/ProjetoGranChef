@@ -494,13 +494,6 @@ main .parte-texto {
    
 }
 
-.faq-toggle.active .parte-texto {
-    width: 100%;
-    display: flex;
-    
-    padding-top: 10px;
-}
-
 
 
 
