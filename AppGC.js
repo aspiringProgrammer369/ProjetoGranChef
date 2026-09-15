@@ -103,19 +103,6 @@
 document.querySelectorAll('.faq-toggle').forEach(item => {
   item.addEventListener('click', e => {
     e.preventDefault();
-
-    const estaAberto = item.classList.contains('active');
-
-    if (estaAberto) {
-      // 2º clique → FECHAR SEM transição
-      item.classList.add('no-transition');
-      item.classList.remove('active');
-      void item.offsetWidth; // força o reflow (garante aplicação imediata)
-    } else {
-      // 1º clique → ABRIR COM transição
-      item.classList.remove('no-transition');
-      void item.offsetWidth; // força o reflow antes de mudar o estado
-      item.classList.add('active');
-    }
+    item.classList.toggle('active');
   });
 });

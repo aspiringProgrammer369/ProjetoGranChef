@@ -347,10 +347,14 @@ main .opcoes-de-lanche {
         display: none;
     }
 
-    main .faca-um-pix .segundo_trecho p:first-of-type {
+    main .texto-informativo {
         padding-bottom: 40px;
         padding-top: 20px;
     }
+
+   main .opcoes_de_pagar {
+        padding-top: 30px;
+   }
 
     main .formas-de-pagamento {
         display: flex;
@@ -371,6 +375,7 @@ main .opcoes-de-lanche {
     main .formas-de-pagamento img {
         height: auto;
         width: 100px;
+        
     }
 
     main .perguntas-frequentes {
@@ -391,11 +396,12 @@ main .opcoes-de-lanche {
 
     
 /* ===== Estado padrão (COM transição) ===== */
-.faq-text {
+main .faq-text {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  
+  padding-right: 5px;
+  padding-left: 5px;
   
   width: 100%;
   transition:
@@ -416,7 +422,7 @@ main .fa-circle-minus {
   color: black;
   font-size: 1.9rem;
   
-  transform-origin: center center;
+
   transition: opacity 0.3s ease;
   
 }
@@ -424,7 +430,6 @@ main .fa-circle-minus {
 main .fa-circle-plus {
   opacity: 1;
   pointer-events: auto;
-  
   transform: translateY(-20px);
   
 }
@@ -467,21 +472,12 @@ main .faq-toggle {
 .faq-toggle.active .fa-circle-minus {
   
   display: flex; /* mostra o minus */
-  transform: translateY(-29%);
-  width: 1px;
-  padding-right: 30.5px;
-  opacity: 1;
+  transform: translateY(-24%);
+  
   pointer-events: auto;
 }
 
 
-
-/* ===== "Desliga" TODAS as transições ===== */
-.faq-toggle.no-transition .faq-text,
-.faq-toggle.no-transition .fa-circle-plus,
-.faq-toggle.no-transition .fa-circle-minus {
-  transition: none !important;
-}
 
 
 
@@ -493,14 +489,6 @@ main .parte-texto {
     width: 100%;
    
 }
-
-
-
-
-
-
-
-   
 
 
     main .perguntas-frequentes h1 {
@@ -728,7 +716,7 @@ main .parte-texto {
         font-size: 4rem;
     }
 
-
+    
     
 
     main .texto-informativo {
@@ -842,10 +830,12 @@ main .parte-texto {
         display: none;
     }
 
-    main .faca-um-pix > p:first-of-type {
-        padding-bottom: 40px;
-        padding-top: 20px;
+    
+
+    main .texto-informativo {
+        padding: 20px;
     }
+    
 
     main .formas-de-pagamento {
         display: flex;
@@ -855,8 +845,8 @@ main .parte-texto {
         background-color: white;
         height: auto;
         border-radius: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -880,17 +870,14 @@ main .parte-texto {
         
     }
 
-
-
-
-
     
 /* ===== Estado padrão (COM transição) ===== */
-.faq-text {
+main .faq-text {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  
+  padding-right: 5px;
+  padding-left: 5px;
   
   width: 100%;
   transition:
@@ -910,63 +897,18 @@ main .fa-circle-plus,
 main .fa-circle-minus {
   color: black;
   font-size: 1.9rem;
-  transform: translateY(-70%);
-  transform-origin: center center;
+  
+
   transition: opacity 0.3s ease;
+  
 }
 
 main .fa-circle-plus {
   opacity: 1;
   pointer-events: auto;
-}
-
-main .fa-circle-minus {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.faq-toggle.active .fa-circle-plus {
-  opacity: 0;
-  pointer-events: none;
-  display: none; /* esconde o plus */
+  transform: translateY(-20px);
   
 }
-
-.faq-toggle.active .fa-circle-minus {
-  
-  display: flex; /* mostra o minus */
-  transform: translateY(-29%);
-  width: 1px;
-  padding-right: 30.5px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* ===== "Desliga" TODAS as transições ===== */
-.faq-toggle.no-transition .faq-text,
-.faq-toggle.no-transition .fa-circle-plus,
-.faq-toggle.no-transition .fa-circle-minus {
-  transition: none !important;
-}
-
-
-
-main .parte-texto {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: space-between;
-   
-}
-
-.faq-toggle.active .parte-texto {
-    width: 100%;
-    display: flex;
-    
-    padding-top: 10px;
-}
-
-
 
 main .parte_1 {
     display: flex;
@@ -979,24 +921,51 @@ main .parte_1 {
     width: 100%;
 }
 
+main .faq-title {
+    width: 92%;
+}
 
-
-main .fa-circle-plus {
-        transform: translateY(-70%);
-        color: black;
-        font-size: 1.9rem;
-        display: flex;
-        align-content: center;
-        height: 0px;
+main .icones_plus_minus {
     
-    }
+    transform: translateX(-28px);
+    
+    width: 1%;
+}
 
-    main .fa-circle-minus {
-        color: black;
-        font-size: 1.9rem;
-        display: none;
-        
-    }
+main .fa-circle-minus {
+  display: none;
+}
+
+main .faq-toggle {
+    padding: 10px;
+}
+
+
+.faq-toggle.active .fa-circle-plus {
+  display: none;
+}
+
+.faq-toggle.active .fa-circle-minus {
+  
+  display: flex; /* mostra o minus */
+  transform: translateY(-24%);
+  
+  pointer-events: auto;
+}
+
+
+
+
+
+main .parte-texto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+   
 
 
     main .perguntas-frequentes h1 {
@@ -1016,6 +985,7 @@ main .fa-circle-plus {
         padding-left: 10px;
         border-radius: 10px;
     }
+
 
 
     main .bateu-preguica {
@@ -1191,7 +1161,7 @@ main .fa-circle-plus {
 
     main #primeira-seta {
         grid-area: 2 / 3 / 3 / 4;
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) translateY(-20px);
     }
 
     main .escolha-seu-favorito {
@@ -1202,7 +1172,7 @@ main .fa-circle-plus {
 
     main #segunda-seta {
         grid-area: 2 / 5 / 3 / 6;
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) translateY(-20px);
     }
 
     main .pague-pelo-app {
@@ -1213,7 +1183,11 @@ main .fa-circle-plus {
 
     main #terceira-seta {
         grid-area: 2 / 7 / 3 / 8;
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) translateY(-20px);
+    }
+
+    #primeira-seta, #segunda-seta, #terceira-seta {
+        transform: translateX(-500px);
     }
 
     main .retire-no-gc {
@@ -1401,17 +1375,14 @@ main .fa-circle-plus {
         
     }
 
-
-
-
-
     
 /* ===== Estado padrão (COM transição) ===== */
-.faq-text {
+main .faq-text {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  
+  padding-right: 5px;
+  padding-left: 5px;
   
   width: 100%;
   transition:
@@ -1431,63 +1402,18 @@ main .fa-circle-plus,
 main .fa-circle-minus {
   color: black;
   font-size: 1.9rem;
-  transform: translateY(-70%);
-  transform-origin: center center;
+  
+
   transition: opacity 0.3s ease;
+  
 }
 
 main .fa-circle-plus {
   opacity: 1;
   pointer-events: auto;
-}
-
-main .fa-circle-minus {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.faq-toggle.active .fa-circle-plus {
-  opacity: 0;
-  pointer-events: none;
-  display: none; /* esconde o plus */
+  transform: translateY(-20px);
   
 }
-
-.faq-toggle.active .fa-circle-minus {
-  
-  display: flex; /* mostra o minus */
-  transform: translateY(-29%);
-  width: 1px;
-  padding-right: 30.5px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* ===== "Desliga" TODAS as transições ===== */
-.faq-toggle.no-transition .faq-text,
-.faq-toggle.no-transition .fa-circle-plus,
-.faq-toggle.no-transition .fa-circle-minus {
-  transition: none !important;
-}
-
-
-
-main .parte-texto {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: space-between;
-   
-}
-
-.faq-toggle.active .parte-texto {
-    width: 100%;
-    display: flex;
-    
-    padding-top: 10px;
-}
-
-
 
 main .parte_1 {
     display: flex;
@@ -1500,24 +1426,51 @@ main .parte_1 {
     width: 100%;
 }
 
+main .faq-title {
+    width: 92%;
+}
 
-
-main .fa-circle-plus {
-        transform: translateY(-70%);
-        color: black;
-        font-size: 1.9rem;
-        display: flex;
-        align-content: center;
-        height: 0px;
+main .icones_plus_minus {
     
-    }
+    transform: translateX(-28px);
+    
+    width: 1%;
+}
 
-    main .fa-circle-minus {
-        color: black;
-        font-size: 1.9rem;
-        display: none;
-        
-    }
+main .fa-circle-minus {
+  display: none;
+}
+
+main .faq-toggle {
+    padding: 10px;
+}
+
+
+.faq-toggle.active .fa-circle-plus {
+  display: none;
+}
+
+.faq-toggle.active .fa-circle-minus {
+  
+  display: flex; /* mostra o minus */
+  transform: translateY(-24%);
+  
+  pointer-events: auto;
+}
+
+
+
+
+
+main .parte-texto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+   
 
 
     main .perguntas-frequentes h1 {
@@ -1529,8 +1482,8 @@ main .fa-circle-plus {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 1300px;
-        height: 60px;
+        width: 1200px;
+        height: auto;
         background-color: var(--cor-de-fundo);
         margin-bottom: 10px;
         padding-right: 10px;
@@ -1538,27 +1491,6 @@ main .fa-circle-plus {
         border-radius: 10px;
     }
 
-    main .perguntas-frequentes a p:first-of-type {
-        
-    }
-
-    main .perguntas-frequentes a p:nth-of-type(2) {
-        display: none;
-    }
-
-    main .fa-circle-plus {
-        transform: translateY(-25%);
-        color: black;
-        font-size: 1.9rem;
-        display: flex;
-        align-content: center;
-    }
-
-    main .fa-circle-minus {
-        color: black;
-        font-size: 1.9rem;
-        display: none;
-    }
     
     main .bateu-preguica {
         display: flex;

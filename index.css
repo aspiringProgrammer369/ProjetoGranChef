@@ -452,7 +452,7 @@
    body .bottom-nav a {
         text-decoration: none;
         color: #9E8172;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
    }
 
    body .bottom-nav i {
@@ -1196,9 +1196,9 @@
    }
 
    footer .navegacao-principal a {
-        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         list-style: none;
-        font-size: 1.1rem;
+        font-size: 1.6rem;
    }
 
     footer a {
@@ -1552,9 +1552,9 @@
    }
 
    footer .navegacao-principal a {
-        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         list-style: none;
-        font-size: 1.1rem;
+        font-size: 1.6rem;
    }
 
     footer a {
