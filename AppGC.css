@@ -856,6 +856,11 @@ main .parte-texto {
     main .formas-de-pagamento img {
         height: auto;
         width: 100px;
+        
+    }
+
+    main .op1, main .op2 {
+        padding-bottom: 50px;
     }
 
      main .perguntas-frequentes {

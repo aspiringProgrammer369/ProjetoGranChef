@@ -1,0 +1,23 @@
+
+
+
+@media (max-width: 765px) {
+    
+    body .comeco {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    main .tela-navegar {
+        display: none;
+    }
+}
+
+@media (min-width: 766px) and (max-width: 1350px) {
+
+}
+
+@media (min-width: 1351px) {
+
+}
+
