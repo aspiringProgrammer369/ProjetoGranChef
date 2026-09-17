@@ -11,6 +11,29 @@
     main .tela-navegar {
         display: none;
     }
+
+    main .vantagens_e_beneficios {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+    }
+
+    main .titulo_vantagens {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .bloco_de_vantagens {
+        margin-right: 20px;
+        margin-left: 20px;
+        height: auto;
+        background-color: red;
+        margin-bottom: 50px;
+    }
 }
 
 @media (min-width: 766px) and (max-width: 1350px) {
