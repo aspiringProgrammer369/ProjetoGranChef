@@ -30,10 +30,10 @@
     main .bloco_de_vantagens {
         margin-right: 20px;
         margin-left: 20px;
-        height: auto;
+        height: 450px;
         background-color: var(--cor-de-fundo);
         margin-bottom: 50px;
-        
+        border-radius: 10px;
     }
 
     main .bloco_de_vantagens img {
@@ -46,13 +46,31 @@
     main .bloco_de_vantagens h2 {
         margin-right: 30px;
         margin-left: 30px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
     }
 
     main .bloco_de_vantagens p {
         margin-top: 30px;
-        padding-bottom: 50px;
+        
         margin-right: 30px;
         margin-left: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        
+    }
+
+    main .como_funciona_clube {
+        width: 100%;
+        background-color: var(--cor-poster);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .como_funciona_clube img {
+        width: auto;
+        height: 250px;
     }
 }
 
