@@ -79,39 +79,43 @@
         
     }
 
-    main .blocos_de_informacao img {
-        transform: translateY(-100px);
-    }
+   
 
     main .blocos_de_informacao {
-        background-color: var(--cor-de-fundo);
-        margin-top: 150px;
         margin-right: 30px;
         margin-left: 30px;
         display: flex;
         flex-direction: column;
+        
     }
 
-    main #num_1 {
-       font-size: 2.5rem;
-       color: black;
-       transform: translateY(-180px); 
-       border-radius: 2px solid orange;
-       background-color: orange;
-       width: 40px;
-       height: 40px;
-       display: flex;
-       align-items: center;
-       justify-content: center;
+    main .blocos_de_informacao picture {
+        transform: translateY(110px);
+        
     }
 
-    main #counter1, main #counter2, main #counter3, main #counter4{
-        font-size: 3rem;
-        transform: translateY(-150px); 
-        display: grid;
-        grid-template: 40px / 40px;
-        background-color: orange;
+    main .blocos_de_informacao .numbers_img {
+        width: auto;
+        height: 50px;
+       transform: translateY(-30px);
     }
+
+    main .imagem_do_numero {
+        background-color: var(--cor-de-fundo);
+        padding-top: 100px;
+        
+    }
+
+    main .blocos_de_informacao .bloco-de-texto {
+        background-color: var(--cor-de-fundo);
+        transform: translateY(-20px);
+        padding-bottom: 10px;
+        
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+   
 }
 
 @media (min-width: 766px) and (max-width: 1350px) {
