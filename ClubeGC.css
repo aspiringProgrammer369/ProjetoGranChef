@@ -132,12 +132,51 @@
     }
 
     main .baixe_o_aplicativo {
-        width: 400px;
-        margin-left: 40px;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
         height: 50px;
-        background-color: aqua;
+        background-color: var(--cor-header);
+        margin: 50px;
+        color: white;
+        border: 2px solid var(--cor-header);
+        border-radius: 10px;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
     }
+
+    main .recompensas {
+        position: relative;
+        z-index: 0;
+    }
+
+    main .confete {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    main .confete img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .formato_hamburguer img {
+        width: 200px;
+        height: auto;
+    }
+
+    main .trecho_da_frente {
+        position: relative;
+        z-index: 2;
+    }
+
+    
 
    
 }
