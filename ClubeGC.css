@@ -242,13 +242,15 @@
         position: relative;
     }
 
-    
+    main .todos_os_pontos span {
+        width: 90px;
+        background-color: red;
+        position: absolute;
+    }
 
     main .opcao_de_pontos {
         display: flex;
         flex-direction: row;
-        width: 1000px;
-        background-color: red;
         
     }
 
