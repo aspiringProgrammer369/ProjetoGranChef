@@ -149,6 +149,17 @@
     main .recompensas {
         position: relative;
         z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 800px;
+        
+    }
+
+    main .recompensas h1 {
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
 
     main .confete {
@@ -158,12 +169,13 @@
         width: 100%;
         height: 100%;
         z-index: 1;
+        
     }
 
     main .confete img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     
@@ -191,7 +203,9 @@
     main .trecho_da_frente {
         position: relative;
         z-index: 2;
-       
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
     }
 
     main .formato_hamburguer {
@@ -220,14 +234,22 @@
         transform: translateY(-30px);
     }
 
-    main .todas_as_opcoes {
+    main .todos_os_pontos {
         display: flex;
         flex-direction: row;
-        width: 60000px;
+        width: 1000px;
+        height: auto;
+        position: relative;
     }
 
+    
+
     main .opcao_de_pontos {
-        width: 60px;
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        background-color: red;
+        
     }
 
     main .yellow_coin {
