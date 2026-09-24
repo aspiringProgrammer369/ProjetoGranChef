@@ -160,6 +160,7 @@
         width: 100%;
         height: auto;
         text-align: center;
+        margin-top: 60px;
     }
 
     main .confete {
@@ -205,10 +206,16 @@
         z-index: 2;
         width: auto;
         display: flex;
-        flex-direction: row;
+        
+        flex-direction: row;       
         
     }
 
+    
+
+    
+
+    
     main .formato_hamburguer {
         display: flex;
         flex-direction: column;
@@ -217,7 +224,13 @@
         align-content: center;
         position: relative;
         
+        
     }
+
+   
+
+
+
 
     main .formato_hamburguer #locker {
         position: absolute;
@@ -239,25 +252,30 @@
         display: flex;
         flex-direction: row;
         position: relative;
-        background-color: aqua;
+        
         text-align: center;
         width: auto;
         
     }
 
+    main .todos_os_pontos a {
+        background-color: lightgray;
+        height: 50px;
+    }
+
     main .todos_os_pontos span {
-        width: 90px;
+        width: 100px;
         position: absolute;
         display: flex;
         
         align-items: center;
         text-align: center;
         font-weight: bold;
-        transform: translateY(28px);
-        margin-left: 5px;
-        font-size: 0.75rem;
-        background-color: red;
         
+        
+        font-size: 0.75rem;
+        
+        z-index: 2;
     }
 
     main .opcao_de_pontos {
@@ -266,16 +284,25 @@
         
     }
 
+    main .opcao_de_pontos img {
+        opacity: 0;
+    }
+
+    main .opcao_de_pontos a.active img {
+        opacity: 1;
+        transform: translateY(-1px);
+        width: 100px;
+    }
+
     main .yellow_coin {
         width: 100px;
-        height: auto;
-        
     }
 
     
    
 }
 
+/*
 @media (min-width: 766px) and (max-width: 1350px) {
 
 }
@@ -283,4 +310,4 @@
 @media (min-width: 1351px) {
 
 }
-
+*/
