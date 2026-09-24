@@ -203,9 +203,10 @@
     main .trecho_da_frente {
         position: relative;
         z-index: 2;
-        width: 1000px;
+        width: auto;
         display: flex;
         flex-direction: row;
+        
     }
 
     main .formato_hamburguer {
@@ -237,15 +238,18 @@
     main .todos_os_pontos {
         display: flex;
         flex-direction: row;
-        width: 1000px;
-        height: auto;
         position: relative;
+        background-color: aqua;
     }
 
     main .todos_os_pontos span {
         width: 90px;
-        background-color: red;
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
     }
 
     main .opcao_de_pontos {
