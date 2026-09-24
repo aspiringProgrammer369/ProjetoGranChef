@@ -151,9 +151,9 @@
         z-index: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+       
         height: 800px;
-        
+        width: auto;
     }
 
     main .recompensas h1 {
@@ -240,16 +240,24 @@
         flex-direction: row;
         position: relative;
         background-color: aqua;
+        text-align: center;
+        width: auto;
+        
     }
 
     main .todos_os_pontos span {
         width: 90px;
         position: absolute;
         display: flex;
-        justify-content: center;
+        
         align-items: center;
         text-align: center;
         font-weight: bold;
+        transform: translateY(28px);
+        margin-left: 5px;
+        font-size: 0.75rem;
+        background-color: red;
+        
     }
 
     main .opcao_de_pontos {
