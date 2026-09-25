@@ -7,7 +7,7 @@
 
 
 
-@media (max-width: 765px) {
+/*@media (max-width: 765px) {*/
     
     body .comeco {
         padding-bottom: 10px;
@@ -204,17 +204,12 @@
     main .trecho_da_frente {
         position: relative;
         z-index: 2;
-        width: auto;
+        width: max-content;
         display: flex;
-        
         flex-direction: row;       
-        
     }
 
     
-
-    
-
     
     main .formato_hamburguer {
         display: flex;
@@ -224,12 +219,11 @@
         align-content: center;
         position: relative;
         
-        
+         
     }
 
    
-
-
+   
 
 
     main .formato_hamburguer #locker {
@@ -255,12 +249,16 @@
         
         text-align: center;
         width: auto;
+
+        
         
     }
 
     main .todos_os_pontos a {
         background-color: lightgray;
         height: 50px;
+
+        
     }
 
     main .todos_os_pontos span {
@@ -272,20 +270,27 @@
         text-align: center;
         font-weight: bold;
         
-        
         font-size: 0.75rem;
-        
         z-index: 2;
+
+
+        
+   
     }
 
     main .opcao_de_pontos {
         display: flex;
         flex-direction: row;
-        
+
+       
     }
 
     main .opcao_de_pontos img {
         opacity: 0;
+
+       
+    
+   
     }
 
     main .opcao_de_pontos a.active img {
@@ -298,9 +303,59 @@
         width: 100px;
     }
 
+
     
+    main .fique_de_olho {
+        background-color: orange;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 100px;
+    }
+
+    main .fique_de_olho h1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .texto_total p {
+        padding-right: 40px;
+        padding-left: 40px;
+        
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    main .restaurantes_nao_participantes {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        border: 1px solid orange;
+    }
+
+    main .restaurantes_nao_participantes p {
+        width: 342px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+    }
+
+    main .fique_de_olho img {
+        width: 400px;
+        height: auto;
+    }
+
    
-}
+/*}*/
 
 /*
 @media (min-width: 766px) and (max-width: 1350px) {
