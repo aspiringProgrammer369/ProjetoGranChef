@@ -7,8 +7,366 @@
 
 
 
-/*@media (max-width: 765px) {*/
+
+
+
+@media (max-width: 765px) {
     
+    body .comeco {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    main .tela-navegar {
+        display: none;
+    }
+
+    main .vantagens_e_beneficios {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+    }
+
+    main .titulo_vantagens {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .bloco_de_vantagens {
+        margin-right: 20px;
+        margin-left: 20px;
+        height: 450px;
+        background-color: var(--cor-de-fundo);
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+
+    main .bloco_de_vantagens img {
+        width: auto;
+        height: 200px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    main .bloco_de_vantagens h2 {
+        margin-right: 30px;
+        margin-left: 30px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .bloco_de_vantagens p {
+        margin-top: 30px;
+        
+        margin-right: 30px;
+        margin-left: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        
+    }
+
+    main .como_funciona_clube {
+        width: 100%;
+        background-color: var(--cor-poster);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    main .como_funciona_clube h1 {
+        transform: translateY(40px);
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .como_funciona_clube img {
+        width: auto;
+        height: 200px;
+    }
+
+    main .primeiro_bloco_info, main .segundo_bloco_info {
+        width: 100%;
+        height: auto;
+        
+    }
+
+   
+
+    main .blocos_de_informacao {
+        margin-right: 30px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    main .blocos_de_informacao picture {
+        transform: translateY(110px);
+        
+    }
+
+    main .blocos_de_informacao .numbers_img {
+        width: auto;
+        height: 50px;
+       transform: translateY(-30px);
+    }
+
+    main .imagem_do_numero {
+        background-color: var(--cor-de-fundo);
+        padding-top: 100px;
+        border: 2px solid var(--cor-de-fundo);
+        border-radius: 10px;
+    }
+
+    main .blocos_de_informacao .bloco-de-texto {
+        background-color: var(--cor-de-fundo);
+        transform: translateY(-20px);
+        padding-bottom: 10px;
+        
+        padding-right: 30px;
+        padding-left: 30px;
+        border: 2px solid var(--cor-de-fundo);
+        border-radius: 10px;
+    }
+
+    main .baixe_o_aplicativo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+        background-color: var(--cor-header);
+        margin: 50px;
+        color: white;
+        border: 2px solid var(--cor-header);
+        border-radius: 10px;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
+
+    main .recompensas {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+       
+        height: 800px;
+        width: auto;
+    }
+
+    main .recompensas h1 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 60px;
+        z-index: 2;
+    }
+
+    main .confete {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        
+    }
+
+    main .confete img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        width: 100vw;
+    }
+
+    
+
+    main .formato_hamburguer img {
+        
+        width: 340px;
+        height: auto;
+        
+        z-index: 1;
+    }
+
+    main .formato_hamburguer .surpresa {
+        color: white;
+        text-align: center;
+        transform: translateY(78px);
+    }
+
+    main .formato_hamburguer .entre_no_app {
+        color: white;
+        text-align: center;
+        transform: translateY(-90px);
+    }
+
+    main .trecho_da_frente {
+        position: relative;
+        z-index: 2;
+        width: max-content;
+        display: flex;
+        flex-direction: row;       
+    }
+
+    
+    
+    main .formato_hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        
+         
+    }
+
+   
+   
+
+
+    main .formato_hamburguer #locker {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-size: 5rem;
+        transform: translateY(-25px);
+    }
+
+    main #tablet {
+        position: absolute;
+        z-index: 1;
+        font-size: 10rem;
+        color: white;
+        transform: translateY(-30px);
+    }
+
+    main .todos_os_pontos {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        
+        text-align: center;
+        width: auto;
+        z-index: 2;
+        
+        
+    }
+
+    main .todos_os_pontos a {
+        background-color: lightgray;
+        height: 50px;
+
+        
+    }
+
+    main .todos_os_pontos span {
+        width: 100px;
+        position: absolute;
+        display: flex;
+        
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        
+        font-size: 0.75rem;
+        z-index: 2;
+
+
+        
+   
+    }
+
+    main .opcao_de_pontos {
+        display: flex;
+        flex-direction: row;
+
+       
+    }
+
+    main .opcao_de_pontos img {
+        opacity: 0;
+
+       
+    
+   
+    }
+
+    main .opcao_de_pontos a.active img {
+        opacity: 1;
+        transform: translateY(-1px);
+        width: 100px;
+    }
+
+    main .yellow_coin {
+        width: 100px;
+    }
+
+
+    
+    main .fique_de_olho {
+        background-color: orange;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 100px;
+    }
+
+    main .fique_de_olho h1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .texto_total p {
+        padding-right: 40px;
+        padding-left: 40px;
+        
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    main .restaurantes_nao_participantes {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        border: 1px solid orange;
+    }
+
+    main .restaurantes_nao_participantes p {
+        width: 342px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+    }
+
+    main .fique_de_olho img {
+        width: 100vw;
+        height: auto;
+    }
+
+     
+   
+}
+
+
+@media (min-width: 766px) and (max-width: 1350px) {
+
     body .comeco {
         padding-bottom: 10px;
         width: 100%;
@@ -354,15 +712,357 @@
         height: auto;
     }
 
-   
-/*}*/
-
-/*
-@media (min-width: 766px) and (max-width: 1350px) {
 
 }
 
 @media (min-width: 1351px) {
 
+    body .comeco {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    main .tela-navegar {
+        display: none;
+    }
+
+    main .vantagens_e_beneficios {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+    }
+
+    main .titulo_vantagens {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .bloco_de_vantagens {
+        margin-right: 20px;
+        margin-left: 20px;
+        height: 450px;
+        background-color: var(--cor-de-fundo);
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+
+    main .bloco_de_vantagens img {
+        width: auto;
+        height: 200px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    main .bloco_de_vantagens h2 {
+        margin-right: 30px;
+        margin-left: 30px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .bloco_de_vantagens p {
+        margin-top: 30px;
+        
+        margin-right: 30px;
+        margin-left: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        
+    }
+
+    main .como_funciona_clube {
+        width: 100%;
+        background-color: var(--cor-poster);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    main .como_funciona_clube h1 {
+        transform: translateY(40px);
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .como_funciona_clube img {
+        width: auto;
+        height: 200px;
+    }
+
+    main .primeiro_bloco_info, main .segundo_bloco_info {
+        width: 100%;
+        height: auto;
+        
+    }
+
+   
+
+    main .blocos_de_informacao {
+        margin-right: 30px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    main .blocos_de_informacao picture {
+        transform: translateY(110px);
+        
+    }
+
+    main .blocos_de_informacao .numbers_img {
+        width: auto;
+        height: 50px;
+       transform: translateY(-30px);
+    }
+
+    main .imagem_do_numero {
+        background-color: var(--cor-de-fundo);
+        padding-top: 100px;
+        border: 2px solid var(--cor-de-fundo);
+        border-radius: 10px;
+    }
+
+    main .blocos_de_informacao .bloco-de-texto {
+        background-color: var(--cor-de-fundo);
+        transform: translateY(-20px);
+        padding-bottom: 10px;
+        
+        padding-right: 30px;
+        padding-left: 30px;
+        border: 2px solid var(--cor-de-fundo);
+        border-radius: 10px;
+    }
+
+    main .baixe_o_aplicativo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 50px;
+        background-color: var(--cor-header);
+        margin: 50px;
+        color: white;
+        border: 2px solid var(--cor-header);
+        border-radius: 10px;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
+
+    main .recompensas {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+       
+        height: 800px;
+        width: auto;
+    }
+
+    main .recompensas h1 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    main .confete {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        
+    }
+
+    main .confete img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    
+
+    main .formato_hamburguer img {
+        
+        width: 340px;
+        height: auto;
+        
+        z-index: 0;
+    }
+
+    main .formato_hamburguer .surpresa {
+        color: white;
+        text-align: center;
+        transform: translateY(78px);
+    }
+
+    main .formato_hamburguer .entre_no_app {
+        color: white;
+        text-align: center;
+        transform: translateY(-90px);
+    }
+
+    main .trecho_da_frente {
+        position: relative;
+        z-index: 2;
+        width: max-content;
+        display: flex;
+        flex-direction: row;       
+    }
+
+    
+    
+    main .formato_hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        
+         
+    }
+
+   
+   
+
+
+    main .formato_hamburguer #locker {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-size: 5rem;
+        transform: translateY(-25px);
+    }
+
+    main #tablet {
+        position: absolute;
+        z-index: 1;
+        font-size: 10rem;
+        color: white;
+        transform: translateY(-30px);
+    }
+
+    main .todos_os_pontos {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        
+        text-align: center;
+        width: auto;
+
+        
+        
+    }
+
+    main .todos_os_pontos a {
+        background-color: lightgray;
+        height: 50px;
+
+        
+    }
+
+    main .todos_os_pontos span {
+        width: 100px;
+        position: absolute;
+        display: flex;
+        
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        
+        font-size: 0.75rem;
+        z-index: 2;
+
+
+        
+   
+    }
+
+    main .opcao_de_pontos {
+        display: flex;
+        flex-direction: row;
+
+       
+    }
+
+    main .opcao_de_pontos img {
+        opacity: 0;
+
+       
+    
+   
+    }
+
+    main .opcao_de_pontos a.active img {
+        opacity: 1;
+        transform: translateY(-1px);
+        width: 100px;
+    }
+
+    main .yellow_coin {
+        width: 100px;
+    }
+
+
+    
+    main .fique_de_olho {
+        background-color: orange;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-top: 100px;
+        width: 100vw;
+    }
+
+    main .fique_de_olho h1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .texto_total p {
+        padding-right: 40px;
+        padding-left: 40px;
+        
+        font-family: 'Yeseva One', Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    main .restaurantes_nao_participantes {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        border: 1px solid orange;
+    }
+
+    main .restaurantes_nao_participantes p {
+        width: 342px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+    }
+
+    main .fique_de_olho img {
+        width: 100vw;
+        height: auto;
+    }
+
+
 }
-*/
+
