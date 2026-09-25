@@ -87,6 +87,7 @@ html {
         padding-top: 70px;
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 10px;
     }
 
     header .botao-voltar {
@@ -482,6 +483,7 @@ html {
         padding-top: 70px;
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 10px;
     }
 
     header .botao-voltar {
@@ -883,7 +885,7 @@ html {
         align-content: center;
         align-items: center;
         color: var(--cor-botoes);
-        
+        padding-bottom: 10px;
     }
 
      /* SEÇÃO HEADER */
@@ -1309,6 +1311,7 @@ html {
         padding-top: 70px;
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        padding-bottom: 10px;
     }
 
     header .botao-voltar {
