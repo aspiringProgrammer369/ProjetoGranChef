@@ -176,6 +176,9 @@
         height: 100%;
         z-index: 1;
         
+         opacity: 0;
+    transform: translateY(-80px);
+    transition: all 0.8s ease-out;
     }
 
     main .confete img {
@@ -185,6 +188,11 @@
         z-index: -1;
         width: 100vw;
     }
+
+    .confete.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
 
     
 
@@ -629,6 +637,9 @@ main .carrossel_viewport:focus-visible {
         height: 100%;
         z-index: 1;
         
+        opacity: 0;
+    transform: translateY(-80px);
+    transition: all 0.8s ease-out;
     }
 
     main .confete img {
@@ -642,6 +653,11 @@ main .carrossel_viewport:focus-visible {
     }
 
     
+    .confete.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
     main .formato_hamburguer img {
         
@@ -1079,6 +1095,9 @@ main .carrossel_viewport:focus-visible {
         height: 100%;
         z-index: 1;
         
+         opacity: 0;
+    transform: translateY(-80px);
+    transition: all 0.8s ease-out;
     }
 
     main .confete img {
@@ -1091,6 +1110,10 @@ main .carrossel_viewport:focus-visible {
         width: 100vw;
     }
 
+    .confete.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
     
 
     main .formato_hamburguer img {
@@ -1522,6 +1545,8 @@ main .carrossel_viewport:focus-visible {
         z-index: 2;
     }
 
+    
+
     main .confete {
         position: absolute;
         top: 0;
@@ -1529,6 +1554,10 @@ main .carrossel_viewport:focus-visible {
         width: 100%;
         height: 100%;
         z-index: 1;
+
+        opacity: 0;
+    transform: translateY(-80px);
+    transition: all 2.0s ease-out;
         
     }
 
@@ -1541,6 +1570,15 @@ main .carrossel_viewport:focus-visible {
         z-index: -1;
         width: 100vw;
     }
+
+    
+    
+
+.confete.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
     
 

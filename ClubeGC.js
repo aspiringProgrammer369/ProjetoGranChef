@@ -168,3 +168,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     medir();
 })();
+
+
+
+const confete = document.querySelector('.confete');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visivel');
+        }
+    });
+}, { threshold: 0.2 });
+
+observer.observe(confete);
