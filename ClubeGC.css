@@ -214,6 +214,13 @@
         width: max-content;
         display: flex;
         flex-direction: row;       
+
+        width: max-content;
+
+    gap: 12px;                                 /* espaço entre os hambúrgueres */
+    transition: transform .45s cubic-bezier(.22,.61,.36,1);
+    will-change: transform;
+    user-select: none;
     }
 
     
@@ -230,7 +237,86 @@
     }
 
    
-   
+    main .carrossel_btn {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 3;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    transition: transform .2s ease, opacity .2s ease;
+}
+main .carrossel_btn:hover:not(:disabled) { transform: scale(1.1); }
+main .carrossel_btn:disabled { opacity: .3; cursor: default; }
+
+/* ---------- Bolinhas ---------- */
+main .carrossel_dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+main .carrossel_dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+main .carrossel_dot.ativo {
+    background: #f0a500;
+    transform: scale(1.3);
+}
+
+/* Se tudo couber, esconde setas e bolinhas */
+main .carrossel_hamburguer.sem_scroll .carrossel_btn,
+main .carrossel_hamburguer.sem_scroll .carrossel_dots {
+    display: none;
+}
+
+
+main .carrossel_hamburguer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+main .carrossel_linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main .carrossel_viewport {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+    outline: none;
+}
+main .carrossel_viewport:active { cursor: grabbing; }
+main .carrossel_viewport:focus-visible {
+    outline: 2px solid #f0a500;
+    outline-offset: 4px;
+    border-radius: 10px;
+}
+
 
 
     main .formato_hamburguer #locker {
@@ -258,7 +344,7 @@
         width: auto;
         z-index: 2;
         
-        
+        transform: translateY(40px);
     }
 
     main .todos_os_pontos a {
@@ -583,7 +669,15 @@
         width: max-content;
         display: flex;
         flex-direction: row;       
+
+        width: max-content;
+
+    gap: 12px;                                 /* espaço entre os hambúrgueres */
+    transition: transform .45s cubic-bezier(.22,.61,.36,1);
+    will-change: transform;
+    user-select: none;
     }
+    
 
     
     
@@ -599,7 +693,85 @@
     }
 
    
-   
+    main .carrossel_btn {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 3;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    transition: transform .2s ease, opacity .2s ease;
+}
+main .carrossel_btn:hover:not(:disabled) { transform: scale(1.1); }
+main .carrossel_btn:disabled { opacity: .3; cursor: default; }
+
+/* ---------- Bolinhas ---------- */
+main .carrossel_dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+main .carrossel_dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+main .carrossel_dot.ativo {
+    background: #f0a500;
+    transform: scale(1.3);
+}
+
+/* Se tudo couber, esconde setas e bolinhas */
+main .carrossel_hamburguer.sem_scroll .carrossel_btn,
+main .carrossel_hamburguer.sem_scroll .carrossel_dots {
+    display: none;
+}
+
+
+main .carrossel_hamburguer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+main .carrossel_linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main .carrossel_viewport {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+    outline: none;
+}
+main .carrossel_viewport:active { cursor: grabbing; }
+main .carrossel_viewport:focus-visible {
+    outline: 2px solid #f0a500;
+    outline-offset: 4px;
+    border-radius: 10px;
+}
 
 
     main .formato_hamburguer #locker {
@@ -627,7 +799,7 @@
         width: auto;
         z-index: 2;
         
-        
+        transform: translateY(40px);
     }
 
     main .todos_os_pontos a {
@@ -947,6 +1119,13 @@
         width: max-content;
         display: flex;
         flex-direction: row;       
+
+        width: max-content;
+
+    gap: 12px;                                 /* espaço entre os hambúrgueres */
+    transition: transform .45s cubic-bezier(.22,.61,.36,1);
+    will-change: transform;
+    user-select: none;
     }
 
     
@@ -963,7 +1142,85 @@
     }
 
    
-   
+    main .carrossel_btn {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 3;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    transition: transform .2s ease, opacity .2s ease;
+}
+main .carrossel_btn:hover:not(:disabled) { transform: scale(1.1); }
+main .carrossel_btn:disabled { opacity: .3; cursor: default; }
+
+/* ---------- Bolinhas ---------- */
+main .carrossel_dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+main .carrossel_dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #bbb;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+main .carrossel_dot.ativo {
+    background: #f0a500;
+    transform: scale(1.3);
+}
+
+/* Se tudo couber, esconde setas e bolinhas */
+main .carrossel_hamburguer.sem_scroll .carrossel_btn,
+main .carrossel_hamburguer.sem_scroll .carrossel_dots {
+    display: none;
+}
+
+
+main .carrossel_hamburguer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+main .carrossel_linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main .carrossel_viewport {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+    outline: none;
+}
+main .carrossel_viewport:active { cursor: grabbing; }
+main .carrossel_viewport:focus-visible {
+    outline: 2px solid #f0a500;
+    outline-offset: 4px;
+    border-radius: 10px;
+}
 
 
     main .formato_hamburguer #locker {
@@ -991,7 +1248,7 @@
         width: auto;
         z-index: 2;
         
-        
+        transform: translateY(40px);
     }
 
     main .todos_os_pontos a {
