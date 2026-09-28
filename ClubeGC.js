@@ -182,3 +182,19 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 observer.observe(confete);
+
+
+
+
+const elementosEscala = document.querySelectorAll('.animar-escala');
+
+const observerEscala = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('esta-visivel');   // <-- nome único
+            observerEscala.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+
+elementosEscala.forEach(el => observerEscala.observe(el));
