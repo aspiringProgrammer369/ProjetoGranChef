@@ -408,12 +408,15 @@ main .faq-text {
     max-height 0.4s ease,
     opacity 0.3s ease,
     padding-top 0.4s ease;
+
+    
 }
 
 .faq-toggle.active .faq-text {
   max-height: 500px;
   opacity: 1;
   padding: 5px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Ícones: só fade, sempre no mesmo lugar */
@@ -462,6 +465,7 @@ main .fa-circle-minus {
 
 main .faq-toggle {
     padding: 10px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -943,6 +947,7 @@ main .fa-circle-minus {
 
 main .faq-toggle {
     padding: 10px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 

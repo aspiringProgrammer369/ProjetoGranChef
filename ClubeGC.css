@@ -134,6 +134,22 @@
         border-radius: 10px;
     }
 
+    /* Estado inicial: pequeno e invisível */
+.animar-escala {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.8s ease-out,
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+/* Estado final: normal e visível */
+.animar-escala.esta-visivel {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
     main .baixe_o_aplicativo {
         display: flex;
         justify-content: center;
@@ -598,6 +614,22 @@ main .carrossel_viewport:focus-visible {
         border-radius: 10px;
     }
 
+    /* Estado inicial: pequeno e invisível */
+.animar-escala {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.8s ease-out,
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+/* Estado final: normal e visível */
+.animar-escala.esta-visivel {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
     main .baixe_o_aplicativo {
         display: flex;
         justify-content: center;
@@ -1056,6 +1088,22 @@ main .carrossel_viewport:focus-visible {
         border: 2px solid var(--cor-de-fundo);
         border-radius: 10px;
     }
+
+    /* Estado inicial: pequeno e invisível */
+.animar-escala {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.8s ease-out,
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+/* Estado final: normal e visível */
+.animar-escala.esta-visivel {
+    opacity: 1;
+    transform: scale(1);
+}
+
 
     main .baixe_o_aplicativo {
         display: flex;
