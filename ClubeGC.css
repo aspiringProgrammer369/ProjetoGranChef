@@ -157,6 +157,7 @@
         
         height: 800px;
         width: auto;
+        overflow: hidden;
     }
 
     main .recompensas h1 {
@@ -353,6 +354,7 @@ main .carrossel_viewport:focus-visible {
         z-index: 2;
         
         transform: translateY(40px);
+        
     }
 
     main .todos_os_pontos a {
@@ -415,6 +417,7 @@ main .carrossel_viewport:focus-visible {
         align-items: center;
         align-content: center;
         padding-top: 100px;
+        
     }
 
     main .fique_de_olho h1 {
@@ -620,6 +623,7 @@ main .carrossel_viewport:focus-visible {
         align-content: center;
         height: 800px;
         width: auto;
+        overflow: hidden;
     }
 
     main .recompensas h1 {
@@ -1077,6 +1081,7 @@ main .carrossel_viewport:focus-visible {
         
         height: 800px;
         width: auto;
+        overflow: hidden;
     }
 
     main .recompensas h1 {
@@ -1334,7 +1339,7 @@ main .carrossel_viewport:focus-visible {
         align-items: center;
         align-content: center;
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
 
     main .fique_de_olho h1 {
@@ -1552,6 +1557,7 @@ main .carrossel_viewport:focus-visible {
         
         height: 800px;
         width: auto;
+        overflow: hidden;
     }
 
     main .recompensas h1 {
@@ -1824,7 +1830,8 @@ main .carrossel_hamburguer.sem_scroll .carrossel_dots {
         align-items: center;
         align-content: center;
         height: 560px;
-        width: 100vw;
+        width: 100%;
+        
     }
 
     main .fique_de_olho h1 {
