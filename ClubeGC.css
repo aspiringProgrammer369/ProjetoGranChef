@@ -9,12 +9,12 @@
 
 
 
-
 @media (max-width: 765px) {
     
     body .comeco {
         padding-bottom: 10px;
         width: 100%;
+        
     }
 
     main .tela-navegar {
