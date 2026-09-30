@@ -58,6 +58,41 @@
         background-color: var(--cor-escura); /* cor de destaque */
     }
 
+    #delivery {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: lightpink;
+            height: 100px;
+            width: 120px;
+            font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 10px;
+        }
+
+        .redondo {
+            display: flex;
+            justify-content: center;
+            
+            width: 120px;
+            height: 8px;
+            
+        }
+
+        .circulo {
+            background-color: lightpink;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .Ifood {
+            height: 50%;
+        }
+
+        .Rappi {
+            height: 50%;
+        }
+
 
 @media (max-width: 760px) {
 
