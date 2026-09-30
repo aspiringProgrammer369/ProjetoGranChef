@@ -59,6 +59,10 @@
     }
 
     #delivery {
+            display: none;
+        }
+
+        #delivery.active {
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -67,6 +71,7 @@
             width: 120px;
             font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
             border-radius: 10px;
+            transform: translateY(10px);
         }
 
         .redondo {
@@ -75,7 +80,7 @@
             
             width: 120px;
             height: 8px;
-            
+            transform: translateY(-10px);
         }
 
         .circulo {
@@ -83,21 +88,18 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
+            cursor: pointer;
         }
 
-        .Ifood {
+        .Ifood, .Rappi {
             height: 50%;
         }
 
-        .Rappi {
-            height: 50%;
-        }
+        
 
-        .opcao_delivery {
-            display: flex;
-            flex-direction: column;
-            
-        }
+        
+
+        
 
 
 @media (max-width: 760px) {
@@ -176,6 +178,7 @@
         position: relative;
         width: 100%;
         overflow: hidden;
+        
     }
 
     main .Ver-Mais-Salgados {
@@ -205,13 +208,14 @@
         height: 100%;
         object-fit: cover;
         transition: left 0.5s ease;
-        
+       
     }
 
     main .lanches img, main .sobremesas img {
         width: 100%;
         aspect-ratio: 16 / 9;
         object-fit: cover;
+        
     }
     
 
