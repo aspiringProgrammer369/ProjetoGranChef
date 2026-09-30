@@ -58,11 +58,20 @@
         background-color: var(--cor-escura); /* cor de destaque */
     }
 
-    #delivery {
+   
+    .Delivery_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+        .delivery {
             display: none;
+            
         }
 
-        #delivery.active {
+        .delivery.ativo {
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -71,7 +80,16 @@
             width: 120px;
             font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
             border-radius: 10px;
-            transform: translateY(10px);
+            transform: translateX(-20px);
+            
+            position: absolute;
+            z-index: 2;
+            margin-top: 40px;
+        }
+
+        .deliveryBtn {
+            cursor: pointer;
+            
         }
 
         .redondo {
@@ -88,7 +106,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            cursor: pointer;
+        
         }
 
         .Ifood, .Rappi {
@@ -1029,6 +1047,7 @@
         display: flex;
         justify-content: center;
         padding-top: 30px;
+    
     }
 
     header ul {

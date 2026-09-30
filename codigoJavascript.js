@@ -142,3 +142,11 @@ function iniciarCarrossel(seletor) {
 iniciarCarrossel('.lanches');
 iniciarCarrossel('.sobremesas');
 
+
+
+const botao = document.querySelector('.deliveryBtn');
+    const painel = document.querySelector('.delivery');
+
+    botao.addEventListener('click', () => {
+        painel.classList.toggle('ativo');
+    });
