@@ -137,3 +137,11 @@ links.forEach(link => {
 imagemSecundaria.addEventListener('click', () => {
   imagemSecundaria.style.display = 'none';
 });
+
+
+const botao = document.querySelector('.deliveryBtn');
+    const painel = document.querySelector('.delivery2');
+
+    botao.addEventListener('click', () => {
+        painel.classList.toggle('ativo');
+    });

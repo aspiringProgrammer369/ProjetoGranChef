@@ -34,7 +34,7 @@ body {
     background-color: var(--cor-de-fundo);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
-    color: #333;
+    color: var(--cor-escura);
 }
 
 html {

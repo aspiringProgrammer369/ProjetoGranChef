@@ -92,3 +92,11 @@ function iniciarCarrossel(seletor) {
 
 // Inicia o carrossel do cardápio
 iniciarCarrossel('.cardapio-carrosel');
+
+
+const botao = document.querySelector('.deliveryBtn');
+    const painel = document.querySelector('.delivery2');
+
+    botao.addEventListener('click', () => {
+        painel.classList.toggle('ativo');
+    });

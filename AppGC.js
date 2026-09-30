@@ -106,3 +106,11 @@ document.querySelectorAll('.faq-toggle').forEach(item => {
     item.classList.toggle('active');
   });
 });
+
+
+const botao = document.querySelector('.deliveryBtn');
+    const painel = document.querySelector('.delivery2');
+
+    botao.addEventListener('click', () => {
+        painel.classList.toggle('ativo');
+    });

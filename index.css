@@ -68,16 +68,16 @@
         background-color: transparent;
     }
 
-        .delivery {
+        .delivery1 {
             display: none;
             
         }
 
-        .delivery.ativo {
+        .delivery1.ativo {
             display: flex;
             flex-direction: column;
             text-align: center;
-            background-color: var(--cor-de-fundo);
+            background-color: var(--cor-poster);
             height: 100px;
             width: 120px;
             font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
@@ -103,7 +103,7 @@
         }
 
         .circulo {
-            background-color: var(--cor-de-fundo);
+            background-color: var(--cor-poster);
             width: 20px;
             height: 20px;
             border-radius: 50%;

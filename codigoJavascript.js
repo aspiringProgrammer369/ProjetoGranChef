@@ -145,8 +145,10 @@ iniciarCarrossel('.sobremesas');
 
 
 const botao = document.querySelector('.deliveryBtn');
-    const painel = document.querySelector('.delivery');
+    const painel = document.querySelector('.delivery1');
 
     botao.addEventListener('click', () => {
         painel.classList.toggle('ativo');
     });
+
+    

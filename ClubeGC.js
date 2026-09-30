@@ -198,3 +198,19 @@ const observerEscala = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 elementosEscala.forEach(el => observerEscala.observe(el));
+
+
+const botao = document.querySelector('.deliveryBtn');
+    const painel = document.querySelector('.delivery2');
+
+    botao.addEventListener('click', () => {
+        painel.classList.toggle('ativo');
+    });
+
+
+    document.querySelectorAll('.faq-toggle').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    item.classList.toggle('active');
+  });
+});
