@@ -1026,7 +1026,7 @@
     header {
         background-color: var(--cor-header);
         display: grid;
-        grid-template: 1fr / 1% 99%;
+        grid-template: 1fr / repeat(3, 1fr);
         justify-content: center;
         align-content: center;
         align-items: center;
