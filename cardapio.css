@@ -77,62 +77,7 @@ html {
   background: #000; /* preta quando ativa */
 }
 
- .Delivery_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        color: inherit;
-        background-color: transparent;
-    }
-
-        .delivery2 {
-            display: none;
-            
-        }
-
-        .delivery2.ativo {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            background-color: var(--cor-poster);
-            height: 100px;
-            width: 120px;
-            font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
-            border-radius: 10px;
-            transform: translateX(-10px);
-            position: absolute;
-            z-index: 1;
-            margin-top: 40px;
-        }
-
-        .deliveryBtn {
-            cursor: pointer;
-            
-        }
-
-        .redondo {
-            display: flex;
-            justify-content: center;
-            
-            width: 120px;
-            height: 8px;
-            transform: translateY(-10px);
-        }
-
-        .circulo {
-            background-color: var(--cor-poster);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-        
-        }
-
-        .Ifood, .Rappi {
-            height: 50%;
-            color: black;
-            font-size: 1.2rem;
-        }
+ 
 
 
 
@@ -1366,6 +1311,8 @@ html {
 
       /* SEÇÃO HEADER */
     body .comeco {
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
@@ -1374,13 +1321,15 @@ html {
     }
 
     header .botao-voltar {
+        grid-area: 1 / 1 / 2 / 2;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        
+        justify-content: center;
         align-items: center;
     }
 
     header .tela-navegar {
+        grid-area: 1 / 2 / 2 / 3;
         color: black;
     }
 
