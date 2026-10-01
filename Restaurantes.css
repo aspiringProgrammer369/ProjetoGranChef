@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+
+
+
+ .Delivery_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        color: inherit;
+        background-color: transparent;
+    }
+
+        .delivery2 {
+            display: none;
+            
+        }
+
+        .delivery2.ativo {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: var(--cor-poster);
+            height: 100px;
+            width: 120px;
+            font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 10px;
+            transform: translateX(-10px);
+            position: absolute;
+            z-index: 1;
+            margin-top: 40px;
+        }
+
+        .deliveryBtn {
+            cursor: pointer;
+            
+        }
+
+        .redondo {
+            display: flex;
+            justify-content: center;
+            
+            width: 120px;
+            height: 8px;
+            transform: translateY(-10px);
+        }
+
+        .circulo {
+            background-color: var(--cor-poster);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        
+        }
+
+        .Ifood p, .Rappi p {
+            height: 50%;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+
+
+        @media (max-width: 560px) {
+
+        header .cabecalho_restaurante {
+            height: 1000px;
+           background-color: white;
+           margin: 1000px;
+        }
+            body .comeco {
+        background-color: var(--cor-de-fundo);
+        padding-top: 70px;
+        font-size: 1.3rem;
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+
+    header .botao-voltar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+
+    header .tela-navegar {
+        display: none;
+    }
+
+    header .voltar {
+        padding-left: 8px;
+    }
+
+    header .voltar:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    header .comeco p {
+        text-align: center;
+    }
+
+    header .restaurantes {
+        padding-bottom: 20px;
+    }
+        }
+
+        @media (min-width: 561px) and (max-width: 765px) {
+
+        }
+
+        @media (min-width: 766px) and (max-width: 1030px) {
+
+        }
+
+        @media (min-width: 1031px) {
+
+        }
