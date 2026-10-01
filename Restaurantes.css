@@ -70,9 +70,8 @@
         @media (max-width: 560px) {
 
         header .cabecalho_restaurante {
-            height: 1000px;
-           background-color: white;
-           margin: 1000px;
+           
+           
         }
             body .comeco {
         background-color: var(--cor-de-fundo);
@@ -103,12 +102,18 @@
         cursor: pointer;
     }
 
-    header .comeco p {
-        text-align: center;
+    header .cabecalho_restaurante a {
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     }
 
     header .restaurantes {
-        padding-bottom: 20px;
+        padding-bottom: 100px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        transform: translateY(50px);
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     }
         }
 
