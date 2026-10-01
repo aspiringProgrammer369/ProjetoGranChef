@@ -1081,8 +1081,23 @@ main .parte-texto {
 
 @media (min-width: 1351px) {
 
-    body .comeco {
+    header .comeco {
         padding-bottom: 17px;
+    }
+
+    header .botao_voltar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    header .voltar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     main .infoAppGC {

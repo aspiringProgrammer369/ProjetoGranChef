@@ -767,6 +767,35 @@
 
 @media (min-width: 1031px) {
 
+    
+
+     /* SEÇÃO HEADER */
+    body .comeco {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
+        background-color: var(--cor-de-fundo);
+        padding-top: 70px;
+        font-size: 1.3rem;
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+    header .botao-voltar {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor-botoes);
+    }
+
+    header .tela-navegar {
+        grid-area: 1 / 2 / 2 / 3;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
     header .tela-navegar a{
         display: flex;
         justify-content: center;
@@ -776,26 +805,9 @@
         
     }
 
-     /* SEÇÃO HEADER */
-    body .comeco {
-        background-color: var(--cor-de-fundo);
-        padding-top: 70px;
-        font-size: 1.3rem;
-        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
-        
-    }
+    
 
-    header .botao-voltar {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        color: var(--cor-botoes);
-    }
-
-    header .voltar {
-        padding-left: 8px;
-    }
+    
 
      header .voltar:hover {
         text-decoration: underline;

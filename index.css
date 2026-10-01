@@ -1034,11 +1034,17 @@
 
     header .logo-oficial {
         grid-area: 1 / 1 / 2 / 2;
-        align-items: center;
-        align-content: center;
         width: 200px;
         height: auto;
-        padding-right: 20px;
+        transform: translateY(15px);
+    }
+
+    header .imagem_do_logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     header .logo-rosto , header .icones-a-direita, header .logo-nome {
@@ -1375,12 +1381,17 @@
 
     header .logo-oficial {
         grid-area: 1 / 1 / 2 / 2;
-        align-items: center;
-        align-content: center;
         width: 200px;
         height: auto;
-        padding-right: 20px;
-        
+        transform: translateY(15px);
+    }
+
+    header .imagem_do_logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     header .logo-rosto , header .icones-a-direita, header .logo-nome {
