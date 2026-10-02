@@ -69,16 +69,11 @@
 
         @media (max-width: 560px) {
 
-        header .cabecalho_restaurante {
-           
-           
-        }
-            body .comeco {
+        body .comeco {
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
     }
 
     header .botao-voltar {
@@ -102,18 +97,11 @@
         cursor: pointer;
     }
 
-    header .cabecalho_restaurante a {
-        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
-    }
+    
 
-    header .restaurantes {
-        padding-bottom: 100px;
-        background-color: transparent;
+    body .cupom {
         display: flex;
         justify-content: center;
-        text-align: center;
-        transform: translateY(50px);
-        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     }
         }
 
