@@ -103,16 +103,16 @@
         display: flex;
         justify-content: center;
     }
-        }
 
-        @media (min-width: 561px) and (max-width: 765px) {
 
-        }
+}
 
-        @media (min-width: 766px) and (max-width: 1030px) {
+        
 
-        }
+@media (min-width: 1031px) {
 
-        @media (min-width: 1031px) {
+      body .bottom-nav {
+    display: none;
+  }      
 
-        }
+}
