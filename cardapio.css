@@ -38,7 +38,7 @@ html {
   background: rgba(0,0,0,0.5);
   color: #fff;
   border: none;
-  font-size: 30px;
+  font-size: 2rem;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 50%; /* deixa redondo */

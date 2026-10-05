@@ -132,7 +132,7 @@
 @media (max-width: 760px) {
 
     
-    header {
+    body .configuracao_header {
         background-color: var(--cor-header);
         display: grid;
         grid-template: 1fr / 1fr 1fr 1fr;
@@ -652,7 +652,7 @@
 @media (min-width: 761px) and (max-width: 1020px) {
 
 
-    header {
+    body .configuracao_header {
         background-color: var(--cor-header);
         display: grid;
         grid-template: 1fr / 1fr 1fr 1fr;
@@ -1029,7 +1029,7 @@
 @media (min-width: 1021px) and (max-width: 1120px) {
 
 
-    header {
+    body .configuracao_header {
         background-color: var(--cor-header);
         display: grid;
         grid-template: 1fr / repeat(3, 1fr);
@@ -1376,7 +1376,7 @@
 @media (min-width: 1121px) {
 
 
-     header {
+     body .configuracao_header {
         background-color: var(--cor-header);
         display: grid;
         grid-template: 1fr / repeat(3, 1fr);

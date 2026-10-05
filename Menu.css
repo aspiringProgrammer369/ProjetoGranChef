@@ -6,15 +6,25 @@
 
 
 
-header .header_menu {
-    width: 100%;
+body .header_menu {
+    
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: var(--cor-poster);
 }
 
 main .trecho_navegacao {
     display: flex;
     justify-content: flex-start;
     background-color: var(--cor-header);
+}
+
+body #login_img {
+    color: white;
+    background-color: black;
+    margin-right: 20px;
+    font-size: 3rem;
+    border-radius: 50%;
 }
