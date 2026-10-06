@@ -67,3 +67,13 @@ main #delivery_option {
     flex-direction: column;
     
 }
+
+.teste_menu a {
+    display: block;
+}
+
+
+.teste_menu summary {
+    cursor: pointer;
+    list-style: none;
+}
