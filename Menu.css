@@ -25,6 +25,7 @@ main .trecho_navegacao {
     justify-content: flex-start;
     
     text-align: left;
+    padding-bottom: 20px;
 }
 
 main .teste_menu {
@@ -32,52 +33,109 @@ main .teste_menu {
     
 }
 
-main .trecho_navegacao ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-}
 
-main .trecho_navegacao a, summary {
+
+main .menu_acima, summary {
     padding-left: 30px;
-    color: white;
+    color: var(--cor-de-fundo);
 }
 
-main .ifood_link, main .rappi_link {
-    padding-left: 1000px;
-    
+main #Delivery_option {
+    padding-left: 20px;
+    background-color: darkred;
 }
+
+
 
 
 body #login_img {
     color: var(--cor-poster);
-    background-color: white;
+    background-color: var(--cor-de-fundo);
     margin-right: 20px;
     font-size: 3rem;
     border-radius: 50%;
 }
 
-body #testando1, body #testando2 {
-    color: white;
-    
-    margin-right: 20px;
-    font-size: 3rem;
-}
+
 
 main #delivery_option {
     display: flex;
     flex-direction: column;
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 100%;
+}
+
+main .fa-caret-right {
+    
+    width: auto;
+    height: 10px;
+    font-size: 2rem;
+    
+  
+}
+
+main .right-arrow {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-80px);
+    height: 0.1vh;
+    padding-right: 20px;
+}
+
+main .menu_acima {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
-.teste_menu a {
-    display: block;
+main .ifood_link, main .rappi_link {
+    background-color: var(--cor-de-fundo);
+    color: darkred;
+    padding-right: 70%;
+    font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    
 }
 
 
-.teste_menu summary {
+
+main .site_de_entrega {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+main summary {
+    font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+details[open] summary {
+    background-color: darkred;
+    
+}
+
+details[open] summary .fa-caret-right {
+    transform: rotate(90deg);
+    transform: translate(20px, 10px);
+}
+
+main .Delivery_bottom {
     cursor: pointer;
     list-style: none;
 }
