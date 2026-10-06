@@ -68,29 +68,41 @@
 @media (max-width: 560px) {
     /* SEÇÃO HEADER */
     body .comeco {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
     }
 
     header .botao-voltar {
+        width: 100%;
+        grid-area: 1 / 1 / 2 / 2;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
-    
+    }
+
+    header .cupom {
+        width: 100%;
+        grid-area: 1 / 2 / 2 / 3;
     }
 
     header .tela-navegar {
         display: none;
     }
 
+    
+
     header .voltar {
+        grid-area: 1 / 1 / 2 / 2;
         padding-left: 8px;
     }
 
     header .voltar:hover {
+        grid-area: 1 / 1 / 2 / 2;
         text-decoration: underline;
         cursor: pointer;
     }
@@ -98,6 +110,7 @@
     
 
     body .cupom {
+        grid-area: 1 / 2 / 2 / 3;
         display: flex;
         justify-content: center;
     }
@@ -362,13 +375,18 @@
 
     /* SEÇÃO HEADER */
     body .comeco {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
-        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
     }
 
     header .botao-voltar {
+        width: 100%;
+        grid-area: 1 / 1 / 2 / 2;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -379,7 +397,13 @@
         display: none;
     }
 
+    header .cupom {
+        width: 100%;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
     header .voltar {
+        grid-area: 1 / 1 / 2 / 2;
         padding-left: 8px;
     }
 
@@ -572,6 +596,8 @@
 
      /* SEÇÃO HEADER */
     body .comeco {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
@@ -579,10 +605,17 @@
     }
 
     header .botao-voltar {
+        width: 100%;
+        grid-area: 1 / 1 / 2 / 2;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    header .cupom {
+        width: 100%;
+        grid-area: 1 / 2 / 2 / 3;
     }
 
     header .voltar:hover {
@@ -591,6 +624,7 @@
     }
 
     header .voltar {
+        grid-area: 1 / 1 / 2 / 2;
         padding-left: 8px;
     }
 
