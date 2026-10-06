@@ -40,7 +40,13 @@ main .trecho_navegacao ul {
     
 }
 
-main .trecho_navegacao a {
+main .trecho_navegacao a, summary {
+    padding-left: 30px;
+    color: white;
+}
+
+main .ifood_link, main .rappi_link {
+    padding-left: 1000px;
     
 }
 
