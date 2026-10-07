@@ -101,7 +101,10 @@ main .ifood_link, main .rappi_link {
     
 }
 
-
+main .rappi_link {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 main .site_de_entrega {
     width: 100%;
@@ -132,7 +135,7 @@ details[open] summary {
 
 details[open] summary .fa-caret-right {
     transform: rotate(90deg);
-    transform: translate(20px, 10px);
+    
 }
 
 main .Delivery_bottom {
