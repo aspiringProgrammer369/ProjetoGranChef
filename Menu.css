@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Arbutus&family=Archivo+Black&family=Bevan:ital@0;1&family=Changa+One:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Fjalla+One&family=Indie+Flower&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montenegrin+Gothic+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Guides&family=Rock+Salt&family=Smokum&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body .header_menu {
     
@@ -71,7 +71,7 @@ main .fa-caret-right {
     width: auto;
     height: 10px;
     font-size: 2rem;
-    
+   
   
 }
 
@@ -98,7 +98,14 @@ main .ifood_link, main .rappi_link {
     
     font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
-    
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1% 99%;
+}
+
+main .letra_ifood, main .letra_rappi {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-left: 40px;
 }
 
 main .rappi_link {
@@ -145,4 +152,118 @@ details[open] summary .right-arrow {
 main .Delivery_bottom {
     cursor: pointer;
     list-style: none;
+}
+
+main .acessibilidade {
+    width: 50%;
+    
+    color: black;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Dm Serif Text' , Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+main .accessibility {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    
+}
+
+main .alto_contraste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+   margin-bottom: 15px;
+   
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--cor-poster);
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+main .tamanho_da_fonte {
+    margin-bottom: 15px;
+}
+
+main .div_padrao {
+    text-align: center;
+    background-color: white;
+    width: 100px;
+    border-radius: 100px;
+   outline: 2px solid black;
+}
+
+main .padrao {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+main .div_grande {
+    background-color: white;
+    text-align: center;
+    width: 130px;
+    border-radius: 100px;
+    outline: 2px solid black;
+}
+
+main .grande {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+main .div_extra_grande {
+    background-color: white;
+    text-align: center;
+    width: 240px;
+    border-radius: 100px;
+    outline: 2px solid black;
+}
+
+main .extra_grande {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    
 }
