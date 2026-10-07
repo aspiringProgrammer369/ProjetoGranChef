@@ -95,7 +95,7 @@ main .menu_acima {
 main .ifood_link, main .rappi_link {
     background-color: var(--cor-de-fundo);
     color: darkred;
-    padding-right: 70%;
+    
     font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     
@@ -107,9 +107,10 @@ main .rappi_link {
 }
 
 main .site_de_entrega {
-    width: 100%;
+    width: 99.8%;
     display: flex; 
     flex-direction: column;
+    justify-content: flex-start;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -134,8 +135,11 @@ details[open] summary {
 }
 
 details[open] summary .fa-caret-right {
-    transform: rotate(90deg);
-    
+   transform: rotate(90deg);
+}
+
+details[open] summary .right-arrow {
+    transform: translate(40px ,-45px);
 }
 
 main .Delivery_bottom {
