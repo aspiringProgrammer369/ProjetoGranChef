@@ -59,8 +59,8 @@
 /* ======= BOTÕES DAS SETAS ======= */
 .carrossel-btn {
     background: rgba(230, 57, 70, 0.95);
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--cor-branca);
+    color: var(--cor-branca);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -176,7 +176,7 @@ main .opcoes-de-lanche {
     }
 
     main .vantagens-do-app .material-symbols-outlined {
-        color: white;
+        color: var(--cor-branca);
         font-size: 5rem;
         padding-top: 40px;
         padding-bottom: 5px;
@@ -187,7 +187,7 @@ main .opcoes-de-lanche {
 
     main .fa-solid {
         font-size: 5rem;
-        color: white;
+        color: var(--cor-branca);
         padding-top: 50px;
         padding-bottom: 5px;
     }
@@ -276,7 +276,7 @@ main .opcoes-de-lanche {
 
   
     main .so-no-app-gc {
-        background-color: white;
+        background-color: var(--cor-branca);
         padding-top: 50px;
         padding-bottom: 50px;
         height: 530px;
@@ -368,7 +368,7 @@ main .opcoes-de-lanche {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color: var(--cor-branca);
         height: auto;
         border-radius: 10px;
         margin-left: 10px;
@@ -391,7 +391,7 @@ main .opcoes-de-lanche {
         flex-direction: column;
         
         align-items: center;
-        background-color: white;
+        background-color: var(--cor-branca);
         padding-top: 80px;
         padding-bottom: 100px;
         
@@ -616,7 +616,7 @@ main .parte-texto {
     
 
     main .vantagens-do-app .material-symbols-outlined {
-        color: white;
+        color: var(--cor-branca);
         font-size: 5rem;
         padding-top: 40px;
         padding-bottom: 5px;
@@ -627,7 +627,7 @@ main .parte-texto {
 
     main .fa-solid {
         font-size: 5rem;
-        color: white;
+        color: var(--cor-branca);
         padding-top: 50px;
         padding-bottom: 5px;
     }
@@ -760,7 +760,7 @@ main .parte-texto {
  
 
     main .so-no-app-gc {
-        background-color: white;
+        background-color: var(--cor-branca);
         padding-top: 50px;
         padding-bottom: 50px;
         height: 530px;
@@ -853,7 +853,7 @@ main .parte-texto {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color: var(--cor-branca);
         height: auto;
         border-radius: 10px;
         margin-left: 20px;
@@ -880,7 +880,7 @@ main .parte-texto {
         flex-direction: column;
         
         align-items: center;
-        background-color: white;
+        background-color: var(--cor-branca);
         padding-top: 80px;
         padding-bottom: 100px;
         
@@ -1116,7 +1116,7 @@ main .parte-texto {
     
 
     main .vantagens-do-app .material-symbols-outlined {
-        color: white;
+        color: var(--cor-branca);
         font-size: 5rem;
         padding-top: 40px;
         padding-bottom: 5px;
@@ -1127,7 +1127,7 @@ main .parte-texto {
 
     main .fa-solid {
         font-size: 5rem;
-        color: white;
+        color: var(--cor-branca);
         padding-top: 50px;
         padding-bottom: 5px;
     }
@@ -1249,7 +1249,7 @@ main .parte-texto {
 
 
     main .so-no-app-gc {
-        background-color: white;
+        background-color: var(--cor-branca);
         padding-top: 50px;
         padding-bottom: 50px;
         height: 530px;
@@ -1376,7 +1376,7 @@ main .parte-texto {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: left;
-        background-color: white;
+        background-color: var(--cor-branca);
         width: 100%;
         height: auto;
         border-radius: 10px;
@@ -1401,107 +1401,107 @@ main .parte-texto {
         flex-direction: column;
         
         align-items: center;
-        background-color: white;
+        background-color: var(--cor-branca);
         padding-top: 80px;
         padding-bottom: 100px;
         
     }
 
     
-/* ===== Estado padrão (COM transição) ===== */
-main .faq-text {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding-right: 5px;
-  padding-left: 5px;
-  
-  width: 100%;
-  transition:
-    max-height 0.4s ease,
-    opacity 0.3s ease,
-    padding-top 0.4s ease;
-}
-
-.faq-toggle.active .faq-text {
-  max-height: 500px;
-  opacity: 1;
-  padding: 5px;
-}
-
-/* Ícones: só fade, sempre no mesmo lugar */
-main .fa-circle-plus,
-main .fa-circle-minus {
-  color: black;
-  font-size: 1.9rem;
-  
-
-  transition: opacity 0.3s ease;
-  
-}
-
-main .fa-circle-plus {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(-20px);
-  
-}
-
-main .parte_1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    height: 30px;
-    margin: 5px;
-    width: 100%;
-}
-
-main .faq-title {
-    width: 92%;
-}
-
-main .icones_plus_minus {
+    /* ===== Estado padrão (COM transição) ===== */
+    main .faq-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-right: 5px;
+    padding-left: 5px;
     
-    transform: translateX(-28px);
-    
-    width: 1%;
-}
-
-main .fa-circle-minus {
-  display: none;
-}
-
-main .faq-toggle {
-    padding: 10px;
-}
-
-
-.faq-toggle.active .fa-circle-plus {
-  display: none;
-}
-
-.faq-toggle.active .fa-circle-minus {
-  
-  display: flex; /* mostra o minus */
-  transform: translateY(-24%);
-  
-  pointer-events: auto;
-}
-
-
-
-
-
-main .parte-texto {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: space-between;
     width: 100%;
-   
-}
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding-top 0.4s ease;
+    }
+
+    .faq-toggle.active .faq-text {
+    max-height: 500px;
+    opacity: 1;
+    padding: 5px;
+    }
+
+    /* Ícones: só fade, sempre no mesmo lugar */
+    main .fa-circle-plus,
+    main .fa-circle-minus {
+    color: black;
+    font-size: 1.9rem;
+    
+
+    transition: opacity 0.3s ease;
+    
+    }
+
+    main .fa-circle-plus {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-20px);
+    
+    }
+
+    main .parte_1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        height: 30px;
+        margin: 5px;
+        width: 100%;
+    }
+
+    main .faq-title {
+        width: 92%;
+    }
+
+    main .icones_plus_minus {
+        
+        transform: translateX(-28px);
+        
+        width: 1%;
+    }
+
+    main .fa-circle-minus {
+    display: none;
+    }
+
+    main .faq-toggle {
+        padding: 10px;
+    }
+
+
+    .faq-toggle.active .fa-circle-plus {
+    display: none;
+    }
+
+    .faq-toggle.active .fa-circle-minus {
+    
+    display: flex; /* mostra o minus */
+    transform: translateY(-24%);
+    
+    pointer-events: auto;
+    }
+
+
+
+
+
+    main .parte-texto {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: space-between;
+        width: 100%;
+    
+    }
    
 
 

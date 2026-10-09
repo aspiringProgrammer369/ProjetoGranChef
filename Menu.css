@@ -239,6 +239,7 @@ main .div_padrao {
 main .padrao {
     margin-bottom: 15px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 main .div_grande {
@@ -252,6 +253,7 @@ main .div_grande {
 main .grande {
     margin-bottom: 15px;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 main .div_extra_grande {
@@ -265,5 +267,5 @@ main .div_extra_grande {
 main .extra_grande {
     margin-bottom: 15px;
     font-size: 2rem;
-    
+    cursor: pointer;
 }
