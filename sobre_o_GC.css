@@ -5,3 +5,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 
+main .vintage_gran_chef {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+main .vintage_gran_chef img {
+    width: 100%;
+    height: auto;
+}
+
+main .outdoor_gran_chef {
+    width: 100%;
+    height: auto;
+}
+
+main .outdoor_gran_chef img {
+    width: 100%;
+    height: auto;
+}
+
+main .trabalhadores_gran_chef {
+    width: 100%;
+    height: auto;
+}
+
+main .trabalhadores_gran_chef img {
+    width: 100%;
+    height: auto;
+}
+
+main .black_girl_image {
+    width: 100%;
+    height: auto;
+}
+
+main .black_girl_image img {
+    width: 100%;
+    height: auto;
+}
+
+main .cultura {
+    width: 100%;
+    height: auto;
+}
+
+main .cultura h1 {
+    text-align: center;
+}
+
+main .cultura img {
+    width: 100%;
+    height: auto;
+}
+
+main .nossos_valores {
+    width: 100%;
+    height: auto;
+}
+
+main .nossos_valores img {
+    width: 100%;
+    height: auto;
+}
