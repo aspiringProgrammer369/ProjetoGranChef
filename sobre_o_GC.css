@@ -19,6 +19,8 @@ main .vintage_gran_chef img {
 main .outdoor_gran_chef {
     width: 100%;
     height: auto;
+    background-color: #198737;
+    color: #FFAA00;
 }
 
 main .outdoor_gran_chef img {
@@ -26,9 +28,12 @@ main .outdoor_gran_chef img {
     height: auto;
 }
 
+
+
 main .trabalhadores_gran_chef {
     width: 100%;
     height: auto;
+    background-color: #FFAA00;
 }
 
 main .trabalhadores_gran_chef img {
