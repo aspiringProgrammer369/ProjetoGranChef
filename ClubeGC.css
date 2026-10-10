@@ -204,7 +204,7 @@
         height: 100%;
         object-fit: cover;
         z-index: -1;
-        width: 100vw;
+        width: 100%;
     }
 
     .confete.visivel {
@@ -471,7 +471,7 @@ main .carrossel_viewport:focus-visible {
     }
 
     main .fique_de_olho img {
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
 

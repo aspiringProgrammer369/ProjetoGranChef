@@ -5,72 +5,337 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 
-main .vintage_gran_chef {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+@media (max-width: 760px) {
+    main .vintage_gran_chef {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    main .vintage_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .outdoor_gran_chef {
+        width: 100%;
+        height: auto;
+        background-color: #198737;
+        color: #FFAA00;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
+
+    main .outdoor_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .outdoor_gran_chef h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    main .outdoor_gran_chef .fa-registered {
+        font-size: 0.5rem;
+        transform: translateY(-20px);
+    }
+
+    main .trabalhadores_gran_chef {
+        width: 100%;
+        height: auto;
+        background-color: #FFAA00;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
+
+    main .trabalhadores_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .trabalhadores_gran_chef h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    main .black_girl_image {
+        width: 100%;
+        height: auto;
+        background-color: #CA161A;
+        color: var(--cor-branca);
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.2rem;
+    }
+
+    main .black_girl_image h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    main .black_girl_image img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .cultura {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: var(--cor-escura);
+        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .cultura h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    main .cultura img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .nossa_missao {
+        padding-bottom: 40px;
+    }
+
+    main .nossa_visao {
+        padding-bottom: 10px;
+    }
+
+    main .nossos_valores {
+        width: 100%;
+        height: auto;
+    }
+
+    main .nossos_valores img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
-main .vintage_gran_chef img {
-    width: 100%;
-    height: auto;
+@media (min-width: 766px) and (max-width: 1050px) {
+
+    main .vintage_gran_chef {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    main .vintage_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .outdoor_gran_chef {
+        width: 100%;
+        height: auto;
+        background-color: #198737;
+        color: #FFAA00;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
+
+    main .outdoor_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .outdoor_gran_chef h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    main .outdoor_gran_chef .fa-registered {
+        font-size: 0.5rem;
+        transform: translateY(-20px);
+    }
+
+    main .trabalhadores_gran_chef {
+        width: 100%;
+        height: auto;
+        background-color: #FFAA00;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
+
+    main .trabalhadores_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .trabalhadores_gran_chef h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    main .black_girl_image {
+        width: 100%;
+        height: auto;
+        background-color: #CA161A;
+        color: var(--cor-branca);
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.2rem;
+    }
+
+    main .black_girl_image h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    main .black_girl_image img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .cultura {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: var(--cor-escura);
+        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .cultura h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    main .cultura img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .nossa_missao {
+        padding-bottom: 40px;
+    }
+
+    main .nossa_visao {
+        padding-bottom: 10px;
+    }
+
+    main .nossos_valores {
+        width: 100%;
+        height: auto;
+    }
+
+    main .nossos_valores img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
-main .outdoor_gran_chef {
-    width: 100%;
-    height: auto;
-    background-color: #198737;
-    color: #FFAA00;
-}
+@media (min-width: 1051px) and (max-width: 1365px) {
 
-main .outdoor_gran_chef img {
-    width: 100%;
-    height: auto;
-}
+    main .vintage_gran_chef {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
 
+    main .vintage_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
 
+    main .outdoor_gran_chef {
+        width: 100%;
+        height: auto;
+        background-color: #198737;
+        color: #FFAA00;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
 
-main .trabalhadores_gran_chef {
-    width: 100%;
-    height: auto;
-    background-color: #FFAA00;
-}
+    main .outdoor_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
 
-main .trabalhadores_gran_chef img {
-    width: 100%;
-    height: auto;
-}
+    main .outdoor_gran_chef h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
 
-main .black_girl_image {
-    width: 100%;
-    height: auto;
-}
+    main .outdoor_gran_chef .fa-registered {
+        font-size: 0.5rem;
+        transform: translateY(-20px);
+    }
 
-main .black_girl_image img {
-    width: 100%;
-    height: auto;
-}
+    main .trabalhadores_gran_chef {
+        width: 100%;
+        height: auto;
+        background-color: #FFAA00;
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+    }
 
-main .cultura {
-    width: 100%;
-    height: auto;
-}
+    main .trabalhadores_gran_chef img {
+        width: 100%;
+        height: auto;
+    }
 
-main .cultura h1 {
-    text-align: center;
-}
+    main .trabalhadores_gran_chef h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
 
-main .cultura img {
-    width: 100%;
-    height: auto;
-}
+    main .black_girl_image {
+        width: 100%;
+        height: auto;
+        background-color: #CA161A;
+        color: var(--cor-branca);
+        font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.2rem;
+    }
 
-main .nossos_valores {
-    width: 100%;
-    height: auto;
-}
+    main .black_girl_image h1 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
 
-main .nossos_valores img {
-    width: 100%;
-    height: auto;
+    main .black_girl_image img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .cultura {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: var(--cor-escura);
+        font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .cultura h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    main .cultura img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .nossa_missao {
+        padding-bottom: 40px;
+    }
+
+    main .nossa_visao {
+        padding-bottom: 10px;
+    }
+
+    main .nossos_valores {
+        width: 100%;
+        height: auto;
+    }
+
+    main .nossos_valores img {
+        width: 100%;
+        height: auto;
+    }
+
 }
