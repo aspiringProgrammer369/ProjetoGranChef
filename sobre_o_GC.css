@@ -5,6 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 
+div, picture, section {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @media (max-width: 760px) {
     main .vintage_gran_chef {
         width: 100%;
@@ -118,10 +129,13 @@
 
 @media (min-width: 766px) and (max-width: 1050px) {
 
+    
+
     main .vintage_gran_chef {
         width: 100%;
         height: auto;
         overflow: hidden;
+    
     }
 
     main .vintage_gran_chef img {
@@ -136,21 +150,35 @@
         color: #FFAA00;
         font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.3rem;
+        display: flex;
+        flex-direction: row;
+        
     }
 
     main .outdoor_gran_chef img {
-        width: 100%;
+        width: 50vw;
         height: auto;
     }
 
     main .outdoor_gran_chef h1 {
+        width: 100%;
         padding-top: 5px;
         padding-bottom: 30px;
+    }
+
+    main .outdoor_gran_chef p {
+        font-size: 2.4vw;
+        width: 100%;
     }
 
     main .outdoor_gran_chef .fa-registered {
         font-size: 0.5rem;
         transform: translateY(-20px);
+    }
+
+    main .outdoor_gran_chef .O_GRAN_CHEF {
+        width: 50vw;
+        height: auto;
     }
 
     main .trabalhadores_gran_chef {
@@ -159,16 +187,25 @@
         background-color: #FFAA00;
         font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.3rem;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     main .trabalhadores_gran_chef img {
-        width: 100%;
+        width: 50vw;
         height: auto;
     }
 
     main .trabalhadores_gran_chef h1 {
         padding-top: 5px;
         padding-bottom: 30px;
+        width: 100%;    
+    }
+
+    main .trabalhadores_texto {
+        width: 50vw;
+        height: auto;
+        width: 100%;
     }
 
     main .black_girl_image {
@@ -178,15 +215,23 @@
         color: var(--cor-branca);
         font-family: 'Passion One', Verdana, Geneva, Tahoma, sans-serif;
         font-size: 1.2rem;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     main .black_girl_image h1 {
         padding-top: 5px;
         padding-bottom: 30px;
+        width: 100%;
     }
 
     main .black_girl_image img {
-        width: 100%;
+        width: 50vw;
+        height: auto;
+    }
+
+    main .texto_black_girl {
+        width: 50vw;
         height: auto;
     }
 
@@ -206,6 +251,12 @@
     main .cultura img {
         width: 100%;
         height: auto;
+    }
+
+    main .missao_e_visao {
+        display: flex;
+        flex-direction: row;
+
     }
 
     main .nossa_missao {
