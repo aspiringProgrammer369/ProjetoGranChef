@@ -5,9 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 
-* {
-    outline: 1px solid red;
-}
+
 
 @media (max-width: 765px) {
     main .vintage_gran_chef {
@@ -367,11 +365,11 @@
     main .missao_e_visao {
         display: flex;
         flex-direction: column;
-        padding-right: 40px;
+       
         padding-left: 20px;
         width: 50%;
         height: 350px;
-        transform: translate(30px, 70px);
+        transform: translateY(70px);
         padding-bottom: 400px;
     }
 
@@ -397,6 +395,8 @@
 }
 
 @media (min-width: 1051px) and (max-width: 1365px) {
+
+    
 
     main .main_sobre_GC {
         width: 100%;
@@ -597,7 +597,7 @@
         padding-left: 20px;
         width: 50%;
         height: 350px;
-        transform: translate(30px, 10px);
+        transform: translateY(10px);
     }
 
     main .nossa_missao {
@@ -823,7 +823,7 @@
         padding-left: 20px;
         width: 50%;
         height: 100%;
-        transform: translate(30px, 10px);
+        transform: translateY(10px);
         font-size: 1.5rem;
     }
 
