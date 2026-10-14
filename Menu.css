@@ -6,9 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Arbutus&family=Archivo+Black&family=Bevan:ital@0;1&family=Changa+One:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Fjalla+One&family=Indie+Flower&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montenegrin+Gothic+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Guides&family=Rock+Salt&family=Smokum&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    outline: 1px solid red;
-}
+
 
 body .header_menu {
     
@@ -30,6 +28,7 @@ main .trecho_navegacao {
     
     text-align: left;
     padding-bottom: 20px;
+    overflow-x: hidden;
 }
 
 main .teste_menu {
@@ -151,11 +150,13 @@ details[open] summary .fa-caret-right {
 
 details[open] summary .right-arrow {
     transform: translate(40px ,-45px);
+    
 }
 
 main .Delivery_bottom {
     cursor: pointer;
     list-style: none;
+     
 }
 
 main .acessibilidade {
