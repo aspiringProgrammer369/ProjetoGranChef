@@ -28,7 +28,7 @@ main .trecho_navegacao {
     
     text-align: left;
     padding-bottom: 20px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 main .teste_menu {
