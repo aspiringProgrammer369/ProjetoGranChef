@@ -382,6 +382,7 @@
         font-size: 1.3rem;
         font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
         width: 100%;
+        
     }
 
     header .botao-voltar {
@@ -601,7 +602,7 @@
         background-color: var(--cor-de-fundo);
         padding-top: 70px;
         font-size: 1.3rem;
-        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif
+        font-family:'Bevan', Verdana, Geneva, Tahoma, sans-serif;
     }
 
     header .botao-voltar {
@@ -611,6 +612,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        
     }
 
     header .cupom {
@@ -801,8 +803,6 @@
 
 @media (min-width: 1031px) {
 
-    
-
      /* SEÇÃO HEADER */
     body .comeco {
         display: grid;
@@ -821,6 +821,7 @@
         justify-content: center;
         align-items: center;
         color: var(--cor-botoes);
+        
     }
 
     header .tela-navegar {

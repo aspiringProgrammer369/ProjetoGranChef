@@ -5,7 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 
-
+* {
+    outline: 1px solid red;
+}
 
 @media (max-width: 765px) {
     main .vintage_gran_chef {
@@ -109,12 +111,22 @@
         background-color: var(--cor-escura);
         font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
         transform: translateY(6px);
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     main .cultura h1 {
         text-align: center;
-        font-size: 5rem;
+        font-size: 4rem;
         
+    }
+
+    main .cultura .cultura_gran_chef {
+        width: 100%;
+    }
+
+    main .cultura picture {
+        width: 100%;
     }
 
     main .cultura img {
@@ -151,7 +163,12 @@
 
 @media (min-width: 766px) and (max-width: 1050px) {
 
-    
+
+    main .main_sobre_GC {
+        width: 100%;
+        height: auto;
+        
+    }
 
     main .vintage_gran_chef {
         width: 100%;
@@ -182,10 +199,12 @@
         transform: translateY(6px);
     }
 
-    
+    main .outdoor_gran_chef picture {
+        width: 50%;
+    }
 
     main .outdoor_gran_chef img {
-        width: 50vw;
+        width: 100%;
         height: auto;
         transform: scale(1.05);
         
@@ -207,7 +226,7 @@
     }
 
     main .outdoor_gran_chef .O_GRAN_CHEF {
-        width: 50vw;
+        width: 50%;
         height: auto;
         
         padding-right: 20px;
@@ -230,10 +249,12 @@
         transform: translateY(6px);
     }
 
-    
+    main .trabalhadores_gran_chef picture {
+        width: 50%;
+    }
 
     main .trabalhadores_gran_chef img {
-        width: 50vw;
+        width: 100%;
         height: auto;
         transform: scale(1.05);
         
@@ -250,13 +271,17 @@
     }
 
     main .trabalhadores_texto {
-        width: 50vw;
+        width: 50%;
         height: auto;
-        width: 100%;
+       
         
         padding-right: 20px;
         padding-left: 20px;
        
+    }
+
+    main .black_girl_image picture {
+        width: 50%;
     }
 
     main .black_girl_image {
@@ -285,7 +310,7 @@
    
 
     main .black_girl_image img {
-        width: 50vw;
+        width: 100%;
         height: auto;
         transform: scale(1.05);
         
@@ -296,7 +321,7 @@
     }
 
     main .texto_black_girl {
-        width: 50vw;
+        width: 50%;
         height: auto;
         
         padding-right: 20px;
@@ -373,7 +398,9 @@
 
 @media (min-width: 1051px) and (max-width: 1365px) {
 
-    
+    main .main_sobre_GC {
+        width: 100%;
+    }
 
     main .vintage_gran_chef {
         width: 100%;
@@ -405,7 +432,7 @@
     }
 
     
-
+    
     main .outdoor_gran_chef img {
         width: 50vw;
         height: auto;
@@ -595,6 +622,8 @@
 }
 
 @media (min-width: 1367px) {
+
+    
 
     
     main .vintage_gran_chef {
