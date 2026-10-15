@@ -11,7 +11,7 @@
 
 @media (max-width: 560px) {
 
-    body .main_trabalhe_conosco {
+    body .section_trabalhe_conosco {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
@@ -72,7 +72,7 @@
 
 @media (min-width: 561px) and (max-width: 765px) {
 
-    body .main_trabalhe_conosco {
+    body .section_trabalhe_conosco {
     width: 100%;
     padding-right: 80px;
     padding-left: 80px;
@@ -134,7 +134,7 @@
 
 @media (min-width: 766px) and (max-width: 1030px) {
 
-    body .main_trabalhe_conosco {
+    body .section_trabalhe_conosco {
     width: 100%;
     padding-right: 100px;
     padding-left: 100px;
@@ -195,8 +195,9 @@
 
 @media (min-width: 1031px) and (max-width: 1600px) {
 
-    body .main_trabalhe_conosco {
-    width: 100%;
+    body .section_trabalhe_conosco {
+    
+    width: 600px;
     padding-right: 100px;
     padding-left: 100px;
     background-color: var(--cor-branca);
@@ -256,7 +257,7 @@
 
 @media (min-width: 1601px) {
 
-     body .main_trabalhe_conosco {
+     body .section_trabalhe_conosco {
     width: 100%;
     padding-right: 400px;
     padding-left: 400px;
