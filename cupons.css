@@ -88,6 +88,7 @@
     header .cupom {
         width: 100%;
         grid-area: 1 / 2 / 2 / 3;
+        white-space: nowrap;
     }
 
     header .tela-navegar {
