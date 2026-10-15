@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+body .texto_das_diretrizes {
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--cor-branca);
+}
+
+body .diretrizes_privacidades {
+    color: var(--cor-poster);
+    padding-top: 40px;
+}
+
+body .texto_das_diretrizes p {
+    font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+body .h1 {
+    font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+body .texto_com_espaco {
+
+}
+
+body .titulo_grande {
+    font-size: 2rem;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
