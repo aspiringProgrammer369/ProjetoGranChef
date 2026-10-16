@@ -7,41 +7,233 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 
-body .texto_das_diretrizes {
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: var(--cor-branca);
+@media (max-width: 560px) {
+
+        body .texto_das_diretrizes {
+            padding-right: 20px;
+            padding-left: 20px;
+            background-color: var(--cor-branca);
+        }
+
+        body .diretrizes_privacidades {
+            color: var(--cor-poster);
+            padding-top: 40px;
+        }
+
+        body .texto_das_diretrizes .texto_normal {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.3rem;
+        }
+
+        body .texto_centralizado {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        body .h2 {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+        }
+
+        body .texto_com_espaco {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.9rem;
+            padding-left: 30px;
+        }
+
+        body .titulo_grande {
+            font-size: 2rem;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
 }
 
-body .diretrizes_privacidades {
-    color: var(--cor-poster);
-    padding-top: 40px;
+@media (min-width: 561px) and (max-width: 765px) {
+
+     body .texto_das_diretrizes {
+            padding-right: 50px;
+            padding-left: 50px;
+            background-color: var(--cor-branca);
+        }
+
+        body .diretrizes_privacidades {
+            color: var(--cor-poster);
+            padding-top: 40px;
+        }
+
+        body .texto_das_diretrizes .texto_normal {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.3rem;
+        }
+
+        body .texto_centralizado {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        body .h2 {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+        }
+
+        body .texto_com_espaco {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.9rem;
+            padding-left: 30px;
+        }
+
+        body .titulo_grande {
+            font-size: 2rem;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
 }
 
-body .texto_das_diretrizes p {
-    font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3rem;
+@media (min-width: 766px) and (max-width: 1030px) {
+
+        body .texto_das_diretrizes {
+            padding-right: 100px;
+            padding-left: 100px;
+            background-color: var(--cor-branca);
+        }
+
+        body .diretrizes_privacidades {
+            color: var(--cor-poster);
+            padding-top: 40px;
+        }
+
+        body .texto_das_diretrizes .texto_normal {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.3rem;
+        }
+
+        body .texto_centralizado {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        body .h2 {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+        }
+
+        body .texto_com_espaco {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.9rem;
+            padding-left: 30px;
+        }
+
+        body .titulo_grande {
+            font-size: 2rem;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
 }
 
-body .texto_centralizado {
-    text-align: center;
-    padding-top: 20px;
+@media (min-width: 1031px) and (max-width: 1600px) {
+
+        body .texto_das_diretrizes {
+            padding-right: 150px;
+            padding-left: 150px;
+            background-color: var(--cor-branca);
+            width: 100%;
+        }
+
+        body .diretrizes_privacidades {
+            color: var(--cor-poster);
+            padding-top: 40px;
+        }
+
+        body .texto_das_diretrizes .texto_normal {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.9rem;
+            text-align: justify;
+            
+        }
+
+        body .texto_centralizado {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        body .h2 {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+        }
+
+        body .texto_com_espaco {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.9rem;
+            padding-left: 50px;
+        }
+
+        body .titulo_grande {
+            font-size: 3.5rem;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
 }
 
-body .h1 {
-    font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-}
+@media (min-width: 1601px) {
 
-body .texto_com_espaco {
-    font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.5rem;
-}
+    body .texto_das_diretrizes {
+            padding-right: 400px;
+            padding-left: 400px;
+            background-color: var(--cor-branca);
+            width: 100%;
+        }
 
-body .titulo_grande {
-    font-size: 2rem;
-}
+        body .diretrizes_privacidades {
+            color: var(--cor-poster);
+            padding-top: 40px;
+        }
 
-table, th, td {
-    border: 1px solid black;
+        body .texto_das_diretrizes .texto_normal {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.9rem;
+            text-align: justify;
+            
+        }
+
+        body .texto_centralizado {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        body .h2 {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+        }
+
+        body .texto_com_espaco {
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.9rem;
+            padding-left: 50px;
+        }
+
+        body .titulo_grande {
+            font-size: 3.5rem;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
 }

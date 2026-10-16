@@ -86,9 +86,12 @@
     }
 
     header .cupom {
+        display: flex;
+        justify-content: center;
         width: 100%;
         grid-area: 1 / 2 / 2 / 3;
         white-space: nowrap;
+        text-align: center;
     }
 
     header .tela-navegar {
@@ -110,11 +113,7 @@
 
     
 
-    body .cupom {
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        justify-content: center;
-    }
+    
 
     /*TRECHO BODY*/
 
@@ -400,9 +399,12 @@
     }
 
     header .cupom {
+        display: flex;
+        justify-content: center;
         width: 100%;
         grid-area: 1 / 2 / 2 / 3;
         white-space: nowrap;
+        text-align: center;
     }
 
     header .voltar {
@@ -417,10 +419,7 @@
 
     
 
-    body .cupom {
-        display: flex;
-        justify-content: center;
-    }
+    
 
     main .carrossel-cupons {
         width: 100%;
@@ -618,9 +617,12 @@
     }
 
     header .cupom {
+        display: flex;
+        justify-content: center;
         width: 100%;
         grid-area: 1 / 2 / 2 / 3;
         white-space: nowrap;
+        text-align: center;
     }
 
     header .voltar:hover {
@@ -633,10 +635,7 @@
         padding-left: 8px;
     }
 
-    body .cupom {
-        display: flex;
-        justify-content: center;
-    }
+    
 
     header .tela-navegar {
         display: none;
