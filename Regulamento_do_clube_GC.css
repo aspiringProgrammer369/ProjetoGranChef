@@ -9,7 +9,24 @@
 
 @media (max-width: 560px) {
 
-      
+      body .main_regulamento {
+            padding-right: 10px;
+            padding-left: 10px;
+      }
+
+      main .regulamento_clube_gc {
+            color: var(--cor-poster);
+            font-size: 1.8rem;
+      }
+
+      main .termos_e_condicoes {
+            padding-top: 5px;
+            padding-bottom: 5px;
+      }
+
+      main .texto_normal {
+            font-size: 1.2rem;
+      }
 
 }
 
