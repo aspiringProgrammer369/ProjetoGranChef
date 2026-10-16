@@ -10,46 +10,139 @@
 @media (max-width: 560px) {
 
       body .main_regulamento {
-            padding-right: 10px;
-            padding-left: 10px;
+            padding-top: 30px;
+            padding-right: 20px;
+            padding-left: 20px;
+            background-color: white;
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
       }
 
       main .regulamento_clube_gc {
             color: var(--cor-poster);
-            font-size: 1.8rem;
+            font-size: 1.9rem;
       }
 
       main .termos_e_condicoes {
             padding-top: 5px;
             padding-bottom: 5px;
+            font-weight: bold;
       }
 
       main .texto_normal {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            
       }
 
 }
 
 @media (min-width: 561px) and (max-width: 765px) {
 
-    
+      body .main_regulamento {
+            padding-top: 30px;
+            padding-right: 70px;
+            padding-left: 70px;
+            background-color: white;
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      main .regulamento_clube_gc {
+            color: var(--cor-poster);
+            font-size: 1.9rem;
+      }
+
+      main .termos_e_condicoes {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+      }
+
+      main .texto_normal {
+            font-size: 1.4rem;
+            
+      }
 
 }
 
 @media (min-width: 766px) and (max-width: 1030px) {
 
-        
+      body .main_regulamento {
+            padding-top: 30px;
+            padding-right: 140px;
+            padding-left: 140px;
+            background-color: white;
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      main .regulamento_clube_gc {
+            color: var(--cor-poster);
+            font-size: 1.9rem;
+      }
+
+      main .termos_e_condicoes {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+      }
+
+      main .texto_normal {
+            font-size: 1.4rem;
+            
+      }
 
 }
 
 @media (min-width: 1031px) and (max-width: 1600px) {
 
-        
+      body .main_regulamento {
+            padding-top: 30px;
+            padding-right: 200px;
+            padding-left: 200px;
+            background-color: white;
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      main .regulamento_clube_gc {
+            color: var(--cor-poster);
+            font-size: 1.9rem;
+      }
+
+      main .termos_e_condicoes {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+      }
+
+      main .texto_normal {
+            font-size: 1rem;
+            
+      }
 
 }
 
 @media (min-width: 1601px) {
 
-   
+     body .main_regulamento {
+            padding-top: 30px;
+            padding-right: 300px;
+            padding-left: 300px;
+            background-color: white;
+            font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      main .regulamento_clube_gc {
+            color: var(--cor-poster);
+            font-size: 1.9rem;
+      }
+
+      main .termos_e_condicoes {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: bold;
+      }
+
+      main .texto_normal {
+            font-size: 1rem;
+            
+      }
 
 }
