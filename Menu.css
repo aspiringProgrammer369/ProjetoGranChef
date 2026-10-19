@@ -274,3 +274,39 @@ main .extra_grande {
     font-size: 2rem;
     cursor: pointer;
 }
+
+/* Painel lateral — começa escondido fora da tela, à direita */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    max-width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    background: var(--cor-poster);
+    transform: translateX(100%);              /* 🔑 escondido à direita */
+    transition: transform .35s ease-in-out;   /* 🔑 a animação */
+    z-index: 1000;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, .3);
+}
+
+/* Quando a classe .open é adicionada, ele entra na tela */
+.side-menu.open {
+    transform: translateX(0);
+}
+
+/* Fundo escuro por trás */
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility .3s ease;
+    z-index: 999;
+}
+.menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
