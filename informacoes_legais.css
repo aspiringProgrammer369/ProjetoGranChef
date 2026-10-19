@@ -9,13 +9,73 @@
 
 @media (max-width: 560px) {
 
-    
+    body .main_informacoes_legais {
+        background-color: white;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    body .h1_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+   
+
+    main .texto_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bold;
+       font-size: 1.1rem;
+    }
+
+    main .codigo_de_etica {
+        color: green;
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bold;
+       font-size: 1.2rem;
+       
+    }
+
+    main .codigo_de_etica:hover {
+        text-decoration: underline;
+    }
 
 }
 
 @media (min-width: 561px) and (max-width: 1030px) {
 
+   body .main_informacoes_legais {
+        background-color: white;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    body .h1_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
    
+
+    main .texto_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bold;
+       font-size: 1.1rem;
+    }
+
+    main .codigo_de_etica {
+        color: green;
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bold;
+       font-size: 1.2rem;
+       
+    }
+
+    main .codigo_de_etica:hover {
+        text-decoration: underline;
+    }
 
 }
 
@@ -23,12 +83,72 @@
 
 @media (min-width: 1031px) and (max-width: 1600px) {
 
-    
+    body .main_informacoes_legais {
+        background-color: white;
+        padding-right: 160px;
+        padding-left: 160px;
+    }
+
+    body .h1_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+   
+
+    main .texto_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       
+       font-size: 1.1rem;
+    }
+
+    main .codigo_de_etica {
+        color: green;
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bold;
+       font-size: 1.2rem;
+       
+    }
+
+    main .codigo_de_etica:hover {
+        text-decoration: underline;
+    }
 
 }
 
 @media (min-width: 1601px) {
 
-    
+    body .main_informacoes_legais {
+        background-color: white;
+        padding-right: 400px;
+        padding-left: 400px;
+    }
+
+    body .h1_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+   
+
+    main .texto_informacao_legal {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       
+       font-size: 1.1rem;
+    }
+
+    main .codigo_de_etica {
+        color: green;
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+       font-weight: bold;
+       font-size: 1.2rem;
+       
+    }
+
+    main .codigo_de_etica:hover {
+        text-decoration: underline;
+    }
 
 }
