@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+@media (max-width: 560px) {
+
+    body .main_informacoes_legais {
+        width: 100%;
+    }
+
+    main .h1_precisa_de_ajuda {
+         font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+         padding-top: 20px;
+         padding-bottom: 20px;
+    }
+
+    main .texto_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .link_dos_apps {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main .acesse_aqui {
+        display: inline;
+    }
+
+    main .link_disponivel_google {
+        height: auto;
+        width: 150px;
+        padding-top: 10px;
+        transform: translateX(-6px);
+    }
+
+    main .link_disponivel_apple {
+        height: auto;
+        width: 140px;
+    }
+
+    main .texto_fale_com_a_gente {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .h2_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        
+    }
+
+}
+
+@media (min-width: 561px) and (max-width: 1030px) {
+
+    body .main_informacoes_legais {
+        width: 100%;
+    }
+
+    main .h1_precisa_de_ajuda {
+         font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+         padding-top: 20px;
+         padding-bottom: 20px;
+    }
+
+    main .texto_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .link_dos_apps {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main .acesse_aqui {
+        display: inline;
+    }
+
+    main .link_disponivel_google {
+        height: auto;
+        width: 150px;
+        padding-top: 10px;
+        transform: translateX(-6px);
+    }
+
+    main .link_disponivel_apple {
+        height: auto;
+        width: 140px;
+    }
+
+    main .texto_fale_com_a_gente {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .h2_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        
+    }
+
+}
+
+
+
+@media (min-width: 1031px) and (max-width: 1600px) {
+
+    body .main_informacoes_legais {
+        width: 100%;
+    }
+
+    main .h1_precisa_de_ajuda {
+         font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+         padding-top: 20px;
+         padding-bottom: 20px;
+    }
+
+    main .texto_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .link_dos_apps {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main .acesse_aqui {
+        display: inline;
+    }
+
+    main .link_disponivel_google {
+        height: auto;
+        width: 150px;
+        padding-top: 10px;
+        transform: translateX(-6px);
+    }
+
+    main .link_disponivel_apple {
+        height: auto;
+        width: 140px;
+    }
+
+    main .texto_fale_com_a_gente {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .h2_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        
+    }
+
+}
+
+@media (min-width: 1601px) {
+
+    body .main_informacoes_legais {
+        width: 100%;
+    }
+
+    main .h1_precisa_de_ajuda {
+         font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+         padding-top: 20px;
+         padding-bottom: 20px;
+    }
+
+    main .texto_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .link_dos_apps {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    main .acesse_aqui {
+        display: inline;
+    }
+
+    main .link_disponivel_google {
+        height: auto;
+        width: 150px;
+        padding-top: 10px;
+        transform: translateX(-6px);
+    }
+
+    main .link_disponivel_apple {
+        height: auto;
+        width: 140px;
+    }
+
+    main .texto_fale_com_a_gente {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main .h2_fale_conosco {
+        font-family: 'Open Sans' , Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        
+    }
+
+}
