@@ -124,8 +124,36 @@
 
         
 
-        
+        .voltar-topo {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: red;
+            width: 100px;
+            height: 180px;
+        }
 
+
+        .circulo_redondo {
+            height: 25px;
+            width: auto;
+            border-radius: 50%;
+            background-color: white;
+            transform: translateY(-42px);
+        }
+
+        #up_arrow {
+            color: red;
+        }
+
+        .voltar_ao_top {
+            text-align: center;
+            height: 50%;
+            font-size: 0.7rem;
+            font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            transform: translateY(-35px);
+        }
         
 
 
