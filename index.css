@@ -1569,26 +1569,44 @@
             position: fixed;
             z-index: 999;
             bottom: 0%;
-            right: 1px;
+            right: 10px;
             background-color: red;
             width: 300px;
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 300px;
+            height: 350px;
             color: white;
             font-family: 'Bevan', Verdana, Geneva, Tahoma, sans-serif;
+
+            transform: translateY(75%);
+            transition: transform 0.4s ease;
+            
+        }
+
+      
+        .acessibilidade.aberto {
+            transform: translateY(0);
         }
 
         #seta_para_cima {
             font-size: 3rem;
             color: red;
+            width: 50px;
+            background-color: white;
+            border-radius: 50%;
+            transform: translateY(-25px);
+           transition: transform 0.4s ease;
+            
         }
 
+        .acessibilidade.aberto #seta_para_cima {
+    transform: translateY(-25px) rotate(180deg);
+}
 
         .circulo_com_seta {
-            background-color: white;
-            
+            background-color: red;
+            border: 2px solid transparent;
             width: 100%;
             height: auto;
             
@@ -1596,10 +1614,19 @@
             justify-content: center;
             
             align-items: center;
+              cursor: pointer;
         }
 
+        
+
+        
+
+        
+
+        
+
         .div_acessibilidade {
-            
+            transform: translateY(-10px);
             
         }
 
@@ -1615,6 +1642,7 @@
         .div_Tamanho_Da_Fonte {
             padding-bottom: 10px;
             padding-top: 10px;
+            
         }
 
         .div_padrao {
@@ -1644,6 +1672,7 @@
             width: 100%;
             height: 50px;
             background-color: red;
+            
         }
 
         .grande {
@@ -1652,7 +1681,7 @@
             height: 40px;
             border-radius: 50px;
             padding-top: 4px;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             
         }
 
@@ -1663,6 +1692,7 @@
             width: 100%;
             height: 50px;
             background-color: red;
+            transform: translateY(15px);
         }
 
         .extra_grande {
@@ -1673,7 +1703,61 @@
             border-radius: 50px;
             padding-top: 4px;
             font-size: 1.8rem;
+            padding-right: 15px;
+            padding-left: 15px;
         }
+
+        .switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #ccc;
+    border-radius: 28px;
+    transition: background-color 0.3s ease;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Quando o checkbox está marcado */
+.switch input:checked + .slider {
+    background-color: #000;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(24px);
+    background-color: #fff;
+}
+
+/* Foco por teclado (acessibilidade) */
+.switch input:focus-visible + .slider {
+    outline: 2px solid #2196F3;
+    outline-offset: 2px;
+}
 }
 
 @media (min-width: 1121px) {

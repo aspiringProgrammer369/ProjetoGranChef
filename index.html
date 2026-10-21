@@ -255,12 +255,19 @@
         </div>
     </a>
     
-    <section class="acessibilidade">
-        <div class="circulo_com_seta">
-            <span class="material-symbols-outlined" id="seta_para_cima">
-            keyboard_arrow_up
-        </span>
-        </div>
+    <section class="acessibilidade" id="painelAcessibilidade">
+        
+            <button  type="button"
+                    class="circulo_com_seta"
+                    id="btnSeta"
+                    aria-expanded="false"
+                    aria-controls="painelAcessibilidade"
+                    aria-label="Abrir/fechar opções de acessibilidade">
+                <span class="material-symbols-outlined" id="seta_para_cima">
+                    keyboard_arrow_up
+                </span>
+            </button>
+        
         <div class="div_acessibilidade">
             <p class="accessibility">Acessibilidade</p>
             
@@ -268,7 +275,7 @@
         <div class="alto_contraste">
             <p>Alto - contraste</p>
             <label class="switch">
-                <input type="checkbox">
+                <input type="checkbox" id="toggleAltoContraste" aria-label="Ativar alto contraste">
                 <span class="slider"></span>
             </label>
         </div>

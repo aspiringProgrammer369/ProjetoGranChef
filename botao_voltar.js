@@ -11,3 +11,16 @@ window.addEventListener("scroll", function() {
         botao.classList.remove("visivel");
     }
 });
+
+
+
+const btnSeta = document.querySelector("#btnSeta");
+const painelAcessibilidade = document.querySelector("#painelAcessibilidade");
+
+btnSeta.addEventListener("click", function() {
+    painelAcessibilidade.classList.toggle("aberto");
+
+    const aberto = painelAcessibilidade.classList.contains("aberto");
+
+    btnSeta.setAttribute("aria-expanded", aberto);
+});
