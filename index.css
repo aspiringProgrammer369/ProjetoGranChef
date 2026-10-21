@@ -1584,10 +1584,23 @@
             
         }
 
+        .acessibilidade.visivel {
+    transform: translateY(75%);
+}
+
+.acessibilidade.visivel.aberto {
+    transform: translateY(0);
+}
+
       
         .acessibilidade.aberto {
             transform: translateY(0);
         }
+
+        .acessibilidade.aberto #seta_para_cima {
+    transform: translateY(-25px) rotate(180deg);
+}
+
 
         #seta_para_cima {
             font-size: 3rem;
@@ -1600,9 +1613,8 @@
             
         }
 
-        .acessibilidade.aberto #seta_para_cima {
-    transform: translateY(-25px) rotate(180deg);
-}
+        
+
 
         .circulo_com_seta {
             background-color: red;
