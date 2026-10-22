@@ -595,6 +595,10 @@
             transform: translateY(-15px);
         }
 
+        body #painelAcessibilidade {
+        display: none;
+    }
+
             
 }
 
@@ -1152,6 +1156,10 @@
             color: white;
             transform: translateY(-20px);
         }
+
+        body #painelAcessibilidade {
+        display: none;
+    }
 
 }
 

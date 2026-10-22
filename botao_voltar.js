@@ -47,3 +47,8 @@ window.addEventListener("scroll", function() {
     }
 
 });
+
+
+document.getElementById("btn-voltar").addEventListener("click", () => {
+    history.back();
+  });
