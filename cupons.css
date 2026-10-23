@@ -279,7 +279,7 @@
         border: 1px solid var(--cor-header);
         border-radius: 20px 20px 0 0;
         object-fit: cover;
-        background-color: var();
+       
         position: absolute;
     }
 

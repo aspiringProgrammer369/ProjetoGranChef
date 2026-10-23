@@ -114,3 +114,7 @@ const botao = document.querySelector('.deliveryBtn');
     botao.addEventListener('click', () => {
         painel.classList.toggle('ativo');
     });
+
+
+
+
