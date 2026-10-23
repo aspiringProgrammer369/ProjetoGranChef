@@ -118,30 +118,55 @@ const botao = document.querySelector('.deliveryBtn');
 
 
 
-const itens = document.querySelectorAll('.carrossel-item');
-const imagemSecundaria = document.getElementById('imagem_secundaria'); // <- mesmo id do HTML!
 
-itens.forEach(item => {
-  item.addEventListener('click', (e) => {
-    e.preventDefault(); // impede o "#" de subir a página / o "" de recarregar
 
-    const estaVisivel = imagemSecundaria.style.display !== 'none';
-    imagemSecundaria.style.display = estaVisivel ? 'none' : 'block';
-  });
+
+const produtos = document.querySelectorAll(".carrossel-item");
+const overlayBanner = document.querySelector("#overlay-banner");
+const fecharBanner = document.querySelector(".overlay-banner__fechar");
+
+
+// Abrir o banner ao clicar em um produto
+produtos.forEach(function(produto) {
+
+    produto.addEventListener("click", function(event) {
+
+        event.preventDefault();
+
+        overlayBanner.hidden = false;
+
+        requestAnimationFrame(function() {
+            overlayBanner.classList.add("aberto");
+        });
+
+    });
+
 });
 
-const itens = document.querySelectorAll('.carrossel-item');
-const banner = document.getElementById('imagem_secundaria');
 
-itens.forEach(item => {
-  item.addEventListener('click', (e) => {
-    e.preventDefault();
-    banner.hidden = !banner.hidden;   // toggle limpo
-  });
+// Fechar pelo botão X
+fecharBanner.addEventListener("click", function() {
+
+    overlayBanner.classList.remove("aberto");
+
+    setTimeout(function() {
+        overlayBanner.hidden = true;
+    }, 300);
+
 });
 
-// extras opcionais: clicar na própria imagem fecha, e Esc também
-banner.addEventListener('click', () => { banner.hidden = true; });
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') banner.hidden = true;
+
+// Fechar clicando fora da imagem
+overlayBanner.addEventListener("click", function(event) {
+
+    if (event.target === overlayBanner) {
+
+        overlayBanner.classList.remove("aberto");
+
+        setTimeout(function() {
+            overlayBanner.hidden = true;
+        }, 300);
+
+    }
+
 });
