@@ -150,7 +150,17 @@ main .preco-do-lanche {
         }
         
    
+.banner-secundario { display: block; margin-top: 16px; }
+.banner-secundario[hidden] { display: none; }
 
+/* bônus: se quiser que ela se sobreponha à tela toda */
+/*
+.banner-secundario {
+  position: fixed; inset: 0; margin: auto;
+  max-width: 90vw; max-height: 90vh;
+  z-index: 999; background: rgba(0,0,0,.6);
+}
+*/
 
 
 

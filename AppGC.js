@@ -118,3 +118,30 @@ const botao = document.querySelector('.deliveryBtn');
 
 
 
+const itens = document.querySelectorAll('.carrossel-item');
+const imagemSecundaria = document.getElementById('imagem_secundaria'); // <- mesmo id do HTML!
+
+itens.forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault(); // impede o "#" de subir a página / o "" de recarregar
+
+    const estaVisivel = imagemSecundaria.style.display !== 'none';
+    imagemSecundaria.style.display = estaVisivel ? 'none' : 'block';
+  });
+});
+
+const itens = document.querySelectorAll('.carrossel-item');
+const banner = document.getElementById('imagem_secundaria');
+
+itens.forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    banner.hidden = !banner.hidden;   // toggle limpo
+  });
+});
+
+// extras opcionais: clicar na própria imagem fecha, e Esc também
+banner.addEventListener('click', () => { banner.hidden = true; });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') banner.hidden = true;
+});
